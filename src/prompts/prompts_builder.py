@@ -1,6 +1,6 @@
 # src/prompts/prompt_builder.py
 from typing import Dict
-from data.load_data import Item  # import the dataclass
+from src.data.load_data import Item
 
 # condition keys (shared everywhere)
 GOLD = "gold"

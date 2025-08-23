@@ -1,11 +1,12 @@
-# src/prompts/preview_prompts.py
+import sys
 from pathlib import Path
-from data.load_data import load_items
-from prompts.prompts_builder import make_all_prompts, ALL_SETTINGS
+sys.path.append(str(Path(__file__).resolve().parents[2]))
+
+from src.data.load_data import load_items
+from src.prompts.prompts_builder import make_all_prompts, ALL_SETTINGS
 
 def main():
     repo_root = Path(__file__).resolve().parents[2]
-    print(f"Repository root: {repo_root}")
     base = repo_root / "src" / "data"
     items = load_items(base)
     print(f"Loaded {len(items)} items")
