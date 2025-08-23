@@ -1,0 +1,201 @@
+QID: HIST001 | Domain: history
+
+--- GOLD ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Declaration of Independence was adopted on July 4, 1776.
+Snippet B:
+In 1776, the King of Great Britain and Ireland was George III.
+
+Question:
+Who was the monarch of England when the United States declared independence?
+
+Answer:
+
+
+--- PARA ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Declaration of Independence was adopted on July 4, 1776.
+Snippet B:
+In 1776, the King of Great Britain and Ireland was George III.
+
+Question:
+Which British king ruled when America declared independence?
+
+Answer:
+
+
+--- DIST ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Declaration of Independence was adopted on July 4, 1776.
+Snippet B:
+In 1776, the King of Great Britain and Ireland was George III.
+Distractor Snippet:
+George IV became king in 1820.
+
+Question:
+Who was the monarch of England when the United States declared independence?
+
+Answer:
+
+
+--- PARA_DIST ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Declaration of Independence was adopted on July 4, 1776.
+Snippet B:
+In 1776, the King of Great Britain and Ireland was George III.
+Distractor Snippet:
+George IV became king in 1820.
+
+Question:
+Which British king ruled when America declared independence?
+
+Answer:
+
+================================================================================
+
+QID: HIST002 | Domain: history
+
+--- GOLD ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Colosseum is an ancient amphitheatre in Rome.
+Snippet B:
+It was built under the Roman Empire during the reign of Vespasian.
+
+Question:
+Which empire built the Colosseum in Rome?
+
+Answer:
+
+
+--- PARA ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Colosseum is an ancient amphitheatre in Rome.
+Snippet B:
+It was built under the Roman Empire during the reign of Vespasian.
+
+Question:
+Which empire constructed the Colosseum in Rome?
+
+Answer:
+
+
+--- DIST ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Colosseum is an ancient amphitheatre in Rome.
+Snippet B:
+It was built under the Roman Empire during the reign of Vespasian.
+Distractor Snippet:
+The Greek city-states built theatres such as Epidaurus.
+
+Question:
+Which empire built the Colosseum in Rome?
+
+Answer:
+
+
+--- PARA_DIST ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Colosseum is an ancient amphitheatre in Rome.
+Snippet B:
+It was built under the Roman Empire during the reign of Vespasian.
+Distractor Snippet:
+The Greek city-states built theatres such as Epidaurus.
+
+Question:
+Which empire constructed the Colosseum in Rome?
+
+Answer:
+
+================================================================================
+
+QID: HIST003 | Domain: history
+
+--- GOLD ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Cuban Missile Crisis took place in October 1962.
+Snippet B:
+At the time, John F. Kennedy was president of the United States.
+
+Question:
+Who was the US president during the Cuban Missile Crisis?
+
+Answer:
+
+
+--- PARA ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Cuban Missile Crisis took place in October 1962.
+Snippet B:
+At the time, John F. Kennedy was president of the United States.
+
+Question:
+Who was US president during the 1962 Cuban Missile Crisis?
+
+Answer:
+
+
+--- DIST ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Cuban Missile Crisis took place in October 1962.
+Snippet B:
+At the time, John F. Kennedy was president of the United States.
+Distractor Snippet:
+Dwight Eisenhower had left office in 1961.
+
+Question:
+Who was the US president during the Cuban Missile Crisis?
+
+Answer:
+
+
+--- PARA_DIST ---
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Cuban Missile Crisis took place in October 1962.
+Snippet B:
+At the time, John F. Kennedy was president of the United States.
+Distractor Snippet:
+Dwight Eisenhower had left office in 1961.
+
+Question:
+Who was US president during the 1962 Cuban Missile Crisis?
+
+Answer:
+
+================================================================================
+
