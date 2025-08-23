@@ -66,7 +66,7 @@ def main():
         out_path = Path(args.out)
     else:
         stamp = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
-        out_path = Path(f"results/{model_id}/raw/{model_id}__run{run_id}__{stamp}__raw.jsonl")
+        out_path = Path(args.out) if args.out else Path(f"src/results/raw/{model_id}_run{run_id}.jsonl")
     ensure_dirs(out_path)
 
     call = get_model_callable(model_id)
