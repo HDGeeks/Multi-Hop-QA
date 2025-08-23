@@ -3,7 +3,7 @@ from ._common import clean_text, get_env_or_raise, backoff_sleep
 import time
 from typing import Optional
 
-def query_openai_mini(
+def query_openai_4o_mini(
     prompt: str,
     model: str = "gpt-4o-mini",
     temperature: float = 0.0,

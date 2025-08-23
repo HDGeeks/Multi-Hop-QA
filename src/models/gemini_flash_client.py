@@ -3,7 +3,7 @@ from ._common import clean_text, get_env_or_raise, backoff_sleep
 import time
 from typing import Optional
 
-def query_gemini(
+def query_gemini_flash(
     prompt: str,
     model: str = "gemini-1.5-flash",
     temperature: float = 0.0,
