@@ -1,0 +1,8 @@
+repeats: 3
+random_seed: 42
+settings:
+  - gold
+  - para
+  - dist
+  - para_dist
+log_prompts: true

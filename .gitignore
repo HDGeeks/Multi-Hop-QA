@@ -2,10 +2,13 @@
 __pycache__/
 *.py[codz]
 *$py.class
-
+.env
+results/
+# Results
+src/results/
 # C extensions
 *.so
-
+src/models/.env
 # Distribution / packaging
 .Python
 build/
