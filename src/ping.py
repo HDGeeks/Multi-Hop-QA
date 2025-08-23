@@ -2,11 +2,11 @@ import os
 from datetime import datetime
 from pprint import PrettyPrinter
 
-from models.openai_client import query_openai
-from models.gemini_client import query_gemini
+from models.openai_4o_client import query_openai
+from models.gemini_flash_client import query_gemini
 from models.llama_client import query_llama
 from models.mistral_client import query_mistral
-from models.openai_mini_client import query_openai_mini 
+from models.openai_4o_mini_client import query_openai_mini 
 from models.gemini_pro_client import query_gemini_pro
 pp = PrettyPrinter(indent=2, width=100)
 
