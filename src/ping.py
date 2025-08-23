@@ -2,11 +2,11 @@ import os
 from datetime import datetime
 from pprint import PrettyPrinter
 
-from models.openai_4o_client import query_openai
-from models.gemini_flash_client import query_gemini
+from models.openai_4o_client import query_openai_4o
+from models.gemini_flash_client import query_gemini_flash
 from models.llama_client import query_llama
 from models.mistral_client import query_mistral
-from models.openai_4o_mini_client import query_openai_mini 
+from models.openai_4o_mini_client import query_openai_4o_mini
 from models.gemini_pro_client import query_gemini_pro
 pp = PrettyPrinter(indent=2, width=100)
 
@@ -35,7 +35,7 @@ def ping_all():
 
     # --- GPT-4o (OpenAI) ---
     try:
-        res = query_openai(prompt, temperature=0.0, max_tokens=64)
+        res = query_openai_4o(prompt, temperature=0.0, max_tokens=64)
         # expected to already be a dict with keys: output, error, usage, version, finish_reason
         if isinstance(res, dict):
             results["gpt4o"] = res
@@ -45,16 +45,7 @@ def ping_all():
     except Exception as e:
         results["gpt4o"] = _as_structured_dict(err=str(e), version="gpt-4o")
 
-    # --- Gemini Flash ---
-    try:
-        res = query_gemini(prompt, temperature=0.0, max_tokens=64)
-        if isinstance(res, dict):
-            results["gemini_flash"] = res
-        else:
-            results["gemini_flash"] = _as_structured_dict(output_text=str(res), version="gemini-1.5-flash")
-    except Exception as e:
-        results["gemini_flash"] = _as_structured_dict(err=str(e), version="gemini-1.5-flash")
-
+ 
     # --- LLaMA 3.1 8B Instruct (HF) ---
     try:
         res = query_llama(
@@ -106,7 +97,7 @@ def ping_all():
 
     # --- GPT-4o Mini (OpenAI) ---
     try:
-        res = query_openai_mini(
+        res = query_openai_4o_mini(
             prompt,
             temperature=0.0,
             max_tokens=64,
