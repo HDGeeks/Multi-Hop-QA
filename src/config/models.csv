@@ -1,0 +1,6 @@
+model_id,name,provider,temperature,top_p,max_tokens,notes
+gpt4o,gpt-4o,openai,0.0,1.0,64,locked for MHQA study
+gpt4o_mini,gpt-4o-mini,openai,0.0,1.0,64,fast/cheap variant
+gemini_pro,gemini-1.5-pro,google,0.0,1.0,64,full-capability Gemini
+llama31_8b,meta-llama/Llama-3.1-8B-Instruct,hf,0.0,1.0,64,HF Inference API
+mistral7b,mistralai/Mistral-7B-Instruct-v0.3,hf,0.0,1.0,64,HF Inference API
