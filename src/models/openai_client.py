@@ -1,83 +1,61 @@
 # src/models/openai_client.py
-
-import os
+from ._common import clean_text, get_env_or_raise, backoff_sleep
 import time
-from datetime import datetime
-from openai import OpenAI
+from typing import Optional
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-if not OPENAI_API_KEY:
-    raise RuntimeError("OPENAI_API_KEY not found in environment")
-
-client = OpenAI(api_key=OPENAI_API_KEY)
-
-def query_openai(prompt: str,
-                 run_id: int,
-                 qid: str,
-                 domain: str,
-                 setting: str,
-                 temperature: float = 0.0,
-                 top_p: float = 1.0,
-                 max_tokens: int = 64,
-                 seed: int | None = None,
-                 timeout: int = 60) -> dict:
+def query_openai(
+    prompt: str,
+    model: str = "gpt-4o",
+    temperature: float = 0.0,
+    top_p: float = 1.0,
+    max_tokens: int = 64,
+    timeout: int = 30,
+    retries: int = 2,
+):
     """
-    Query OpenAI GPT-4o with a text prompt.
-    Returns dict ready for experiment logging.
+    Returns a normalized dict:
+      version, output, finish_reason, usage, error
     """
+    import openai
+    openai.api_key = get_env_or_raise("OPENAI_API_KEY")
 
-    start = time.time()
-    ts = datetime.utcnow().isoformat()
-
-    try:
-        response = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=temperature,
-            top_p=top_p,
-            max_tokens=max_tokens,
-            seed=seed,
-            timeout=timeout
-        )
-        latency_ms = int((time.time() - start) * 1000)
-
-        choice = response.choices[0]
-        text = choice.message.content.strip()
-
-        return {
-            "run_id": run_id,
-            "qid": qid,
-            "domain": domain,
-            "model": "gpt4o",
-            "setting": setting,
-            "prompt": prompt,
-            "output": text,
-            "latency_ms": latency_ms,
-            "ts": ts,
-            "version": "gpt-4o",
-            "finish_reason": choice.finish_reason,
-            "usage": {
-                "prompt_tokens": response.usage.prompt_tokens if response.usage else None,
-                "completion_tokens": response.usage.completion_tokens if response.usage else None,
-                "total_tokens": response.usage.total_tokens if response.usage else None,
-            },
-            "error": None,
-        }
-
-    except Exception as e:
-        latency_ms = int((time.time() - start) * 1000)
-        return {
-            "run_id": run_id,
-            "qid": qid,
-            "domain": domain,
-            "model": "gpt4o",
-            "setting": setting,
-            "prompt": prompt,
-            "output": "",
-            "latency_ms": latency_ms,
-            "ts": ts,
-            "version": "gpt-4o",
-            "finish_reason": "error",
-            "usage": None,
-            "error": str(e),
-        }
+    last_err: Optional[str] = None
+    for attempt in range(retries + 1):
+        t0 = time.time()
+        try:
+            client = openai.OpenAI(timeout=timeout)
+            resp = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=temperature,
+                top_p=top_p,
+                max_tokens=max_tokens,
+            )
+            c0 = resp.choices[0]
+            text = c0.message.content or ""
+            out = {
+                "version": model,
+                "output": clean_text(text),
+                "finish_reason": getattr(c0, "finish_reason", None),
+                "usage": {
+                    "prompt_tokens": getattr(resp.usage, "prompt_tokens", None),
+                    "completion_tokens": getattr(resp.usage, "completion_tokens", None),
+                    "total_tokens": getattr(resp.usage, "total_tokens", None),
+                },
+                "error": None,
+            }
+            return out
+        except Exception as e:
+            last_err = str(e)
+            if attempt < retries:
+                backoff_sleep(attempt)
+            else:
+                return {
+                    "version": model,
+                    "output": "",
+                    "finish_reason": None,
+                    "usage": {"prompt_tokens": None, "completion_tokens": None, "total_tokens": None},
+                    "error": last_err,
+                }
+        finally:
+            _ = int((time.time() - t0) * 1000)

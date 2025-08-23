@@ -10,13 +10,12 @@ HF_TOKEN = os.getenv("HUGGINGFACE_API_KEY")
 if not HF_TOKEN:
     raise RuntimeError("HUGGINGFACE_API_KEY not found in environment")
 
-# Default LLaMA instruct model; override via param if you like
-DEFAULT_LLAMA_MODEL = "meta-llama/Llama-3.1-8B-Instruct"
+# Default Mistral instruct model
+DEFAULT_MISTRAL_MODEL = "mistralai/Mistral-7B-Instruct-v0.3"
 
-# Single, re-usable client
 _client = InferenceClient(api_key=HF_TOKEN)
 
-def query_llama(
+def query_mistral(
     prompt: str,
     *,
     temperature: float = 0.0,
@@ -25,10 +24,10 @@ def query_llama(
     model: Optional[str] = None
 ) -> Dict[str, Any]:
     """
-    Query LLaMA via HF Inference API (chat_completion).
+    Query Mistral via HF Inference API (chat_completion).
     Returns a unified schema dict.
     """
-    model_id = model or DEFAULT_LLAMA_MODEL
+    model_id = model or DEFAULT_MISTRAL_MODEL
     t0 = time.time()
     try:
         resp = _client.chat_completion(
@@ -39,14 +38,12 @@ def query_llama(
             max_tokens=max_tokens,
             stream=False,
         )
-        # HF chat_completion returns choices similar to OpenAI
         choice = resp.choices[0] if resp and resp.choices else None
         output = (choice.message.content or "").strip() if choice else ""
         finish_reason = getattr(choice, "finish_reason", None) or "stop"
 
-        # Token usage is not always available on HF endpoint
         usage = {}
-        result = {
+        return {
             "output": output,
             "error": None,
             "latency_ms": int((time.time() - t0) * 1000),
@@ -54,8 +51,6 @@ def query_llama(
             "finish_reason": finish_reason,
             "usage": usage,
         }
-        return result
-
     except Exception as e:
         return {
             "output": "",
