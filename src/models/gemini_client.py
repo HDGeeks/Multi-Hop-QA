@@ -16,7 +16,7 @@ def query_gemini(
     Normalized dict: version, output, finish_reason, usage, error
     """
     import google.generativeai as genai
-    genai.configure(api_key=get_env_or_raise("GOOGLE_API_KEY"))
+    genai.configure(api_key=get_env_or_raise("GEMINI_API_KEY"))
 
     last_err: Optional[str] = None
     for attempt in range(retries + 1):
