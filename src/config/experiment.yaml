@@ -1,0 +1,65 @@
+experiment:
+  id: mhqa_v1
+  description: "Multi-hop QA robustness: Gold vs Paraphrase vs Distractor vs Both"
+  seed: 42
+  repeats_per_cell: 3
+  domains: ["history", "science", "politics"]
+  settings:
+    - id: gold
+      include_distractor: false
+      use_paraphrase: false
+    - id: para
+      include_distractor: false
+      use_paraphrase: true
+    - id: dist
+      include_distractor: true
+      use_paraphrase: false
+    - id: para_dist
+      include_distractor: true
+      use_paraphrase: true
+
+paths:
+  data_dir: "src/data"
+  questions_csv: "src/data/mhqa_questions.csv"
+  context_csv: "src/data/mhqa_context.csv"
+  paraphrases_csv: "src/data/mhqa_paraphrases.csv"
+  results_dir: "src/results"
+  raw_jsonl: "src/results/results.jsonl"
+  per_run_scores: "src/results/scores_per_run.csv"
+  items_agg: "src/results/scores_aggregated_items.csv"
+  summary_csv: "src/results/scores_summary.csv"
+  prompts_dir: "src/prompts"
+  prompt_template_txt: "src/prompts/mhqa_base.txt"
+
+scoring:
+  em:
+    casefold: true
+    strip_punct: true
+    punct_chars: ".,!?;:'\"()[]"
+    trim_spaces: true
+    alias_map: true
+  f1:
+    tokenization: "whitespace"      # or "nltk"
+  refusal:
+    keywords: ["cannot answer", "unable to answer", "sorry", "policy"]
+    treat_empty_as_refusal: true
+  format_violation:
+    max_tokens_answer: 12           # answers should be short spans
+    allow_colon: false
+
+logging:
+  log_prompts: "hash"               # "full" | "hash"
+  hash_algo: "sha256"
+  include_usage: true
+  include_finish_reason: true
+  include_version: true
+  redact_keys: ["OPENAI_API_KEY", "GEMINI_API_KEY", "HUGGINGFACE_API_KEY"]
+
+runtime:
+  shuffle_cells: true
+  max_concurrent: 1                 # set >1 if your clients are thread-safe and you can throttle
+  retry:
+    max_attempts: 3
+    backoff: "exponential"          # 1s,2s,4s (cap 8s)
+    first_delay_s: 1
+    max_delay_s: 8
