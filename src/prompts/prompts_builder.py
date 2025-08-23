@@ -1,68 +1,58 @@
-# src/data/load_data.py
-import csv
-from pathlib import Path
-from dataclasses import dataclass
-from typing import Optional
+# src/prompts/prompt_builder.py
+from typing import Dict
+from data.load_data import Item  # import the dataclass
 
-@dataclass
-class Item:
-    qid: str
-    domain: str
-    question: str
-    paraphrase: Optional[str]
-    snippet_a: str
-    snippet_b: str
-    distractor: str
-    answer: str
+# condition keys (shared everywhere)
+GOLD = "gold"
+PARA = "para"
+DIST = "dist"
+PARA_DIST = "para_dist"
+ALL_SETTINGS = (GOLD, PARA, DIST, PARA_DIST)
 
-def load_items(base_dir: Path) -> list[Item]:
-    # Load questions
-    questions = {}
-    with (base_dir / "mhqa_questions.csv").open(encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            questions[row["qid"]] = {
-                "qid": row["qid"],
-                "domain": row["domain"],
-                "question": row["question"],
-                "answer": row["answer"],
-            }
 
-    # Load contexts
-    contexts = {}
-    with (base_dir / "mhqa_context.csv").open(encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            contexts[row["qid"]] = {
-                "snippet_a": row["snippet_a"],
-                "snippet_b": row["snippet_b"],
-                "distractor": row["distractor"],
-            }
+def build_prompt(item: Item, setting: str) -> str:
+    """
+    Build the exact prompt text for one item under one condition.
+    Conditions:
+      - gold: gold question + 2 gold snippets
+      - para: paraphrased question + 2 gold snippets
+      - dist: gold question + 2 gold snippets + distractor
+      - para_dist: paraphrased question + 2 gold snippets + distractor
+    """
+    if setting not in ALL_SETTINGS:
+        raise ValueError(f"Unknown setting {setting}, expected one of {ALL_SETTINGS}")
 
-    # Load paraphrases
-    paras = {}
-    with (base_dir / "mhqa_paraphrases.csv").open(encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            paras[row["qid"]] = row["paraphrase"]
+    # decide which question to show
+    question_text = (
+        item.paraphrase if setting in (PARA, PARA_DIST) and item.paraphrase else item.question
+    )
 
-    # Merge into Item objects
-    items = []
-    for qid, q in questions.items():
-        ctx = contexts[qid]
-        para = paras.get(qid, None)
-        items.append(Item(
-            qid=q["qid"],
-            domain=q["domain"],
-            question=q["question"],
-            paraphrase=para,
-            snippet_a=ctx["snippet_a"],
-            snippet_b=ctx["snippet_b"],
-            distractor=ctx["distractor"],
-            answer=q["answer"],
-        ))
+    # base prompt
+    blocks = [
+        "Use the snippets to answer the question.",
+        "Rules: Output only the final answer as a short span. No explanations.",
+        "",
+        f"Snippet A:\n{item.snippet_a.strip()}",
+        f"Snippet B:\n{item.snippet_b.strip()}",
+    ]
 
-    return items
+    # add distractor if needed
+    if setting in (DIST, PARA_DIST):
+        blocks.append(f"Distractor Snippet:\n{item.distractor.strip()}")
 
-if __name__ == "__main__":
-    base = Path("src/data")
-    items = load_items(base)
-    print(f"Loaded {len(items)} items")
-    print(items[0])  # peek at first
+    # add the question and answer anchor
+    blocks.extend([
+        "",
+        f"Question:\n{question_text.strip()}",
+        "",
+        "Answer:"  # <- the model completes here
+    ])
+
+    return "\n".join(blocks)
+
+
+def make_all_prompts(item: Item) -> Dict[str, str]:
+    """
+    Return a dict of {setting: prompt_text} for all four settings of one item.
+    """
+    return {s: build_prompt(item, s) for s in ALL_SETTINGS}
