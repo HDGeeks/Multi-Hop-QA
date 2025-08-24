@@ -9,7 +9,7 @@ import time
 from src.data.load_data import load_items
 from src.prompts.prompts_builder import build_prompt, GOLD, PARA, DIST, PARA_DIST
 
-# model clients (already implemented in your repo)
+# model clients
 from src.models.openai_4o_client import query_openai_4o
 from src.models.openai_4o_mini_client import query_openai_4o_mini
 from src.models.gemini_pro_client import query_gemini_pro
@@ -66,7 +66,7 @@ def main():
         out_path = Path(args.out)
     else:
         stamp = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
-        out_path = Path(args.out) if args.out else Path(f"src/results/raw/{model_id}_run{run_id}.jsonl")
+        out_path = Path(args.out) if args.out else Path(f"src/results/{model_id}/{model_id}_run{run_id}.jsonl")
     ensure_dirs(out_path)
 
     call = get_model_callable(model_id)
