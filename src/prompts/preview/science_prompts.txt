@@ -1,4 +1,4 @@
-# Domain: science | Items: 8
+# Domain: science | Items: 10
 # Settings: gold, para, dist, para_dist
 ================================================================================
 
@@ -9,9 +9,9 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Water is composed of hydrogen and oxygen.
+A water molecule consists of two hydrogen atoms bonded to one oxygen atom.
 Snippet B:
-Its formula is H2O.
+The chemical formula that represents water is H2O.
 
 Question:
 What is the chemical symbol for water?
@@ -23,12 +23,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Water is composed of hydrogen and oxygen.
+A water molecule consists of two hydrogen atoms bonded to one oxygen atom.
 Snippet B:
-Its formula is H2O.
+The chemical formula that represents water is H2O.
 
 Question:
-What is water’s chemical formula?
+What is the chemical formula for water?
 
 Answer:
 
@@ -37,11 +37,11 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Water is composed of hydrogen and oxygen.
+A water molecule consists of two hydrogen atoms bonded to one oxygen atom.
 Snippet B:
-Its formula is H2O.
+The chemical formula that represents water is H2O.
 Distractor Snippet:
-O2 is the formula for oxygen.
+Hydrogen peroxide has the formula H2O2, not water.
 
 Question:
 What is the chemical symbol for water?
@@ -53,14 +53,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Water is composed of hydrogen and oxygen.
+A water molecule consists of two hydrogen atoms bonded to one oxygen atom.
 Snippet B:
-Its formula is H2O.
+The chemical formula that represents water is H2O.
 Distractor Snippet:
-O2 is the formula for oxygen.
+Hydrogen peroxide has the formula H2O2, not water.
 
 Question:
-What is water’s chemical formula?
+What is the chemical formula for water?
 
 Answer:
 
@@ -73,12 +73,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Mars is the fourth planet from the Sun.
+An element’s atomic number equals the number of protons in its nucleus.
 Snippet B:
-It is called the Red Planet due to its iron oxide surface.
+The element with atomic number 6 is carbon.
 
 Question:
-Which planet is known as the Red Planet?
+Which element has the atomic number 6?
 
 Answer:
 
@@ -87,12 +87,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Mars is the fourth planet from the Sun.
+An element’s atomic number equals the number of protons in its nucleus.
 Snippet B:
-It is called the Red Planet due to its iron oxide surface.
+The element with atomic number 6 is carbon.
 
 Question:
-Which planet is known as the Red Planet?
+Which element has atomic number 6?
 
 Answer:
 
@@ -101,14 +101,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Mars is the fourth planet from the Sun.
+An element’s atomic number equals the number of protons in its nucleus.
 Snippet B:
-It is called the Red Planet due to its iron oxide surface.
+The element with atomic number 6 is carbon.
 Distractor Snippet:
-Venus is sometimes called Earth’s twin.
+Nitrogen has atomic number 7, one higher than carbon.
 
 Question:
-Which planet is known as the Red Planet?
+Which element has the atomic number 6?
 
 Answer:
 
@@ -117,14 +117,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Mars is the fourth planet from the Sun.
+An element’s atomic number equals the number of protons in its nucleus.
 Snippet B:
-It is called the Red Planet due to its iron oxide surface.
+The element with atomic number 6 is carbon.
 Distractor Snippet:
-Venus is sometimes called Earth’s twin.
+Nitrogen has atomic number 7, one higher than carbon.
 
 Question:
-Which planet is known as the Red Planet?
+Which element has atomic number 6?
 
 Answer:
 
@@ -137,12 +137,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The theory of relativity revolutionized physics.
+Cellular respiration in humans produces carbon dioxide as a waste product.
 Snippet B:
-It was proposed by Albert Einstein in 1905.
+Humans exhale carbon dioxide (CO2) during breathing.
 
 Question:
-Who proposed the theory of relativity?
+What gas do humans exhale during respiration?
 
 Answer:
 
@@ -151,12 +151,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The theory of relativity revolutionized physics.
+Cellular respiration in humans produces carbon dioxide as a waste product.
 Snippet B:
-It was proposed by Albert Einstein in 1905.
+Humans exhale carbon dioxide (CO2) during breathing.
 
 Question:
-Who developed the theory of relativity?
+What gas do humans primarily exhale during respiration?
 
 Answer:
 
@@ -165,14 +165,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The theory of relativity revolutionized physics.
+Cellular respiration in humans produces carbon dioxide as a waste product.
 Snippet B:
-It was proposed by Albert Einstein in 1905.
+Humans exhale carbon dioxide (CO2) during breathing.
 Distractor Snippet:
-Isaac Newton formulated the laws of motion.
+Oxygen (O2) is primarily inhaled and used by tissues rather than exhaled.
 
 Question:
-Who proposed the theory of relativity?
+What gas do humans exhale during respiration?
 
 Answer:
 
@@ -181,14 +181,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The theory of relativity revolutionized physics.
+Cellular respiration in humans produces carbon dioxide as a waste product.
 Snippet B:
-It was proposed by Albert Einstein in 1905.
+Humans exhale carbon dioxide (CO2) during breathing.
 Distractor Snippet:
-Isaac Newton formulated the laws of motion.
+Oxygen (O2) is primarily inhaled and used by tissues rather than exhaled.
 
 Question:
-Who developed the theory of relativity?
+What gas do humans primarily exhale during respiration?
 
 Answer:
 
@@ -201,12 +201,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Humans inhale oxygen.
+A 1915 theory described gravity as the curvature of spacetime caused by mass and energy.
 Snippet B:
-They exhale carbon dioxide during respiration.
+This theory of general relativity was developed by Albert Einstein.
 
 Question:
-What gas do humans exhale in respiration?
+Who proposed the theory of general relativity?
 
 Answer:
 
@@ -215,12 +215,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Humans inhale oxygen.
+A 1915 theory described gravity as the curvature of spacetime caused by mass and energy.
 Snippet B:
-They exhale carbon dioxide during respiration.
+This theory of general relativity was developed by Albert Einstein.
 
 Question:
-Which gas do humans breathe out during respiration?
+Who proposed the theory of general relativity?
 
 Answer:
 
@@ -229,14 +229,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Humans inhale oxygen.
+A 1915 theory described gravity as the curvature of spacetime caused by mass and energy.
 Snippet B:
-They exhale carbon dioxide during respiration.
+This theory of general relativity was developed by Albert Einstein.
 Distractor Snippet:
-Helium is an inert gas not used in respiration.
+Isaac Newton’s theory of gravitation preceded relativity and uses forces, not curved spacetime.
 
 Question:
-What gas do humans exhale in respiration?
+Who proposed the theory of general relativity?
 
 Answer:
 
@@ -245,14 +245,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Humans inhale oxygen.
+A 1915 theory described gravity as the curvature of spacetime caused by mass and energy.
 Snippet B:
-They exhale carbon dioxide during respiration.
+This theory of general relativity was developed by Albert Einstein.
 Distractor Snippet:
-Helium is an inert gas not used in respiration.
+Isaac Newton’s theory of gravitation preceded relativity and uses forces, not curved spacetime.
 
 Question:
-Which gas do humans breathe out during respiration?
+Who proposed the theory of general relativity?
 
 Answer:
 
@@ -265,12 +265,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Atoms are composed of protons, neutrons, and electrons.
+Cells generate most ATP within an organelle responsible for aerobic respiration.
 Snippet B:
-Electrons carry a negative charge.
+This organelle—the mitochondrion—is commonly called the powerhouse of the cell.
 
 Question:
-Which particle carries a negative charge?
+What is the powerhouse of the cell?
 
 Answer:
 
@@ -279,12 +279,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Atoms are composed of protons, neutrons, and electrons.
+Cells generate most ATP within an organelle responsible for aerobic respiration.
 Snippet B:
-Electrons carry a negative charge.
+This organelle—the mitochondrion—is commonly called the powerhouse of the cell.
 
 Question:
-Which subatomic particle has a negative charge?
+Which organelle is known as the powerhouse of the cell?
 
 Answer:
 
@@ -293,14 +293,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Atoms are composed of protons, neutrons, and electrons.
+Cells generate most ATP within an organelle responsible for aerobic respiration.
 Snippet B:
-Electrons carry a negative charge.
+This organelle—the mitochondrion—is commonly called the powerhouse of the cell.
 Distractor Snippet:
-Protons carry a positive charge.
+The nucleus stores genetic material but does not produce most ATP.
 
 Question:
-Which particle carries a negative charge?
+What is the powerhouse of the cell?
 
 Answer:
 
@@ -309,14 +309,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Atoms are composed of protons, neutrons, and electrons.
+Cells generate most ATP within an organelle responsible for aerobic respiration.
 Snippet B:
-Electrons carry a negative charge.
+This organelle—the mitochondrion—is commonly called the powerhouse of the cell.
 Distractor Snippet:
-Protons carry a positive charge.
+The nucleus stores genetic material but does not produce most ATP.
 
 Question:
-Which subatomic particle has a negative charge?
+Which organelle is known as the powerhouse of the cell?
 
 Answer:
 
@@ -329,12 +329,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Penicillin was discovered accidentally from mold.
+The fourth planet from the Sun appears reddish because of iron oxide on its surface.
 Snippet B:
-The discoverer was Alexander Fleming in 1928.
+This world is nicknamed the Red Planet—Mars.
 
 Question:
-Who discovered penicillin?
+What planet is known as the Red Planet?
 
 Answer:
 
@@ -343,12 +343,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Penicillin was discovered accidentally from mold.
+The fourth planet from the Sun appears reddish because of iron oxide on its surface.
 Snippet B:
-The discoverer was Alexander Fleming in 1928.
+This world is nicknamed the Red Planet—Mars.
 
 Question:
-Who discovered the antibiotic penicillin?
+Which planet is nicknamed the Red Planet?
 
 Answer:
 
@@ -357,14 +357,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Penicillin was discovered accidentally from mold.
+The fourth planet from the Sun appears reddish because of iron oxide on its surface.
 Snippet B:
-The discoverer was Alexander Fleming in 1928.
+This world is nicknamed the Red Planet—Mars.
 Distractor Snippet:
-Louis Pasteur studied vaccination.
+Jupiter is known for the Great Red Spot but is not called the Red Planet.
 
 Question:
-Who discovered penicillin?
+What planet is known as the Red Planet?
 
 Answer:
 
@@ -373,14 +373,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Penicillin was discovered accidentally from mold.
+The fourth planet from the Sun appears reddish because of iron oxide on its surface.
 Snippet B:
-The discoverer was Alexander Fleming in 1928.
+This world is nicknamed the Red Planet—Mars.
 Distractor Snippet:
-Louis Pasteur studied vaccination.
+Jupiter is known for the Great Red Spot but is not called the Red Planet.
 
 Question:
-Who discovered the antibiotic penicillin?
+Which planet is nicknamed the Red Planet?
 
 Answer:
 
@@ -393,12 +393,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Cells contain organelles such as mitochondria.
+Atoms contain negatively charged electrons, positively charged protons, and neutral neutrons.
 Snippet B:
-Mitochondria produce energy (ATP).
+The subatomic particle with negative charge is the electron.
 
 Question:
-What is the powerhouse of the cell?
+What particle carries a negative charge?
 
 Answer:
 
@@ -407,12 +407,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Cells contain organelles such as mitochondria.
+Atoms contain negatively charged electrons, positively charged protons, and neutral neutrons.
 Snippet B:
-Mitochondria produce energy (ATP).
+The subatomic particle with negative charge is the electron.
 
 Question:
-Which cell organelle is called the powerhouse?
+Which subatomic particle carries a negative charge?
 
 Answer:
 
@@ -421,14 +421,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Cells contain organelles such as mitochondria.
+Atoms contain negatively charged electrons, positively charged protons, and neutral neutrons.
 Snippet B:
-Mitochondria produce energy (ATP).
+The subatomic particle with negative charge is the electron.
 Distractor Snippet:
-The nucleus stores DNA.
+Protons carry positive charge, the opposite of electrons.
 
 Question:
-What is the powerhouse of the cell?
+What particle carries a negative charge?
 
 Answer:
 
@@ -437,14 +437,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Cells contain organelles such as mitochondria.
+Atoms contain negatively charged electrons, positively charged protons, and neutral neutrons.
 Snippet B:
-Mitochondria produce energy (ATP).
+The subatomic particle with negative charge is the electron.
 Distractor Snippet:
-The nucleus stores DNA.
+Protons carry positive charge, the opposite of electrons.
 
 Question:
-Which cell organelle is called the powerhouse?
+Which subatomic particle carries a negative charge?
 
 Answer:
 
@@ -457,12 +457,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The element with atomic number 6 is carbon.
+Ultraviolet B radiation on skin initiates synthesis of cholecalciferol.
 Snippet B:
-Carbon is essential to organic chemistry.
+This process produces Vitamin D in the human body.
 
 Question:
-Which element has the atomic number 6?
+Which vitamin is produced when skin is exposed to sunlight?
 
 Answer:
 
@@ -471,12 +471,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The element with atomic number 6 is carbon.
+Ultraviolet B radiation on skin initiates synthesis of cholecalciferol.
 Snippet B:
-Carbon is essential to organic chemistry.
+This process produces Vitamin D in the human body.
 
 Question:
-Which element has atomic number six?
+Which vitamin is synthesized in human skin under sunlight?
 
 Answer:
 
@@ -485,14 +485,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The element with atomic number 6 is carbon.
+Ultraviolet B radiation on skin initiates synthesis of cholecalciferol.
 Snippet B:
-Carbon is essential to organic chemistry.
+This process produces Vitamin D in the human body.
 Distractor Snippet:
-Hydrogen is atomic number 1.
+Vitamin C must be obtained from diet and is not synthesized by skin.
 
 Question:
-Which element has the atomic number 6?
+Which vitamin is produced when skin is exposed to sunlight?
 
 Answer:
 
@@ -501,14 +501,142 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The element with atomic number 6 is carbon.
+Ultraviolet B radiation on skin initiates synthesis of cholecalciferol.
 Snippet B:
-Carbon is essential to organic chemistry.
+This process produces Vitamin D in the human body.
 Distractor Snippet:
-Hydrogen is atomic number 1.
+Vitamin C must be obtained from diet and is not synthesized by skin.
 
 Question:
-Which element has atomic number six?
+Which vitamin is synthesized in human skin under sunlight?
+
+Answer:
+
+================================================================================
+
+QID: SCI009 | Domain: science
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Using light energy, plants convert carbon dioxide and water into sugars and oxygen.
+Snippet B:
+This food‑producing process is called photosynthesis.
+
+Question:
+What is the process by which plants make food?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Using light energy, plants convert carbon dioxide and water into sugars and oxygen.
+Snippet B:
+This food‑producing process is called photosynthesis.
+
+Question:
+What is the name of the process plants use to make food from light?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Using light energy, plants convert carbon dioxide and water into sugars and oxygen.
+Snippet B:
+This food‑producing process is called photosynthesis.
+Distractor Snippet:
+Cellular respiration breaks down sugars; it does not produce them from light.
+
+Question:
+What is the process by which plants make food?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Using light energy, plants convert carbon dioxide and water into sugars and oxygen.
+Snippet B:
+This food‑producing process is called photosynthesis.
+Distractor Snippet:
+Cellular respiration breaks down sugars; it does not produce them from light.
+
+Question:
+What is the name of the process plants use to make food from light?
+
+Answer:
+
+================================================================================
+
+QID: SCI010 | Domain: science
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The human integumentary system includes the skin covering the body.
+Snippet B:
+By area, the skin is the largest organ of the human body.
+
+Question:
+What is the largest organ in the human body?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The human integumentary system includes the skin covering the body.
+Snippet B:
+By area, the skin is the largest organ of the human body.
+
+Question:
+What is the largest organ of the human body by surface area?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The human integumentary system includes the skin covering the body.
+Snippet B:
+By area, the skin is the largest organ of the human body.
+Distractor Snippet:
+The liver is often cited as the largest internal solid organ, not overall largest.
+
+Question:
+What is the largest organ in the human body?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The human integumentary system includes the skin covering the body.
+Snippet B:
+By area, the skin is the largest organ of the human body.
+Distractor Snippet:
+The liver is often cited as the largest internal solid organ, not overall largest.
+
+Question:
+What is the largest organ of the human body by surface area?
 
 Answer:
 

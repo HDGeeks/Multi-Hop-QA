@@ -1,4 +1,4 @@
-# Domain: politics | Items: 8
+# Domain: politics | Items: 10
 # Settings: gold, para, dist, para_dist
 ================================================================================
 
@@ -9,12 +9,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The US Constitution was drafted in 1787.
+In this political system, citizens hold power directly or through elected representatives.
 Snippet B:
-James Madison is considered its father.
+Government by the people is termed democracy.
 
 Question:
-Who is considered the father of the US Constitution?
+Which political system is based on rule by the people?
 
 Answer:
 
@@ -23,12 +23,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The US Constitution was drafted in 1787.
+In this political system, citizens hold power directly or through elected representatives.
 Snippet B:
-James Madison is considered its father.
+Government by the people is termed democracy.
 
 Question:
-Who is regarded as the father of the US Constitution?
+What is the term for a government run by the people directly or via representatives?
 
 Answer:
 
@@ -37,14 +37,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The US Constitution was drafted in 1787.
+In this political system, citizens hold power directly or through elected representatives.
 Snippet B:
-James Madison is considered its father.
+Government by the people is termed democracy.
 Distractor Snippet:
-Thomas Jefferson drafted the Declaration of Independence.
+An autocracy concentrates power in one ruler rather than the people.
 
 Question:
-Who is considered the father of the US Constitution?
+Which political system is based on rule by the people?
 
 Answer:
 
@@ -53,14 +53,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The US Constitution was drafted in 1787.
+In this political system, citizens hold power directly or through elected representatives.
 Snippet B:
-James Madison is considered its father.
+Government by the people is termed democracy.
 Distractor Snippet:
-Thomas Jefferson drafted the Declaration of Independence.
+An autocracy concentrates power in one ruler rather than the people.
 
 Question:
-Who is regarded as the father of the US Constitution?
+What is the term for a government run by the people directly or via representatives?
 
 Answer:
 
@@ -73,12 +73,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Democracy means rule by the people.
+A 1979 general election in the UK brought the Conservative Party to power.
 Snippet B:
-Citizens vote to elect representatives in a democracy.
+Its leader Margaret Thatcher thus became the first female Prime Minister of the United Kingdom.
 
 Question:
-Which political system is based on rule by the people?
+Who was the first female Prime Minister of the UK?
 
 Answer:
 
@@ -87,12 +87,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Democracy means rule by the people.
+A 1979 general election in the UK brought the Conservative Party to power.
 Snippet B:
-Citizens vote to elect representatives in a democracy.
+Its leader Margaret Thatcher thus became the first female Prime Minister of the United Kingdom.
 
 Question:
-Which political system is based on popular rule?
+Who was the first woman to serve as Prime Minister of the United Kingdom?
 
 Answer:
 
@@ -101,14 +101,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Democracy means rule by the people.
+A 1979 general election in the UK brought the Conservative Party to power.
 Snippet B:
-Citizens vote to elect representatives in a democracy.
+Its leader Margaret Thatcher thus became the first female Prime Minister of the United Kingdom.
 Distractor Snippet:
-Monarchy is rule by a king or queen.
+Indira Gandhi was India’s Prime Minister, not the UK’s.
 
 Question:
-Which political system is based on rule by the people?
+Who was the first female Prime Minister of the UK?
 
 Answer:
 
@@ -117,14 +117,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Democracy means rule by the people.
+A 1979 general election in the UK brought the Conservative Party to power.
 Snippet B:
-Citizens vote to elect representatives in a democracy.
+Its leader Margaret Thatcher thus became the first female Prime Minister of the United Kingdom.
 Distractor Snippet:
-Monarchy is rule by a king or queen.
+Indira Gandhi was India’s Prime Minister, not the UK’s.
 
 Question:
-Which political system is based on popular rule?
+Who was the first woman to serve as Prime Minister of the United Kingdom?
 
 Answer:
 
@@ -137,12 +137,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The UK had its first female Prime Minister in 1979.
+The preamble that begins with the words 'We the People' introduces a foundational U.S. document.
 Snippet B:
-Her name was Margaret Thatcher.
+Those words open the Constitution of the United States.
 
 Question:
-Who was the first female Prime Minister of the UK?
+Which U.S. document begins with 'We the People'?
 
 Answer:
 
@@ -151,12 +151,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The UK had its first female Prime Minister in 1979.
+The preamble that begins with the words 'We the People' introduces a foundational U.S. document.
 Snippet B:
-Her name was Margaret Thatcher.
+Those words open the Constitution of the United States.
 
 Question:
-Who was Britain’s first female Prime Minister?
+Which U.S. document opens with the words 'We the People'?
 
 Answer:
 
@@ -165,14 +165,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The UK had its first female Prime Minister in 1979.
+The preamble that begins with the words 'We the People' introduces a foundational U.S. document.
 Snippet B:
-Her name was Margaret Thatcher.
+Those words open the Constitution of the United States.
 Distractor Snippet:
-Theresa May became Prime Minister in 2016.
+The Declaration of Independence begins with a different preamble in 1776.
 
 Question:
-Who was the first female Prime Minister of the UK?
+Which U.S. document begins with 'We the People'?
 
 Answer:
 
@@ -181,14 +181,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The UK had its first female Prime Minister in 1979.
+The preamble that begins with the words 'We the People' introduces a foundational U.S. document.
 Snippet B:
-Her name was Margaret Thatcher.
+Those words open the Constitution of the United States.
 Distractor Snippet:
-Theresa May became Prime Minister in 2016.
+The Declaration of Independence begins with a different preamble in 1776.
 
 Question:
-Who was Britain’s first female Prime Minister?
+Which U.S. document opens with the words 'We the People'?
 
 Answer:
 
@@ -201,12 +201,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Constitution is the highest law in the United States.
+The U.S. Congress is bicameral, consisting of two chambers.
 Snippet B:
-It overrides state laws.
+The upper chamber is the United States Senate.
 
 Question:
-What is the supreme law of the United States?
+What body serves as the upper chamber of the U.S. Congress?
 
 Answer:
 
@@ -215,12 +215,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Constitution is the highest law in the United States.
+The U.S. Congress is bicameral, consisting of two chambers.
 Snippet B:
-It overrides state laws.
+The upper chamber is the United States Senate.
 
 Question:
-What is the highest law in the United States?
+What is the name of the upper chamber of the U.S. Congress?
 
 Answer:
 
@@ -229,14 +229,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Constitution is the highest law in the United States.
+The U.S. Congress is bicameral, consisting of two chambers.
 Snippet B:
-It overrides state laws.
+The upper chamber is the United States Senate.
 Distractor Snippet:
-The Magna Carta was signed in 1215.
+The House of Representatives is the lower chamber.
 
 Question:
-What is the supreme law of the United States?
+What body serves as the upper chamber of the U.S. Congress?
 
 Answer:
 
@@ -245,14 +245,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Constitution is the highest law in the United States.
+The U.S. Congress is bicameral, consisting of two chambers.
 Snippet B:
-It overrides state laws.
+The upper chamber is the United States Senate.
 Distractor Snippet:
-The Magna Carta was signed in 1215.
+The House of Representatives is the lower chamber.
 
 Question:
-What is the highest law in the United States?
+What is the name of the upper chamber of the U.S. Congress?
 
 Answer:
 
@@ -265,12 +265,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Apartheid in South Africa ended in the 1990s.
+The first inauguration under the U.S. Constitution occurred in 1789 in New York City.
 Snippet B:
-Nelson Mandela became the first black president in 1994.
+The first President of the United States was George Washington.
 
 Question:
-Who was the first President of South Africa elected after apartheid?
+Who was the first president of the United States?
 
 Answer:
 
@@ -279,12 +279,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Apartheid in South Africa ended in the 1990s.
+The first inauguration under the U.S. Constitution occurred in 1789 in New York City.
 Snippet B:
-Nelson Mandela became the first black president in 1994.
+The first President of the United States was George Washington.
 
 Question:
-Who became South Africa’s first president after apartheid?
+Who was the first President of the United States?
 
 Answer:
 
@@ -293,14 +293,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Apartheid in South Africa ended in the 1990s.
+The first inauguration under the U.S. Constitution occurred in 1789 in New York City.
 Snippet B:
-Nelson Mandela became the first black president in 1994.
+The first President of the United States was George Washington.
 Distractor Snippet:
-Frederik de Klerk was the last white president.
+John Adams was the first vice president and later became the second president.
 
 Question:
-Who was the first President of South Africa elected after apartheid?
+Who was the first president of the United States?
 
 Answer:
 
@@ -309,14 +309,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Apartheid in South Africa ended in the 1990s.
+The first inauguration under the U.S. Constitution occurred in 1789 in New York City.
 Snippet B:
-Nelson Mandela became the first black president in 1994.
+The first President of the United States was George Washington.
 Distractor Snippet:
-Frederik de Klerk was the last white president.
+John Adams was the first vice president and later became the second president.
 
 Question:
-Who became South Africa’s first president after apartheid?
+Who was the first President of the United States?
 
 Answer:
 
@@ -329,12 +329,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Kremlin is a fortified complex in Moscow.
+An international organization formed after World War II sought to maintain peace and cooperation.
 Snippet B:
-It is the seat of Russia’s government.
+This organization, founded in 1945, is the United Nations.
 
 Question:
-Which country has the Kremlin as a seat of government?
+Which organization was founded in 1945 to promote peace?
 
 Answer:
 
@@ -343,12 +343,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Kremlin is a fortified complex in Moscow.
+An international organization formed after World War II sought to maintain peace and cooperation.
 Snippet B:
-It is the seat of Russia’s government.
+This organization, founded in 1945, is the United Nations.
 
 Question:
-Which country’s government operates from the Kremlin?
+Which organization founded in 1945 aims to promote international peace and cooperation?
 
 Answer:
 
@@ -357,14 +357,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Kremlin is a fortified complex in Moscow.
+An international organization formed after World War II sought to maintain peace and cooperation.
 Snippet B:
-It is the seat of Russia’s government.
+This organization, founded in 1945, is the United Nations.
 Distractor Snippet:
-The White House is the US executive residence.
+The League of Nations was founded after World War I and dissolved earlier.
 
 Question:
-Which country has the Kremlin as a seat of government?
+Which organization was founded in 1945 to promote peace?
 
 Answer:
 
@@ -373,14 +373,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Kremlin is a fortified complex in Moscow.
+An international organization formed after World War II sought to maintain peace and cooperation.
 Snippet B:
-It is the seat of Russia’s government.
+This organization, founded in 1945, is the United Nations.
 Distractor Snippet:
-The White House is the US executive residence.
+The League of Nations was founded after World War I and dissolved earlier.
 
 Question:
-Which country’s government operates from the Kremlin?
+Which organization founded in 1945 aims to promote international peace and cooperation?
 
 Answer:
 
@@ -393,12 +393,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Barack Obama served as US President until 2017.
+The U.S. federal judiciary is headed by its highest tribunal.
 Snippet B:
-Donald Trump succeeded him that year.
+The highest court in the United States is the Supreme Court.
 
 Question:
-Who succeeded Barack Obama as US President?
+What is the highest court in the United States?
 
 Answer:
 
@@ -407,12 +407,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Barack Obama served as US President until 2017.
+The U.S. federal judiciary is headed by its highest tribunal.
 Snippet B:
-Donald Trump succeeded him that year.
+The highest court in the United States is the Supreme Court.
 
 Question:
-Who came after Barack Obama as US President?
+What is the highest court in the United States?
 
 Answer:
 
@@ -421,14 +421,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Barack Obama served as US President until 2017.
+The U.S. federal judiciary is headed by its highest tribunal.
 Snippet B:
-Donald Trump succeeded him that year.
+The highest court in the United States is the Supreme Court.
 Distractor Snippet:
-Joe Biden succeeded Trump in 2021.
+Federal courts of appeals are intermediate courts below the Supreme Court.
 
 Question:
-Who succeeded Barack Obama as US President?
+What is the highest court in the United States?
 
 Answer:
 
@@ -437,14 +437,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Barack Obama served as US President until 2017.
+The U.S. federal judiciary is headed by its highest tribunal.
 Snippet B:
-Donald Trump succeeded him that year.
+The highest court in the United States is the Supreme Court.
 Distractor Snippet:
-Joe Biden succeeded Trump in 2021.
+Federal courts of appeals are intermediate courts below the Supreme Court.
 
 Question:
-Who came after Barack Obama as US President?
+What is the highest court in the United States?
 
 Answer:
 
@@ -457,12 +457,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1990, Germany reunified after decades of division.
+A 1992 treaty signed in Maastricht created a new political and economic union.
 Snippet B:
-Chancellor Helmut Kohl oversaw reunification.
+This Treaty on European Union established the European Union (EU).
 
 Question:
-Which German leader oversaw reunification in 1990?
+Which treaty established the European Union?
 
 Answer:
 
@@ -471,12 +471,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1990, Germany reunified after decades of division.
+A 1992 treaty signed in Maastricht created a new political and economic union.
 Snippet B:
-Chancellor Helmut Kohl oversaw reunification.
+This Treaty on European Union established the European Union (EU).
 
 Question:
-Which German leader oversaw reunification in 1990?
+Which 1992 treaty established the European Union?
 
 Answer:
 
@@ -485,14 +485,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1990, Germany reunified after decades of division.
+A 1992 treaty signed in Maastricht created a new political and economic union.
 Snippet B:
-Chancellor Helmut Kohl oversaw reunification.
+This Treaty on European Union established the European Union (EU).
 Distractor Snippet:
-Angela Merkel became Chancellor in 2005.
+The Lisbon Treaty reformed the EU later but did not originally establish it.
 
 Question:
-Which German leader oversaw reunification in 1990?
+Which treaty established the European Union?
 
 Answer:
 
@@ -501,14 +501,142 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1990, Germany reunified after decades of division.
+A 1992 treaty signed in Maastricht created a new political and economic union.
 Snippet B:
-Chancellor Helmut Kohl oversaw reunification.
+This Treaty on European Union established the European Union (EU).
 Distractor Snippet:
-Angela Merkel became Chancellor in 2005.
+The Lisbon Treaty reformed the EU later but did not originally establish it.
 
 Question:
-Which German leader oversaw reunification in 1990?
+Which 1992 treaty established the European Union?
+
+Answer:
+
+================================================================================
+
+QID: POL009 | Domain: politics
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A system where a state is headed by a king or queen, typically hereditary, is one form of government.
+Snippet B:
+That form is called a monarchy.
+
+Question:
+What is the term for rule by a king or queen?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A system where a state is headed by a king or queen, typically hereditary, is one form of government.
+Snippet B:
+That form is called a monarchy.
+
+Question:
+What is the form of government headed by a king or queen called?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A system where a state is headed by a king or queen, typically hereditary, is one form of government.
+Snippet B:
+That form is called a monarchy.
+Distractor Snippet:
+An aristocracy denotes rule by a privileged class, not necessarily a single monarch.
+
+Question:
+What is the term for rule by a king or queen?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A system where a state is headed by a king or queen, typically hereditary, is one form of government.
+Snippet B:
+That form is called a monarchy.
+Distractor Snippet:
+An aristocracy denotes rule by a privileged class, not necessarily a single monarch.
+
+Question:
+What is the form of government headed by a king or queen called?
+
+Answer:
+
+================================================================================
+
+QID: POL010 | Domain: politics
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+After the end of apartheid, South Africa held its first fully inclusive elections in 1994.
+Snippet B:
+Nelson Mandela was elected as the country’s first Black president that year.
+
+Question:
+Who became South Africa’s first Black president in 1994?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+After the end of apartheid, South Africa held its first fully inclusive elections in 1994.
+Snippet B:
+Nelson Mandela was elected as the country’s first Black president that year.
+
+Question:
+Who became South Africa’s first Black president in 1994?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+After the end of apartheid, South Africa held its first fully inclusive elections in 1994.
+Snippet B:
+Nelson Mandela was elected as the country’s first Black president that year.
+Distractor Snippet:
+Thabo Mbeki succeeded Mandela later, becoming president in 1999.
+
+Question:
+Who became South Africa’s first Black president in 1994?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+After the end of apartheid, South Africa held its first fully inclusive elections in 1994.
+Snippet B:
+Nelson Mandela was elected as the country’s first Black president that year.
+Distractor Snippet:
+Thabo Mbeki succeeded Mandela later, becoming president in 1999.
+
+Question:
+Who became South Africa’s first Black president in 1994?
 
 Answer:
 

@@ -1,4 +1,4 @@
-# Domain: history | Items: 9
+# Domain: history | Items: 10
 # Settings: gold, para, dist, para_dist
 ================================================================================
 
@@ -9,12 +9,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Declaration of Independence was adopted on July 4, 1776.
+In October 1962 the United States and the Soviet Union faced off over missiles in Cuba, a confrontation known as the Cuban Missile Crisis.
 Snippet B:
-In 1776, the King of Great Britain and Ireland was George III.
+At that time, the sitting U.S. president (January 1961–November 1963) was John F. Kennedy.
 
 Question:
-Who was the monarch of England when the United States declared independence?
+Who was the U.S. president during the Cuban Missile Crisis?
 
 Answer:
 
@@ -23,12 +23,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Declaration of Independence was adopted on July 4, 1776.
+In October 1962 the United States and the Soviet Union faced off over missiles in Cuba, a confrontation known as the Cuban Missile Crisis.
 Snippet B:
-In 1776, the King of Great Britain and Ireland was George III.
+At that time, the sitting U.S. president (January 1961–November 1963) was John F. Kennedy.
 
 Question:
-Which British king ruled when America declared independence?
+Which U.S. president was in office during the 1962 Cuban Missile Crisis?
 
 Answer:
 
@@ -37,14 +37,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Declaration of Independence was adopted on July 4, 1776.
+In October 1962 the United States and the Soviet Union faced off over missiles in Cuba, a confrontation known as the Cuban Missile Crisis.
 Snippet B:
-In 1776, the King of Great Britain and Ireland was George III.
+At that time, the sitting U.S. president (January 1961–November 1963) was John F. Kennedy.
 Distractor Snippet:
-George IV became king in 1820.
+Dwight D. Eisenhower left office in 1961 after overseeing the 1960 U‑2 incident.
 
 Question:
-Who was the monarch of England when the United States declared independence?
+Who was the U.S. president during the Cuban Missile Crisis?
 
 Answer:
 
@@ -53,14 +53,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Declaration of Independence was adopted on July 4, 1776.
+In October 1962 the United States and the Soviet Union faced off over missiles in Cuba, a confrontation known as the Cuban Missile Crisis.
 Snippet B:
-In 1776, the King of Great Britain and Ireland was George III.
+At that time, the sitting U.S. president (January 1961–November 1963) was John F. Kennedy.
 Distractor Snippet:
-George IV became king in 1820.
+Dwight D. Eisenhower left office in 1961 after overseeing the 1960 U‑2 incident.
 
 Question:
-Which British king ruled when America declared independence?
+Which U.S. president was in office during the 1962 Cuban Missile Crisis?
 
 Answer:
 
@@ -73,9 +73,9 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Colosseum is an ancient amphitheatre in Rome.
+The Colosseum is a large amphitheatre in Rome constructed in the first century CE.
 Snippet B:
-It was built under the Roman Empire during the reign of Vespasian.
+It was built under the Flavian emperors of the Roman Empire, beginning with Vespasian.
 
 Question:
 Which empire built the Colosseum in Rome?
@@ -87,12 +87,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Colosseum is an ancient amphitheatre in Rome.
+The Colosseum is a large amphitheatre in Rome constructed in the first century CE.
 Snippet B:
-It was built under the Roman Empire during the reign of Vespasian.
+It was built under the Flavian emperors of the Roman Empire, beginning with Vespasian.
 
 Question:
-Which empire constructed the Colosseum in Rome?
+Under which dynasty was Rome’s Colosseum constructed?
 
 Answer:
 
@@ -101,11 +101,11 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Colosseum is an ancient amphitheatre in Rome.
+The Colosseum is a large amphitheatre in Rome constructed in the first century CE.
 Snippet B:
-It was built under the Roman Empire during the reign of Vespasian.
+It was built under the Flavian emperors of the Roman Empire, beginning with Vespasian.
 Distractor Snippet:
-The Greek city-states built theatres such as Epidaurus.
+The Theatre of Dionysus in Athens is a major Greek theatre, not the Colosseum.
 
 Question:
 Which empire built the Colosseum in Rome?
@@ -117,14 +117,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Colosseum is an ancient amphitheatre in Rome.
+The Colosseum is a large amphitheatre in Rome constructed in the first century CE.
 Snippet B:
-It was built under the Roman Empire during the reign of Vespasian.
+It was built under the Flavian emperors of the Roman Empire, beginning with Vespasian.
 Distractor Snippet:
-The Greek city-states built theatres such as Epidaurus.
+The Theatre of Dionysus in Athens is a major Greek theatre, not the Colosseum.
 
 Question:
-Which empire constructed the Colosseum in Rome?
+Under which dynasty was Rome’s Colosseum constructed?
 
 Answer:
 
@@ -137,12 +137,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Cuban Missile Crisis took place in October 1962.
+The American Declaration of Independence was issued in 1776 against the British crown.
 Snippet B:
-At the time, John F. Kennedy was president of the United States.
+The British monarch in 1776 was King George III (reigned 1760–1820).
 
 Question:
-Who was the US president during the Cuban Missile Crisis?
+Who was the British monarch when the United States declared independence?
 
 Answer:
 
@@ -151,12 +151,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Cuban Missile Crisis took place in October 1962.
+The American Declaration of Independence was issued in 1776 against the British crown.
 Snippet B:
-At the time, John F. Kennedy was president of the United States.
+The British monarch in 1776 was King George III (reigned 1760–1820).
 
 Question:
-Who was US president during the 1962 Cuban Missile Crisis?
+Who was the British monarch when the colonies declared independence in 1776?
 
 Answer:
 
@@ -165,14 +165,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Cuban Missile Crisis took place in October 1962.
+The American Declaration of Independence was issued in 1776 against the British crown.
 Snippet B:
-At the time, John F. Kennedy was president of the United States.
+The British monarch in 1776 was King George III (reigned 1760–1820).
 Distractor Snippet:
-Dwight Eisenhower had left office in 1961.
+Lord North served as British Prime Minister during the American Revolution.
 
 Question:
-Who was the US president during the Cuban Missile Crisis?
+Who was the British monarch when the United States declared independence?
 
 Answer:
 
@@ -181,14 +181,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The Cuban Missile Crisis took place in October 1962.
+The American Declaration of Independence was issued in 1776 against the British crown.
 Snippet B:
-At the time, John F. Kennedy was president of the United States.
+The British monarch in 1776 was King George III (reigned 1760–1820).
 Distractor Snippet:
-Dwight Eisenhower had left office in 1961.
+Lord North served as British Prime Minister during the American Revolution.
 
 Question:
-Who was US president during the 1962 Cuban Missile Crisis?
+Who was the British monarch when the colonies declared independence in 1776?
 
 Answer:
 
@@ -201,12 +201,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The French Revolution began in 1789.
+The Treaty of Versailles was signed in 1919 at the Paris Peace Conference by the Allied powers.
 Snippet B:
-It marked the overthrow of the Bourbon monarchy.
+France was represented and its delegation led by Prime Minister Georges Clemenceau, who signed the treaty.
 
 Question:
-Which revolution began in 1789 in France?
+Who signed the Treaty of Versailles on behalf of France?
 
 Answer:
 
@@ -215,12 +215,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The French Revolution began in 1789.
+The Treaty of Versailles was signed in 1919 at the Paris Peace Conference by the Allied powers.
 Snippet B:
-It marked the overthrow of the Bourbon monarchy.
+France was represented and its delegation led by Prime Minister Georges Clemenceau, who signed the treaty.
 
 Question:
-Which revolution started in France in 1789?
+Which French leader signed the Treaty of Versailles for France in 1919?
 
 Answer:
 
@@ -229,14 +229,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The French Revolution began in 1789.
+The Treaty of Versailles was signed in 1919 at the Paris Peace Conference by the Allied powers.
 Snippet B:
-It marked the overthrow of the Bourbon monarchy.
+France was represented and its delegation led by Prime Minister Georges Clemenceau, who signed the treaty.
 Distractor Snippet:
-The Russian Revolution occurred in 1917.
+Aristide Briand was a prominent French statesman but was not the principal signatory at Versailles in 1919.
 
 Question:
-Which revolution began in 1789 in France?
+Who signed the Treaty of Versailles on behalf of France?
 
 Answer:
 
@@ -245,14 +245,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-The French Revolution began in 1789.
+The Treaty of Versailles was signed in 1919 at the Paris Peace Conference by the Allied powers.
 Snippet B:
-It marked the overthrow of the Bourbon monarchy.
+France was represented and its delegation led by Prime Minister Georges Clemenceau, who signed the treaty.
 Distractor Snippet:
-The Russian Revolution occurred in 1917.
+Aristide Briand was a prominent French statesman but was not the principal signatory at Versailles in 1919.
 
 Question:
-Which revolution started in France in 1789?
+Which French leader signed the Treaty of Versailles for France in 1919?
 
 Answer:
 
@@ -265,12 +265,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-World War II lasted from 1939 to 1945.
+In 221 BCE, the state of Qin unified China after conquering rival states.
 Snippet B:
-The Soviet Union was led by Joseph Stalin during this period.
+Its king Ying Zheng took the title Qin Shi Huang, becoming the first emperor of a unified China.
 
 Question:
-Who led the Soviet Union during World War II?
+Who was the first emperor of a unified China?
 
 Answer:
 
@@ -279,12 +279,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-World War II lasted from 1939 to 1945.
+In 221 BCE, the state of Qin unified China after conquering rival states.
 Snippet B:
-The Soviet Union was led by Joseph Stalin during this period.
+Its king Ying Zheng took the title Qin Shi Huang, becoming the first emperor of a unified China.
 
 Question:
-Who was leading the Soviet Union in World War II?
+Who became the first emperor after unifying China in 221 BCE?
 
 Answer:
 
@@ -293,14 +293,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-World War II lasted from 1939 to 1945.
+In 221 BCE, the state of Qin unified China after conquering rival states.
 Snippet B:
-The Soviet Union was led by Joseph Stalin during this period.
+Its king Ying Zheng took the title Qin Shi Huang, becoming the first emperor of a unified China.
 Distractor Snippet:
-Vladimir Lenin died in 1924.
+Emperor Wu of Han expanded the Han Empire later, not the first unifier.
 
 Question:
-Who led the Soviet Union during World War II?
+Who was the first emperor of a unified China?
 
 Answer:
 
@@ -309,14 +309,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-World War II lasted from 1939 to 1945.
+In 221 BCE, the state of Qin unified China after conquering rival states.
 Snippet B:
-The Soviet Union was led by Joseph Stalin during this period.
+Its king Ying Zheng took the title Qin Shi Huang, becoming the first emperor of a unified China.
 Distractor Snippet:
-Vladimir Lenin died in 1924.
+Emperor Wu of Han expanded the Han Empire later, not the first unifier.
 
 Question:
-Who was leading the Soviet Union in World War II?
+Who became the first emperor after unifying China in 221 BCE?
 
 Answer:
 
@@ -329,12 +329,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Genghis Khan united the Mongol tribes.
+Archduke Franz Ferdinand was assassinated in Sarajevo in June 1914.
 Snippet B:
-He founded and led the Mongol Empire.
+This event triggered alliances and mobilizations that led to the outbreak of World War I.
 
 Question:
-Which empire was ruled by Genghis Khan?
+Which war began after the assassination of Archduke Franz Ferdinand?
 
 Answer:
 
@@ -343,12 +343,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Genghis Khan united the Mongol tribes.
+Archduke Franz Ferdinand was assassinated in Sarajevo in June 1914.
 Snippet B:
-He founded and led the Mongol Empire.
+This event triggered alliances and mobilizations that led to the outbreak of World War I.
 
 Question:
-Genghis Khan ruled which empire?
+What event in Sarajevo set off the chain of events leading to World War I?
 
 Answer:
 
@@ -357,14 +357,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Genghis Khan united the Mongol tribes.
+Archduke Franz Ferdinand was assassinated in Sarajevo in June 1914.
 Snippet B:
-He founded and led the Mongol Empire.
+This event triggered alliances and mobilizations that led to the outbreak of World War I.
 Distractor Snippet:
-The Ottoman Empire was ruled by Suleiman the Magnificent.
+The Crimean War occurred in the 1850s and was unrelated to the 1914 assassination.
 
 Question:
-Which empire was ruled by Genghis Khan?
+Which war began after the assassination of Archduke Franz Ferdinand?
 
 Answer:
 
@@ -373,14 +373,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-Genghis Khan united the Mongol tribes.
+Archduke Franz Ferdinand was assassinated in Sarajevo in June 1914.
 Snippet B:
-He founded and led the Mongol Empire.
+This event triggered alliances and mobilizations that led to the outbreak of World War I.
 Distractor Snippet:
-The Ottoman Empire was ruled by Suleiman the Magnificent.
+The Crimean War occurred in the 1850s and was unrelated to the 1914 assassination.
 
 Question:
-Genghis Khan ruled which empire?
+What event in Sarajevo set off the chain of events leading to World War I?
 
 Answer:
 
@@ -393,12 +393,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1914, an assassination in Sarajevo triggered World War I.
+After consolidating power in the 1930s, Joseph Stalin led the Soviet Union during the Great Patriotic War (1941–1945).
 Snippet B:
-Archduke Franz Ferdinand of Austria-Hungary was the victim.
+Thus, the USSR’s leader during World War II was Joseph Stalin.
 
 Question:
-Who was assassinated in Sarajevo in 1914 sparking World War I?
+Who led the Soviet Union during World War II?
 
 Answer:
 
@@ -407,12 +407,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1914, an assassination in Sarajevo triggered World War I.
+After consolidating power in the 1930s, Joseph Stalin led the Soviet Union during the Great Patriotic War (1941–1945).
 Snippet B:
-Archduke Franz Ferdinand of Austria-Hungary was the victim.
+Thus, the USSR’s leader during World War II was Joseph Stalin.
 
 Question:
-Whose assassination in Sarajevo sparked World War I?
+Who led the Soviet Union during World War II?
 
 Answer:
 
@@ -421,14 +421,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1914, an assassination in Sarajevo triggered World War I.
+After consolidating power in the 1930s, Joseph Stalin led the Soviet Union during the Great Patriotic War (1941–1945).
 Snippet B:
-Archduke Franz Ferdinand of Austria-Hungary was the victim.
+Thus, the USSR’s leader during World War II was Joseph Stalin.
 Distractor Snippet:
-Tsar Nicholas II was executed later in 1918.
+Nikita Khrushchev led the USSR later, primarily in the late 1950s and early 1960s.
 
 Question:
-Who was assassinated in Sarajevo in 1914 sparking World War I?
+Who led the Soviet Union during World War II?
 
 Answer:
 
@@ -437,14 +437,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1914, an assassination in Sarajevo triggered World War I.
+After consolidating power in the 1930s, Joseph Stalin led the Soviet Union during the Great Patriotic War (1941–1945).
 Snippet B:
-Archduke Franz Ferdinand of Austria-Hungary was the victim.
+Thus, the USSR’s leader during World War II was Joseph Stalin.
 Distractor Snippet:
-Tsar Nicholas II was executed later in 1918.
+Nikita Khrushchev led the USSR later, primarily in the late 1950s and early 1960s.
 
 Question:
-Whose assassination in Sarajevo sparked World War I?
+Who led the Soviet Union during World War II?
 
 Answer:
 
@@ -457,12 +457,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1989, a wall dividing East and West Berlin was torn down.
+In 1863, the Emancipation Proclamation declared enslaved people in rebellious states to be free.
 Snippet B:
-The fall of the Berlin Wall symbolized the end of the Cold War.
+President Abraham Lincoln pressed for the Thirteenth Amendment (1865), which abolished slavery nationwide.
 
 Question:
-Which wall fell in 1989 symbolizing the end of the Cold War?
+Which U.S. president abolished slavery?
 
 Answer:
 
@@ -471,12 +471,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1989, a wall dividing East and West Berlin was torn down.
+In 1863, the Emancipation Proclamation declared enslaved people in rebellious states to be free.
 Snippet B:
-The fall of the Berlin Wall symbolized the end of the Cold War.
+President Abraham Lincoln pressed for the Thirteenth Amendment (1865), which abolished slavery nationwide.
 
 Question:
-Which wall fell in 1989 marking the Cold War’s end?
+Which U.S. president issued the Emancipation Proclamation?
 
 Answer:
 
@@ -485,14 +485,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1989, a wall dividing East and West Berlin was torn down.
+In 1863, the Emancipation Proclamation declared enslaved people in rebellious states to be free.
 Snippet B:
-The fall of the Berlin Wall symbolized the end of the Cold War.
+President Abraham Lincoln pressed for the Thirteenth Amendment (1865), which abolished slavery nationwide.
 Distractor Snippet:
-The Great Wall of China still stands.
+Andrew Johnson succeeded Lincoln after his assassination but did not author the Proclamation.
 
 Question:
-Which wall fell in 1989 symbolizing the end of the Cold War?
+Which U.S. president abolished slavery?
 
 Answer:
 
@@ -501,14 +501,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-In 1989, a wall dividing East and West Berlin was torn down.
+In 1863, the Emancipation Proclamation declared enslaved people in rebellious states to be free.
 Snippet B:
-The fall of the Berlin Wall symbolized the end of the Cold War.
+President Abraham Lincoln pressed for the Thirteenth Amendment (1865), which abolished slavery nationwide.
 Distractor Snippet:
-The Great Wall of China still stands.
+Andrew Johnson succeeded Lincoln after his assassination but did not author the Proclamation.
 
 Question:
-Which wall fell in 1989 marking the Cold War’s end?
+Which U.S. president issued the Emancipation Proclamation?
 
 Answer:
 
@@ -521,12 +521,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-China’s first emperor unified the country in 221 BCE.
+In 1979, the Conservative Party won the UK general election.
 Snippet B:
-His name was Qin Shi Huang.
+Its leader, Margaret Thatcher, became the first woman to serve as Prime Minister of the United Kingdom.
 
 Question:
-Who was the first emperor of China?
+Who was the first female Prime Minister of the United Kingdom?
 
 Answer:
 
@@ -535,12 +535,12 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-China’s first emperor unified the country in 221 BCE.
+In 1979, the Conservative Party won the UK general election.
 Snippet B:
-His name was Qin Shi Huang.
+Its leader, Margaret Thatcher, became the first woman to serve as Prime Minister of the United Kingdom.
 
 Question:
-Who was China’s first emperor?
+Who became the UK’s first female Prime Minister in 1979?
 
 Answer:
 
@@ -549,14 +549,14 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-China’s first emperor unified the country in 221 BCE.
+In 1979, the Conservative Party won the UK general election.
 Snippet B:
-His name was Qin Shi Huang.
+Its leader, Margaret Thatcher, became the first woman to serve as Prime Minister of the United Kingdom.
 Distractor Snippet:
-Confucius was a philosopher, not an emperor.
+Theresa May became Prime Minister in 2016, not the first female PM.
 
 Question:
-Who was the first emperor of China?
+Who was the first female Prime Minister of the United Kingdom?
 
 Answer:
 
@@ -565,14 +565,78 @@ Use the snippets to answer the question.
 Rules: Output only the final answer as a short span. No explanations.
 
 Snippet A:
-China’s first emperor unified the country in 221 BCE.
+In 1979, the Conservative Party won the UK general election.
 Snippet B:
-His name was Qin Shi Huang.
+Its leader, Margaret Thatcher, became the first woman to serve as Prime Minister of the United Kingdom.
 Distractor Snippet:
-Confucius was a philosopher, not an emperor.
+Theresa May became Prime Minister in 2016, not the first female PM.
 
 Question:
-Who was China’s first emperor?
+Who became the UK’s first female Prime Minister in 1979?
+
+Answer:
+
+================================================================================
+
+QID: HIST010 | Domain: history
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Machu Picchu is a 15th‑century citadel in the Andes of Peru.
+Snippet B:
+It was constructed by the Inca civilization, traditionally linked to the reign of Pachacuti.
+
+Question:
+Which ancient civilization built Machu Picchu?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Machu Picchu is a 15th‑century citadel in the Andes of Peru.
+Snippet B:
+It was constructed by the Inca civilization, traditionally linked to the reign of Pachacuti.
+
+Question:
+Which civilization built Machu Picchu in the Andes?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Machu Picchu is a 15th‑century citadel in the Andes of Peru.
+Snippet B:
+It was constructed by the Inca civilization, traditionally linked to the reign of Pachacuti.
+Distractor Snippet:
+Tikal is a major Maya site in Guatemala, not Inca.
+
+Question:
+Which ancient civilization built Machu Picchu?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Machu Picchu is a 15th‑century citadel in the Andes of Peru.
+Snippet B:
+It was constructed by the Inca civilization, traditionally linked to the reign of Pachacuti.
+Distractor Snippet:
+Tikal is a major Maya site in Guatemala, not Inca.
+
+Question:
+Which civilization built Machu Picchu in the Andes?
 
 Answer:
 

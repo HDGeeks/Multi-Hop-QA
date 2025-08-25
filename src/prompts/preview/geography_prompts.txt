@@ -1,0 +1,643 @@
+# Domain: geography | Items: 10
+# Settings: gold, para, dist, para_dist
+================================================================================
+
+QID: GEO001 | Domain: geography
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Sahara covers much of North Africa and is Earth’s largest hot desert by area.
+Snippet B:
+Among hot deserts, the Sahara is the largest.
+
+Question:
+What is the largest desert in the world?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Sahara covers much of North Africa and is Earth’s largest hot desert by area.
+Snippet B:
+Among hot deserts, the Sahara is the largest.
+
+Question:
+What is the world’s largest hot desert?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Sahara covers much of North Africa and is Earth’s largest hot desert by area.
+Snippet B:
+Among hot deserts, the Sahara is the largest.
+Distractor Snippet:
+Some classifications call Antarctica the largest desert overall due to low precipitation.
+
+Question:
+What is the largest desert in the world?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Sahara covers much of North Africa and is Earth’s largest hot desert by area.
+Snippet B:
+Among hot deserts, the Sahara is the largest.
+Distractor Snippet:
+Some classifications call Antarctica the largest desert overall due to low precipitation.
+
+Question:
+What is the world’s largest hot desert?
+
+Answer:
+
+================================================================================
+
+QID: GEO002 | Domain: geography
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Nile flows northward through northeastern Africa into the Mediterranean Sea.
+Snippet B:
+It is widely cited as the world’s longest river at about 6,650 km.
+
+Question:
+Which river is the longest in the world?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Nile flows northward through northeastern Africa into the Mediterranean Sea.
+Snippet B:
+It is widely cited as the world’s longest river at about 6,650 km.
+
+Question:
+Which river is widely cited as the longest in the world?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Nile flows northward through northeastern Africa into the Mediterranean Sea.
+Snippet B:
+It is widely cited as the world’s longest river at about 6,650 km.
+Distractor Snippet:
+Some measurements argue the Amazon may be longer depending on sources.
+
+Question:
+Which river is the longest in the world?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Nile flows northward through northeastern Africa into the Mediterranean Sea.
+Snippet B:
+It is widely cited as the world’s longest river at about 6,650 km.
+Distractor Snippet:
+Some measurements argue the Amazon may be longer depending on sources.
+
+Question:
+Which river is widely cited as the longest in the world?
+
+Answer:
+
+================================================================================
+
+QID: GEO003 | Domain: geography
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Japan’s national government is based in its capital city on Honshu.
+Snippet B:
+The capital of Japan is Tokyo.
+
+Question:
+What is the capital of Japan?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Japan’s national government is based in its capital city on Honshu.
+Snippet B:
+The capital of Japan is Tokyo.
+
+Question:
+What is the capital city of Japan?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Japan’s national government is based in its capital city on Honshu.
+Snippet B:
+The capital of Japan is Tokyo.
+Distractor Snippet:
+Kyoto is a historic former capital, not the current one.
+
+Question:
+What is the capital of Japan?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Japan’s national government is based in its capital city on Honshu.
+Snippet B:
+The capital of Japan is Tokyo.
+Distractor Snippet:
+Kyoto is a historic former capital, not the current one.
+
+Question:
+What is the capital city of Japan?
+
+Answer:
+
+================================================================================
+
+QID: GEO004 | Domain: geography
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 19th‑century European writings, one continent was pejoratively referred to as the 'Dark Continent.'
+Snippet B:
+That label was applied to Africa.
+
+Question:
+Which continent is known as the 'Dark Continent'?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 19th‑century European writings, one continent was pejoratively referred to as the 'Dark Continent.'
+Snippet B:
+That label was applied to Africa.
+
+Question:
+Which continent was historically labeled the 'Dark Continent' in 19th‑century Europe?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 19th‑century European writings, one continent was pejoratively referred to as the 'Dark Continent.'
+Snippet B:
+That label was applied to Africa.
+Distractor Snippet:
+Australia was sometimes called the 'unknown south land' but not the 'Dark Continent.'
+
+Question:
+Which continent is known as the 'Dark Continent'?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 19th‑century European writings, one continent was pejoratively referred to as the 'Dark Continent.'
+Snippet B:
+That label was applied to Africa.
+Distractor Snippet:
+Australia was sometimes called the 'unknown south land' but not the 'Dark Continent.'
+
+Question:
+Which continent was historically labeled the 'Dark Continent' in 19th‑century Europe?
+
+Answer:
+
+================================================================================
+
+QID: GEO005 | Domain: geography
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Mount Everest straddles the frontier between Nepal and another country’s Tibet Autonomous Region.
+Snippet B:
+Thus, Everest lies on the border of Nepal and China.
+
+Question:
+Mount Everest lies on the border of Nepal and which country?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Mount Everest straddles the frontier between Nepal and another country’s Tibet Autonomous Region.
+Snippet B:
+Thus, Everest lies on the border of Nepal and China.
+
+Question:
+Mount Everest lies on the border of Nepal and which country?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Mount Everest straddles the frontier between Nepal and another country’s Tibet Autonomous Region.
+Snippet B:
+Thus, Everest lies on the border of Nepal and China.
+Distractor Snippet:
+India borders Nepal but not at Everest’s summit region.
+
+Question:
+Mount Everest lies on the border of Nepal and which country?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Mount Everest straddles the frontier between Nepal and another country’s Tibet Autonomous Region.
+Snippet B:
+Thus, Everest lies on the border of Nepal and China.
+Distractor Snippet:
+India borders Nepal but not at Everest’s summit region.
+
+Question:
+Mount Everest lies on the border of Nepal and which country?
+
+Answer:
+
+================================================================================
+
+QID: GEO006 | Domain: geography
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The deepest oceanic trenches, including the Mariana Trench, are located in one major ocean.
+Snippet B:
+Therefore, the Pacific Ocean is the deepest.
+
+Question:
+Which ocean is the deepest?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The deepest oceanic trenches, including the Mariana Trench, are located in one major ocean.
+Snippet B:
+Therefore, the Pacific Ocean is the deepest.
+
+Question:
+Which ocean contains the deepest oceanic trenches?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The deepest oceanic trenches, including the Mariana Trench, are located in one major ocean.
+Snippet B:
+Therefore, the Pacific Ocean is the deepest.
+Distractor Snippet:
+The Atlantic Ocean contains deep trenches but not the very deepest.
+
+Question:
+Which ocean is the deepest?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The deepest oceanic trenches, including the Mariana Trench, are located in one major ocean.
+Snippet B:
+Therefore, the Pacific Ocean is the deepest.
+Distractor Snippet:
+The Atlantic Ocean contains deep trenches but not the very deepest.
+
+Question:
+Which ocean contains the deepest oceanic trenches?
+
+Answer:
+
+================================================================================
+
+QID: GEO007 | Domain: geography
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The smallest independent state by both area and population is an enclave within Rome.
+Snippet B:
+This state is Vatican City.
+
+Question:
+What is the smallest country in the world?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The smallest independent state by both area and population is an enclave within Rome.
+Snippet B:
+This state is Vatican City.
+
+Question:
+Which independent state is the smallest by both area and population?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The smallest independent state by both area and population is an enclave within Rome.
+Snippet B:
+This state is Vatican City.
+Distractor Snippet:
+Monaco is very small but larger than Vatican City.
+
+Question:
+What is the smallest country in the world?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The smallest independent state by both area and population is an enclave within Rome.
+Snippet B:
+This state is Vatican City.
+Distractor Snippet:
+Monaco is very small but larger than Vatican City.
+
+Question:
+Which independent state is the smallest by both area and population?
+
+Answer:
+
+================================================================================
+
+QID: GEO008 | Domain: geography
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+By total area, one non‑contiguous U.S. state far exceeds all others.
+Snippet B:
+Alaska is the largest U.S. state by area.
+
+Question:
+Which U.S. state is the largest by area?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+By total area, one non‑contiguous U.S. state far exceeds all others.
+Snippet B:
+Alaska is the largest U.S. state by area.
+
+Question:
+Which U.S. state is the largest by total area?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+By total area, one non‑contiguous U.S. state far exceeds all others.
+Snippet B:
+Alaska is the largest U.S. state by area.
+Distractor Snippet:
+Texas is the second‑largest state by area.
+
+Question:
+Which U.S. state is the largest by area?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+By total area, one non‑contiguous U.S. state far exceeds all others.
+Snippet B:
+Alaska is the largest U.S. state by area.
+Distractor Snippet:
+Texas is the second‑largest state by area.
+
+Question:
+Which U.S. state is the largest by total area?
+
+Answer:
+
+================================================================================
+
+QID: GEO009 | Domain: geography
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A nearly enclosed sea connects the Atlantic and separates southern Europe from North Africa.
+Snippet B:
+This is the Mediterranean Sea.
+
+Question:
+Which sea separates Europe and Africa?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A nearly enclosed sea connects the Atlantic and separates southern Europe from North Africa.
+Snippet B:
+This is the Mediterranean Sea.
+
+Question:
+What is the name of the nearly enclosed sea between southern Europe and North Africa?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A nearly enclosed sea connects the Atlantic and separates southern Europe from North Africa.
+Snippet B:
+This is the Mediterranean Sea.
+Distractor Snippet:
+The Black Sea lies between southeastern Europe and western Asia.
+
+Question:
+Which sea separates Europe and Africa?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A nearly enclosed sea connects the Atlantic and separates southern Europe from North Africa.
+Snippet B:
+This is the Mediterranean Sea.
+Distractor Snippet:
+The Black Sea lies between southeastern Europe and western Asia.
+
+Question:
+What is the name of the nearly enclosed sea between southern Europe and North Africa?
+
+Answer:
+
+================================================================================
+
+QID: GEO010 | Domain: geography
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Australia’s planned capital lies inland between Sydney and Melbourne.
+Snippet B:
+The capital city of Australia is Canberra.
+
+Question:
+What is the capital city of Australia?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Australia’s planned capital lies inland between Sydney and Melbourne.
+Snippet B:
+The capital city of Australia is Canberra.
+
+Question:
+What is the capital of Australia?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Australia’s planned capital lies inland between Sydney and Melbourne.
+Snippet B:
+The capital city of Australia is Canberra.
+Distractor Snippet:
+Sydney is the largest city but not the capital.
+
+Question:
+What is the capital city of Australia?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Australia’s planned capital lies inland between Sydney and Melbourne.
+Snippet B:
+The capital city of Australia is Canberra.
+Distractor Snippet:
+Sydney is the largest city but not the capital.
+
+Question:
+What is the capital of Australia?
+
+Answer:
+
+================================================================================

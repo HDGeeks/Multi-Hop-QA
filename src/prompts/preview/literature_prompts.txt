@@ -1,0 +1,643 @@
+# Domain: literature | Items: 10
+# Settings: gold, para, dist, para_dist
+================================================================================
+
+QID: LIT001 | Domain: literature
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A tragic love story set in Verona is among the most famous works of an English playwright.
+Snippet B:
+'Romeo and Juliet' was written by William Shakespeare.
+
+Question:
+Who wrote 'Romeo and Juliet'?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A tragic love story set in Verona is among the most famous works of an English playwright.
+Snippet B:
+'Romeo and Juliet' was written by William Shakespeare.
+
+Question:
+Who wrote the tragedy set in Verona about star‑crossed lovers?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A tragic love story set in Verona is among the most famous works of an English playwright.
+Snippet B:
+'Romeo and Juliet' was written by William Shakespeare.
+Distractor Snippet:
+Christopher Marlowe was a contemporary dramatist but not the author of this play.
+
+Question:
+Who wrote 'Romeo and Juliet'?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A tragic love story set in Verona is among the most famous works of an English playwright.
+Snippet B:
+'Romeo and Juliet' was written by William Shakespeare.
+Distractor Snippet:
+Christopher Marlowe was a contemporary dramatist but not the author of this play.
+
+Question:
+Who wrote the tragedy set in Verona about star‑crossed lovers?
+
+Answer:
+
+================================================================================
+
+QID: LIT002 | Domain: literature
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A 19th‑century novel features Elizabeth Bennet and Mr. Darcy in a tale of manners and marriage.
+Snippet B:
+'Pride and Prejudice' was written by Jane Austen.
+
+Question:
+Who wrote 'Pride and Prejudice'?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A 19th‑century novel features Elizabeth Bennet and Mr. Darcy in a tale of manners and marriage.
+Snippet B:
+'Pride and Prejudice' was written by Jane Austen.
+
+Question:
+Who is the author of 'Pride and Prejudice'?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A 19th‑century novel features Elizabeth Bennet and Mr. Darcy in a tale of manners and marriage.
+Snippet B:
+'Pride and Prejudice' was written by Jane Austen.
+Distractor Snippet:
+Charlotte Brontë authored 'Jane Eyre,' not this novel.
+
+Question:
+Who wrote 'Pride and Prejudice'?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A 19th‑century novel features Elizabeth Bennet and Mr. Darcy in a tale of manners and marriage.
+Snippet B:
+'Pride and Prejudice' was written by Jane Austen.
+Distractor Snippet:
+Charlotte Brontë authored 'Jane Eyre,' not this novel.
+
+Question:
+Who is the author of 'Pride and Prejudice'?
+
+Answer:
+
+================================================================================
+
+QID: LIT003 | Domain: literature
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In Tolkien’s epic, a hobbit carries the One Ring toward Mount Doom to destroy it.
+Snippet B:
+The ring‑bearer in 'The Lord of the Rings' is Frodo Baggins.
+
+Question:
+What is the name of the hobbit who carries the One Ring?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In Tolkien’s epic, a hobbit carries the One Ring toward Mount Doom to destroy it.
+Snippet B:
+The ring‑bearer in 'The Lord of the Rings' is Frodo Baggins.
+
+Question:
+Who is the hobbit that carries the One Ring to Mount Doom?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In Tolkien’s epic, a hobbit carries the One Ring toward Mount Doom to destroy it.
+Snippet B:
+The ring‑bearer in 'The Lord of the Rings' is Frodo Baggins.
+Distractor Snippet:
+Bilbo Baggins carried the ring earlier in 'The Hobbit,' not in the main quest to Mordor.
+
+Question:
+What is the name of the hobbit who carries the One Ring?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In Tolkien’s epic, a hobbit carries the One Ring toward Mount Doom to destroy it.
+Snippet B:
+The ring‑bearer in 'The Lord of the Rings' is Frodo Baggins.
+Distractor Snippet:
+Bilbo Baggins carried the ring earlier in 'The Hobbit,' not in the main quest to Mordor.
+
+Question:
+Who is the hobbit that carries the One Ring to Mount Doom?
+
+Answer:
+
+================================================================================
+
+QID: LIT004 | Domain: literature
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+An ancient Greek epic poem recounts Odysseus’s long voyage home after the Trojan War.
+Snippet B:
+This epic, 'The Odyssey,' is attributed to Homer.
+
+Question:
+Who wrote 'The Odyssey'?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+An ancient Greek epic poem recounts Odysseus’s long voyage home after the Trojan War.
+Snippet B:
+This epic, 'The Odyssey,' is attributed to Homer.
+
+Question:
+Who is credited with composing 'The Odyssey'?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+An ancient Greek epic poem recounts Odysseus’s long voyage home after the Trojan War.
+Snippet B:
+This epic, 'The Odyssey,' is attributed to Homer.
+Distractor Snippet:
+Virgil wrote the 'Aeneid,' a Roman epic, not 'The Odyssey.'
+
+Question:
+Who wrote 'The Odyssey'?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+An ancient Greek epic poem recounts Odysseus’s long voyage home after the Trojan War.
+Snippet B:
+This epic, 'The Odyssey,' is attributed to Homer.
+Distractor Snippet:
+Virgil wrote the 'Aeneid,' a Roman epic, not 'The Odyssey.'
+
+Question:
+Who is credited with composing 'The Odyssey'?
+
+Answer:
+
+================================================================================
+
+QID: LIT005 | Domain: literature
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A novel opens with the famous line 'Call me Ishmael.'
+Snippet B:
+That opening belongs to Herman Melville’s 'Moby‑Dick.'
+
+Question:
+Which novel begins with the line 'Call me Ishmael'?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A novel opens with the famous line 'Call me Ishmael.'
+Snippet B:
+That opening belongs to Herman Melville’s 'Moby‑Dick.'
+
+Question:
+Which novel begins with the line 'Call me Ishmael'?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A novel opens with the famous line 'Call me Ishmael.'
+Snippet B:
+That opening belongs to Herman Melville’s 'Moby‑Dick.'
+Distractor Snippet:
+'The Old Man and the Sea' is a novella by Ernest Hemingway with a different opening.
+
+Question:
+Which novel begins with the line 'Call me Ishmael'?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A novel opens with the famous line 'Call me Ishmael.'
+Snippet B:
+That opening belongs to Herman Melville’s 'Moby‑Dick.'
+Distractor Snippet:
+'The Old Man and the Sea' is a novella by Ernest Hemingway with a different opening.
+
+Question:
+Which novel begins with the line 'Call me Ishmael'?
+
+Answer:
+
+================================================================================
+
+QID: LIT006 | Domain: literature
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A British author created a brilliant detective living at 221B Baker Street.
+Snippet B:
+Sherlock Holmes was created by Arthur Conan Doyle.
+
+Question:
+Who created the detective Sherlock Holmes?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A British author created a brilliant detective living at 221B Baker Street.
+Snippet B:
+Sherlock Holmes was created by Arthur Conan Doyle.
+
+Question:
+Who created the detective who lives at 221B Baker Street?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A British author created a brilliant detective living at 221B Baker Street.
+Snippet B:
+Sherlock Holmes was created by Arthur Conan Doyle.
+Distractor Snippet:
+Agatha Christie created Hercule Poirot and Miss Marple, not Holmes.
+
+Question:
+Who created the detective Sherlock Holmes?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A British author created a brilliant detective living at 221B Baker Street.
+Snippet B:
+Sherlock Holmes was created by Arthur Conan Doyle.
+Distractor Snippet:
+Agatha Christie created Hercule Poirot and Miss Marple, not Holmes.
+
+Question:
+Who created the detective who lives at 221B Baker Street?
+
+Answer:
+
+================================================================================
+
+QID: LIT007 | Domain: literature
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A fantasy series follows a young wizard attending a school of witchcraft and wizardry.
+Snippet B:
+This book series is 'Harry Potter.'
+
+Question:
+Which book series features Harry Potter?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A fantasy series follows a young wizard attending a school of witchcraft and wizardry.
+Snippet B:
+This book series is 'Harry Potter.'
+
+Question:
+What is the title of the series about a boy wizard at a magic school?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A fantasy series follows a young wizard attending a school of witchcraft and wizardry.
+Snippet B:
+This book series is 'Harry Potter.'
+Distractor Snippet:
+'The Chronicles of Narnia' is a separate fantasy series by C. S. Lewis.
+
+Question:
+Which book series features Harry Potter?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A fantasy series follows a young wizard attending a school of witchcraft and wizardry.
+Snippet B:
+This book series is 'Harry Potter.'
+Distractor Snippet:
+'The Chronicles of Narnia' is a separate fantasy series by C. S. Lewis.
+
+Question:
+What is the title of the series about a boy wizard at a magic school?
+
+Answer:
+
+================================================================================
+
+QID: LIT008 | Domain: literature
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A dystopian novel features Big Brother and the Thought Police in a totalitarian state.
+Snippet B:
+'1984' was written by George Orwell.
+
+Question:
+Who wrote '1984'?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A dystopian novel features Big Brother and the Thought Police in a totalitarian state.
+Snippet B:
+'1984' was written by George Orwell.
+
+Question:
+Who wrote the dystopian novel featuring Big Brother?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A dystopian novel features Big Brother and the Thought Police in a totalitarian state.
+Snippet B:
+'1984' was written by George Orwell.
+Distractor Snippet:
+Aldous Huxley wrote 'Brave New World,' a different dystopia.
+
+Question:
+Who wrote '1984'?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A dystopian novel features Big Brother and the Thought Police in a totalitarian state.
+Snippet B:
+'1984' was written by George Orwell.
+Distractor Snippet:
+Aldous Huxley wrote 'Brave New World,' a different dystopia.
+
+Question:
+Who wrote the dystopian novel featuring Big Brother?
+
+Answer:
+
+================================================================================
+
+QID: LIT009 | Domain: literature
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A Shakespearean tragedy depicts a Scottish general’s bloody rise to the throne and disastrous fall.
+Snippet B:
+The tragic king in that play is Macbeth.
+
+Question:
+Who is the tragic king in Shakespeare’s play 'Macbeth'?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A Shakespearean tragedy depicts a Scottish general’s bloody rise to the throne and disastrous fall.
+Snippet B:
+The tragic king in that play is Macbeth.
+
+Question:
+Who is the Scottish general who becomes king in a Shakespeare tragedy?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A Shakespearean tragedy depicts a Scottish general’s bloody rise to the throne and disastrous fall.
+Snippet B:
+The tragic king in that play is Macbeth.
+Distractor Snippet:
+'King Lear' is a different Shakespeare tragedy about an aging monarch.
+
+Question:
+Who is the tragic king in Shakespeare’s play 'Macbeth'?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A Shakespearean tragedy depicts a Scottish general’s bloody rise to the throne and disastrous fall.
+Snippet B:
+The tragic king in that play is Macbeth.
+Distractor Snippet:
+'King Lear' is a different Shakespeare tragedy about an aging monarch.
+
+Question:
+Who is the Scottish general who becomes king in a Shakespeare tragedy?
+
+Answer:
+
+================================================================================
+
+QID: LIT010 | Domain: literature
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A narrative poem with the refrain 'Nevermore' made its author famous in American literature.
+Snippet B:
+'The Raven' was written by Edgar Allan Poe.
+
+Question:
+Which poet wrote 'The Raven'?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A narrative poem with the refrain 'Nevermore' made its author famous in American literature.
+Snippet B:
+'The Raven' was written by Edgar Allan Poe.
+
+Question:
+Who wrote the poem 'The Raven'?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A narrative poem with the refrain 'Nevermore' made its author famous in American literature.
+Snippet B:
+'The Raven' was written by Edgar Allan Poe.
+Distractor Snippet:
+T. S. Eliot wrote 'The Waste Land,' not 'The Raven.'
+
+Question:
+Which poet wrote 'The Raven'?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+A narrative poem with the refrain 'Nevermore' made its author famous in American literature.
+Snippet B:
+'The Raven' was written by Edgar Allan Poe.
+Distractor Snippet:
+T. S. Eliot wrote 'The Waste Land,' not 'The Raven.'
+
+Question:
+Who wrote the poem 'The Raven'?
+
+Answer:
+
+================================================================================

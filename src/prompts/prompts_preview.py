@@ -1,5 +1,5 @@
 # src/prompts/prompts_preview.py
-#!/usr/bin/env python3
+
 import sys
 import argparse
 from pathlib import Path
@@ -47,16 +47,16 @@ def main():
                     help="Output directory (default: src/prompts/preview).")
     args = ap.parse_args()
 
-    data_dir = ROOT / "src" / "data"
+    data_dir = ROOT / "src" / "data_50"
     items = load_items(
-        questions_csv=data_dir / "mhqa_questions.csv",
-        context_csv=data_dir / "mhqa_context.csv",
-        paraphrases_csv=data_dir / "mhqa_paraphrases.csv",
+        questions_csv=data_dir / "mhqa_questions_50.csv",
+        context_csv=data_dir / "mhqa_context_50.csv",
+        paraphrases_csv=data_dir / "mhqa_paraphrases_50.csv",
     )
 
     out_dir = Path(args.outdir) if args.outdir else (ROOT / "src" / "prompts" / "preview")
 
-    domains = ["history", "science", "politics"] if args.domain == "all" else [args.domain]
+    domains = ["history", "science", "politics","geography","literature"] if args.domain == "all" else [args.domain]
     for d in domains:
         write_domain(items, d, out_dir, args.limit)
 
