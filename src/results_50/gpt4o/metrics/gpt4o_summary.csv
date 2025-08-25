@@ -1,0 +1,5 @@
+model,setting,n_items,em_mean,f1_median,latency_median_ms,drop_em_median,drop_f1_median,ci_em_low,ci_em_high,ci_em_method,ci_f1_low,ci_f1_high,ci_f1_method,stability_median
+gpt4o,dist,50,0.0,1.0,818.5,0.0,0.0,0.0,0.0,degenerate,,,BCa,0.0
+gpt4o,gold,50,0.0,1.0,854.5,0.0,0.0,0.0,0.0,degenerate,,,BCa,0.0
+gpt4o,para,50,0.0,1.0,895.0,0.0,0.0,0.0,0.0,degenerate,,,BCa,0.0
+gpt4o,para_dist,50,0.0,1.0,779.5,0.0,0.0,0.0,0.0,degenerate,,,BCa,0.0

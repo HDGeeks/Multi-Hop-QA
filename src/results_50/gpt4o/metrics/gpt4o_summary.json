@@ -1,0 +1,72 @@
+{
+  "model": "gpt4o",
+  "num_runs": 1,
+  "num_files": 1,
+  "counts_by_setting": {
+    "gold": 50,
+    "para": 50,
+    "dist": 50,
+    "para_dist": 50
+  },
+  "em_f1_by_setting": {
+    "gold": {
+      "exact_match": 0.0,
+      "f1": 0.0
+    },
+    "para": {
+      "exact_match": 0.0,
+      "f1": 0.0
+    },
+    "dist": {
+      "exact_match": 0.0,
+      "f1": 0.0
+    },
+    "para_dist": {
+      "exact_match": 0.0,
+      "f1": 0.0
+    }
+  },
+  "overall": {
+    "exact_match": 0.0,
+    "f1": 0.0
+  },
+  "invalid_rate_by_setting": {
+    "gold": 0.0,
+    "para": 0.0,
+    "dist": 0.0,
+    "para_dist": 0.0
+  },
+  "refusal_rate_by_setting": {
+    "gold": 0.0,
+    "para": 0.0,
+    "dist": 0.0,
+    "para_dist": 0.0
+  },
+  "latency_by_setting": {
+    "gold": {
+      "avg_ms": 958.4,
+      "p50_ms": 852.0,
+      "p90_ms": 1397.0
+    },
+    "para": {
+      "avg_ms": 1003.8,
+      "p50_ms": 894.0,
+      "p90_ms": 1299.0
+    },
+    "dist": {
+      "avg_ms": 898.18,
+      "p50_ms": 818.0,
+      "p90_ms": 1133.0
+    },
+    "para_dist": {
+      "avg_ms": 880.7,
+      "p50_ms": 767.0,
+      "p90_ms": 1068.0
+    }
+  },
+  "robustness_delta_vs_gold_pp": {
+    "para": 0.0,
+    "dist": 0.0,
+    "para_dist": 0.0
+  }
+}

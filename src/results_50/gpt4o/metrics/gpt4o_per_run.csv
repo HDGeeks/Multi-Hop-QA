@@ -1,0 +1,201 @@
+run_id,qid,domain,model,setting,output,latency_ms,em,f1,refusal,format_violation
+1,HIST001,history,gpt4o,gold,John F. Kennedy,1058,1,1.0,0,0
+1,HIST001,history,gpt4o,para,John F. Kennedy,795,1,1.0,0,0
+1,HIST001,history,gpt4o,dist,John F. Kennedy,1228,1,1.0,0,0
+1,HIST001,history,gpt4o,para_dist,John F. Kennedy,718,1,1.0,0,0
+1,HIST002,history,gpt4o,gold,Roman Empire,852,1,1.0,0,0
+1,HIST002,history,gpt4o,para,Flavian dynasty,738,0,0.0,0,0
+1,HIST002,history,gpt4o,dist,Roman Empire,828,1,1.0,0,0
+1,HIST002,history,gpt4o,para_dist,Flavian,656,0,0.0,0,0
+1,HIST003,history,gpt4o,gold,King George III,1397,1,1.0,0,0
+1,HIST003,history,gpt4o,para,King George III,1257,1,1.0,0,0
+1,HIST003,history,gpt4o,dist,King George III,892,1,1.0,0,0
+1,HIST003,history,gpt4o,para_dist,King George III,686,1,1.0,0,0
+1,HIST004,history,gpt4o,gold,Georges Clemenceau,1494,1,1.0,0,0
+1,HIST004,history,gpt4o,para,Georges Clemenceau,918,1,1.0,0,0
+1,HIST004,history,gpt4o,dist,Georges Clemenceau,627,1,1.0,0,0
+1,HIST004,history,gpt4o,para_dist,Georges Clemenceau,806,1,1.0,0,0
+1,HIST005,history,gpt4o,gold,Qin Shi Huang,716,1,1.0,0,0
+1,HIST005,history,gpt4o,para,Qin Shi Huang,837,1,1.0,0,0
+1,HIST005,history,gpt4o,dist,Qin Shi Huang,674,1,1.0,0,0
+1,HIST005,history,gpt4o,para_dist,Qin Shi Huang,639,1,1.0,0,0
+1,HIST006,history,gpt4o,gold,World War I,820,1,1.0,0,0
+1,HIST006,history,gpt4o,para,Archduke Franz Ferdinand was assassinated.,1731,0,0.0,0,0
+1,HIST006,history,gpt4o,dist,World War I,732,1,1.0,0,0
+1,HIST006,history,gpt4o,para_dist,Archduke Franz Ferdinand was assassinated.,810,0,0.0,0,0
+1,HIST007,history,gpt4o,gold,Joseph Stalin.,819,1,1.0,0,0
+1,HIST007,history,gpt4o,para,Joseph Stalin.,829,1,1.0,0,0
+1,HIST007,history,gpt4o,dist,Joseph Stalin,1018,1,1.0,0,0
+1,HIST007,history,gpt4o,para_dist,Joseph Stalin,1231,1,1.0,0,0
+1,HIST008,history,gpt4o,gold,Abraham Lincoln,615,1,1.0,0,0
+1,HIST008,history,gpt4o,para,Abraham Lincoln,810,1,1.0,0,0
+1,HIST008,history,gpt4o,dist,Abraham Lincoln,960,1,1.0,0,0
+1,HIST008,history,gpt4o,para_dist,Abraham Lincoln,613,1,1.0,0,0
+1,HIST009,history,gpt4o,gold,Margaret Thatcher,810,1,1.0,0,0
+1,HIST009,history,gpt4o,para,Margaret Thatcher,608,1,1.0,0,0
+1,HIST009,history,gpt4o,dist,Margaret Thatcher,1083,1,1.0,0,0
+1,HIST009,history,gpt4o,para_dist,Margaret Thatcher,674,1,1.0,0,0
+1,HIST010,history,gpt4o,gold,Inca civilization,2220,0,0.6666666666666666,0,0
+1,HIST010,history,gpt4o,para,Inca civilization,1296,0,0.6666666666666666,0,0
+1,HIST010,history,gpt4o,dist,Inca civilization,2380,0,0.6666666666666666,0,0
+1,HIST010,history,gpt4o,para_dist,Inca civilization,3071,0,0.6666666666666666,0,0
+1,SCI001,science,gpt4o,gold,H2O,601,1,1.0,0,0
+1,SCI001,science,gpt4o,para,H2O,1240,1,1.0,0,0
+1,SCI001,science,gpt4o,dist,H2O,818,1,1.0,0,0
+1,SCI001,science,gpt4o,para_dist,H2O,971,1,1.0,0,0
+1,SCI002,science,gpt4o,gold,Carbon,668,1,1.0,0,0
+1,SCI002,science,gpt4o,para,Carbon,819,1,1.0,0,0
+1,SCI002,science,gpt4o,dist,Carbon,798,1,1.0,0,0
+1,SCI002,science,gpt4o,para_dist,carbon,743,1,1.0,0,0
+1,SCI003,science,gpt4o,gold,carbon dioxide (CO2),1015,0,0.8,0,0
+1,SCI003,science,gpt4o,para,Carbon dioxide (CO2),715,0,0.8,0,0
+1,SCI003,science,gpt4o,dist,carbon dioxide (CO2),718,0,0.8,0,0
+1,SCI003,science,gpt4o,para_dist,Carbon dioxide (CO2),669,0,0.8,0,0
+1,SCI004,science,gpt4o,gold,Albert Einstein.,595,1,1.0,0,0
+1,SCI004,science,gpt4o,para,Albert Einstein.,781,1,1.0,0,0
+1,SCI004,science,gpt4o,dist,Albert Einstein.,921,1,1.0,0,0
+1,SCI004,science,gpt4o,para_dist,Albert Einstein.,824,1,1.0,0,0
+1,SCI005,science,gpt4o,gold,mitochondrion,813,1,1.0,0,0
+1,SCI005,science,gpt4o,para,mitochondrion,751,1,1.0,0,0
+1,SCI005,science,gpt4o,dist,mitochondrion,2832,1,1.0,0,0
+1,SCI005,science,gpt4o,para_dist,mitochondrion,613,1,1.0,0,0
+1,SCI006,science,gpt4o,gold,Mars,849,1,1.0,0,0
+1,SCI006,science,gpt4o,para,Mars,1299,1,1.0,0,0
+1,SCI006,science,gpt4o,dist,Mars,624,1,1.0,0,0
+1,SCI006,science,gpt4o,para_dist,Mars,1172,1,1.0,0,0
+1,SCI007,science,gpt4o,gold,electron,866,1,1.0,0,0
+1,SCI007,science,gpt4o,para,electron,2048,1,1.0,0,0
+1,SCI007,science,gpt4o,dist,electron,921,1,1.0,0,0
+1,SCI007,science,gpt4o,para_dist,electron,520,1,1.0,0,0
+1,SCI008,science,gpt4o,gold,Vitamin D,713,1,1.0,0,0
+1,SCI008,science,gpt4o,para,Vitamin D,1105,1,1.0,0,0
+1,SCI008,science,gpt4o,dist,Vitamin D,939,1,1.0,0,0
+1,SCI008,science,gpt4o,para_dist,Vitamin D,815,1,1.0,0,0
+1,SCI009,science,gpt4o,gold,photosynthesis,931,1,1.0,0,0
+1,SCI009,science,gpt4o,para,photosynthesis,1015,1,1.0,0,0
+1,SCI009,science,gpt4o,dist,photosynthesis,1540,1,1.0,0,0
+1,SCI009,science,gpt4o,para_dist,photosynthesis,645,1,1.0,0,0
+1,SCI010,science,gpt4o,gold,the skin,886,0,0.6666666666666666,0,0
+1,SCI010,science,gpt4o,para,the skin,1031,0,0.6666666666666666,0,0
+1,SCI010,science,gpt4o,dist,The skin,911,0,0.6666666666666666,0,0
+1,SCI010,science,gpt4o,para_dist,the skin,1023,0,0.6666666666666666,0,0
+1,POL001,politics,gpt4o,gold,democracy,1125,1,1.0,0,0
+1,POL001,politics,gpt4o,para,democracy,3894,1,1.0,0,0
+1,POL001,politics,gpt4o,dist,democracy,1133,1,1.0,0,0
+1,POL001,politics,gpt4o,para_dist,democracy,809,1,1.0,0,0
+1,POL002,politics,gpt4o,gold,Margaret Thatcher,615,1,1.0,0,0
+1,POL002,politics,gpt4o,para,Margaret Thatcher,874,1,1.0,0,0
+1,POL002,politics,gpt4o,dist,Margaret Thatcher,709,1,1.0,0,0
+1,POL002,politics,gpt4o,para_dist,Margaret Thatcher,875,1,1.0,0,0
+1,POL003,politics,gpt4o,gold,Constitution of the United States,1020,0,0.33333333333333337,0,0
+1,POL003,politics,gpt4o,para,Constitution of the United States,520,0,0.33333333333333337,0,0
+1,POL003,politics,gpt4o,dist,The Constitution of the United States.,812,0,0.2857142857142857,0,0
+1,POL003,politics,gpt4o,para_dist,The Constitution of the United States.,816,0,0.2857142857142857,0,0
+1,POL004,politics,gpt4o,gold,The United States Senate.,1728,0,0.4,0,0
+1,POL004,politics,gpt4o,para,United States Senate,775,0,0.5,0,0
+1,POL004,politics,gpt4o,dist,The United States Senate.,775,0,0.4,0,0
+1,POL004,politics,gpt4o,para_dist,United States Senate,714,0,0.5,0,0
+1,POL005,politics,gpt4o,gold,George Washington.,822,1,1.0,0,0
+1,POL005,politics,gpt4o,para,George Washington,1035,1,1.0,0,0
+1,POL005,politics,gpt4o,dist,George Washington.,1008,1,1.0,0,0
+1,POL005,politics,gpt4o,para_dist,George Washington.,920,1,1.0,0,0
+1,POL006,politics,gpt4o,gold,United Nations,1022,1,1.0,0,0
+1,POL006,politics,gpt4o,para,United Nations,1026,1,1.0,0,0
+1,POL006,politics,gpt4o,dist,United Nations,492,1,1.0,0,0
+1,POL006,politics,gpt4o,para_dist,United Nations,735,1,1.0,0,0
+1,POL007,politics,gpt4o,gold,Supreme Court,904,1,1.0,0,0
+1,POL007,politics,gpt4o,para,The Supreme Court.,1041,0,0.8,0,0
+1,POL007,politics,gpt4o,dist,The Supreme Court.,818,0,0.8,0,0
+1,POL007,politics,gpt4o,para_dist,Supreme Court,1027,1,1.0,0,0
+1,POL008,politics,gpt4o,gold,Treaty on European Union,1019,1,1.0,0,0
+1,POL008,politics,gpt4o,para,Treaty on European Union,719,1,1.0,0,0
+1,POL008,politics,gpt4o,dist,Treaty on European Union,612,1,1.0,0,0
+1,POL008,politics,gpt4o,para_dist,Treaty on European Union,477,1,1.0,0,0
+1,POL009,politics,gpt4o,gold,monarchy,646,1,1.0,0,0
+1,POL009,politics,gpt4o,para,monarchy,917,1,1.0,0,0
+1,POL009,politics,gpt4o,dist,monarchy,652,1,1.0,0,0
+1,POL009,politics,gpt4o,para_dist,monarchy,745,1,1.0,0,0
+1,POL010,politics,gpt4o,gold,Nelson Mandela,857,1,1.0,0,0
+1,POL010,politics,gpt4o,para,Nelson Mandela,642,1,1.0,0,0
+1,POL010,politics,gpt4o,dist,Nelson Mandela,795,1,1.0,0,0
+1,POL010,politics,gpt4o,para_dist,Nelson Mandela,1121,1,1.0,0,0
+1,LIT001,literature,gpt4o,gold,William Shakespeare,820,1,1.0,0,0
+1,LIT001,literature,gpt4o,para,William Shakespeare,1022,1,1.0,0,0
+1,LIT001,literature,gpt4o,dist,William Shakespeare.,623,1,1.0,0,0
+1,LIT001,literature,gpt4o,para_dist,William Shakespeare.,605,1,1.0,0,0
+1,LIT002,literature,gpt4o,gold,Jane Austen.,821,1,1.0,0,0
+1,LIT002,literature,gpt4o,para,Jane Austen.,1001,1,1.0,0,0
+1,LIT002,literature,gpt4o,dist,Jane Austen.,471,1,1.0,0,0
+1,LIT002,literature,gpt4o,para_dist,Jane Austen,682,1,1.0,0,0
+1,LIT003,literature,gpt4o,gold,Frodo Baggins,2887,1,1.0,0,0
+1,LIT003,literature,gpt4o,para,Frodo Baggins,998,1,1.0,0,0
+1,LIT003,literature,gpt4o,dist,Frodo Baggins,919,1,1.0,0,0
+1,LIT003,literature,gpt4o,para_dist,Frodo Baggins.,927,1,1.0,0,0
+1,LIT004,literature,gpt4o,gold,Homer,719,1,1.0,0,0
+1,LIT004,literature,gpt4o,para,Homer,894,1,1.0,0,0
+1,LIT004,literature,gpt4o,dist,Homer,634,1,1.0,0,0
+1,LIT004,literature,gpt4o,para_dist,Homer,919,1,1.0,0,0
+1,LIT005,literature,gpt4o,gold,Moby-Dick,1028,1,1.0,0,0
+1,LIT005,literature,gpt4o,para,Moby-Dick,924,1,1.0,0,0
+1,LIT005,literature,gpt4o,dist,Moby-Dick,606,1,1.0,0,0
+1,LIT005,literature,gpt4o,para_dist,Moby-Dick,616,1,1.0,0,0
+1,LIT006,literature,gpt4o,gold,Arthur Conan Doyle,919,1,1.0,0,0
+1,LIT006,literature,gpt4o,para,Arthur Conan Doyle,600,1,1.0,0,0
+1,LIT006,literature,gpt4o,dist,Arthur Conan Doyle,637,1,1.0,0,0
+1,LIT006,literature,gpt4o,para_dist,Arthur Conan Doyle.,707,1,1.0,0,0
+1,LIT007,literature,gpt4o,gold,Harry Potter,1560,1,1.0,0,0
+1,LIT007,literature,gpt4o,para,Harry Potter,896,1,1.0,0,0
+1,LIT007,literature,gpt4o,dist,Harry Potter,717,1,1.0,0,0
+1,LIT007,literature,gpt4o,para_dist,Harry Potter,725,1,1.0,0,0
+1,LIT008,literature,gpt4o,gold,George Orwell.,532,1,1.0,0,0
+1,LIT008,literature,gpt4o,para,George Orwell,585,1,1.0,0,0
+1,LIT008,literature,gpt4o,dist,George Orwell.,921,1,1.0,0,0
+1,LIT008,literature,gpt4o,para_dist,George Orwell,921,1,1.0,0,0
+1,LIT009,literature,gpt4o,gold,Macbeth,705,1,1.0,0,0
+1,LIT009,literature,gpt4o,para,Macbeth,1547,1,1.0,0,0
+1,LIT009,literature,gpt4o,dist,Macbeth,819,1,1.0,0,0
+1,LIT009,literature,gpt4o,para_dist,Macbeth,2968,1,1.0,0,0
+1,LIT010,literature,gpt4o,gold,Edgar Allan Poe,897,1,1.0,0,0
+1,LIT010,literature,gpt4o,para,Edgar Allan Poe,1160,1,1.0,0,0
+1,LIT010,literature,gpt4o,dist,Edgar Allan Poe,1019,1,1.0,0,0
+1,LIT010,literature,gpt4o,para_dist,Edgar Allan Poe,610,1,1.0,0,0
+1,GEO001,geography,gpt4o,gold,The Sahara,509,0,0.6666666666666666,0,0
+1,GEO001,geography,gpt4o,para,Sahara,558,1,1.0,0,0
+1,GEO001,geography,gpt4o,dist,Antarctica,715,0,0.0,0,0
+1,GEO001,geography,gpt4o,para_dist,The Sahara,978,0,0.6666666666666666,0,0
+1,GEO002,geography,gpt4o,gold,The Nile,819,0,0.6666666666666666,0,0
+1,GEO002,geography,gpt4o,para,The Nile,818,0,0.6666666666666666,0,0
+1,GEO002,geography,gpt4o,dist,The Nile,921,0,0.6666666666666666,0,0
+1,GEO002,geography,gpt4o,para_dist,The Nile,767,0,0.6666666666666666,0,0
+1,GEO003,geography,gpt4o,gold,Tokyo,1279,1,1.0,0,0
+1,GEO003,geography,gpt4o,para,Tokyo,1024,1,1.0,0,0
+1,GEO003,geography,gpt4o,dist,Tokyo.,875,1,1.0,0,0
+1,GEO003,geography,gpt4o,para_dist,Tokyo.,1068,1,1.0,0,0
+1,GEO004,geography,gpt4o,gold,Africa,1032,1,1.0,0,0
+1,GEO004,geography,gpt4o,para,Africa,774,1,1.0,0,0
+1,GEO004,geography,gpt4o,dist,Africa,1265,1,1.0,0,0
+1,GEO004,geography,gpt4o,para_dist,Africa,1023,1,1.0,0,0
+1,GEO005,geography,gpt4o,gold,China,614,1,1.0,0,0
+1,GEO005,geography,gpt4o,para,China,1359,1,1.0,0,0
+1,GEO005,geography,gpt4o,dist,China,997,1,1.0,0,0
+1,GEO005,geography,gpt4o,para_dist,China,792,1,1.0,0,0
+1,GEO006,geography,gpt4o,gold,Pacific Ocean,638,1,1.0,0,0
+1,GEO006,geography,gpt4o,para,Pacific Ocean,716,1,1.0,0,0
+1,GEO006,geography,gpt4o,dist,Pacific Ocean,828,1,1.0,0,0
+1,GEO006,geography,gpt4o,para_dist,Pacific Ocean,605,1,1.0,0,0
+1,GEO007,geography,gpt4o,gold,Vatican City,707,1,1.0,0,0
+1,GEO007,geography,gpt4o,para,Vatican City.,725,1,1.0,0,0
+1,GEO007,geography,gpt4o,dist,Vatican City,615,1,1.0,0,0
+1,GEO007,geography,gpt4o,para_dist,Vatican City.,827,1,1.0,0,0
+1,GEO008,geography,gpt4o,gold,Alaska,950,1,1.0,0,0
+1,GEO008,geography,gpt4o,para,Alaska,681,1,1.0,0,0
+1,GEO008,geography,gpt4o,dist,Alaska,919,1,1.0,0,0
+1,GEO008,geography,gpt4o,para_dist,Alaska,872,1,1.0,0,0
+1,GEO009,geography,gpt4o,gold,Mediterranean Sea.,877,1,1.0,0,0
+1,GEO009,geography,gpt4o,para,Mediterranean Sea.,810,1,1.0,0,0
+1,GEO009,geography,gpt4o,dist,The Mediterranean Sea.,717,0,0.8,0,0
+1,GEO009,geography,gpt4o,para_dist,The Mediterranean Sea.,627,0,0.8,0,0
+1,GEO010,geography,gpt4o,gold,Canberra,1111,1,1.0,0,0
+1,GEO010,geography,gpt4o,para,Canberra.,1032,1,1.0,0,0
+1,GEO010,geography,gpt4o,dist,Canberra.,441,1,1.0,0,0
+1,GEO010,geography,gpt4o,para_dist,Canberra,658,1,1.0,0,0
