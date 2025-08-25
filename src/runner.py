@@ -49,24 +49,36 @@ def main():
     parser.add_argument("--model", required=True, help="One of: gpt4o, gpt4o_mini, gemini_pro, llama31_8b, mistral7b")
     parser.add_argument("--run-id", type=int, default=1, help="Repeat index (1..n)")
     parser.add_argument("--out", default=None, help="Optional override path for output JSONL")
+    parser.add_argument("--qid", default=None, help="Optional: only run this QID")
     args = parser.parse_args()
 
     model_id = args.model
     run_id = args.run_id
 
     # load items
-    base = Path("src/data")
-    questions_csv = base / "mhqa_questions.csv"
-    context_csv   = base / "mhqa_context.csv"
-    paras_csv     = base / "mhqa_paraphrases.csv"
+    # base = Path("src/data")
+    # questions_csv = base / "mhqa_questions.csv"
+    # context_csv   = base / "mhqa_context.csv"
+    # paras_csv     = base / "mhqa_paraphrases.csv"
+    # items = load_items(questions_csv, context_csv, paras_csv)
+
+    base = Path("src/data_50")
+    questions_csv = base / "mhqa_questions_50.csv"
+    context_csv   = base / "mhqa_context_50.csv"
+    paras_csv     = base / "mhqa_paraphrases_50.csv"
     items = load_items(questions_csv, context_csv, paras_csv)
 
+    # optional: filter to a single QID
+    if args.qid:
+        items = [it for it in items if it.qid == args.qid]
+    if not items:
+        raise ValueError(f"No item with qid={args.qid}")
     # output path (per-model, per-run)
     if args.out:
         out_path = Path(args.out)
     else:
         stamp = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
-        out_path = Path(args.out) if args.out else Path(f"src/results/{model_id}/{model_id}_run{run_id}.jsonl")
+        out_path = Path(args.out) if args.out else Path(f"src/results_50/{model_id}/{model_id}_run{run_id}.jsonl")
     ensure_dirs(out_path)
 
     call = get_model_callable(model_id)
