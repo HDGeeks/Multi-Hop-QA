@@ -1,0 +1,515 @@
+# Domain: politics | Items: 8
+# Settings: gold, para, dist, para_dist
+================================================================================
+
+QID: POL001 | Domain: politics
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The US Constitution was drafted in 1787.
+Snippet B:
+James Madison is considered its father.
+
+Question:
+Who is considered the father of the US Constitution?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The US Constitution was drafted in 1787.
+Snippet B:
+James Madison is considered its father.
+
+Question:
+Who is regarded as the father of the US Constitution?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The US Constitution was drafted in 1787.
+Snippet B:
+James Madison is considered its father.
+Distractor Snippet:
+Thomas Jefferson drafted the Declaration of Independence.
+
+Question:
+Who is considered the father of the US Constitution?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The US Constitution was drafted in 1787.
+Snippet B:
+James Madison is considered its father.
+Distractor Snippet:
+Thomas Jefferson drafted the Declaration of Independence.
+
+Question:
+Who is regarded as the father of the US Constitution?
+
+Answer:
+
+================================================================================
+
+QID: POL002 | Domain: politics
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Democracy means rule by the people.
+Snippet B:
+Citizens vote to elect representatives in a democracy.
+
+Question:
+Which political system is based on rule by the people?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Democracy means rule by the people.
+Snippet B:
+Citizens vote to elect representatives in a democracy.
+
+Question:
+Which political system is based on popular rule?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Democracy means rule by the people.
+Snippet B:
+Citizens vote to elect representatives in a democracy.
+Distractor Snippet:
+Monarchy is rule by a king or queen.
+
+Question:
+Which political system is based on rule by the people?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Democracy means rule by the people.
+Snippet B:
+Citizens vote to elect representatives in a democracy.
+Distractor Snippet:
+Monarchy is rule by a king or queen.
+
+Question:
+Which political system is based on popular rule?
+
+Answer:
+
+================================================================================
+
+QID: POL003 | Domain: politics
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The UK had its first female Prime Minister in 1979.
+Snippet B:
+Her name was Margaret Thatcher.
+
+Question:
+Who was the first female Prime Minister of the UK?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The UK had its first female Prime Minister in 1979.
+Snippet B:
+Her name was Margaret Thatcher.
+
+Question:
+Who was Britain’s first female Prime Minister?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The UK had its first female Prime Minister in 1979.
+Snippet B:
+Her name was Margaret Thatcher.
+Distractor Snippet:
+Theresa May became Prime Minister in 2016.
+
+Question:
+Who was the first female Prime Minister of the UK?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The UK had its first female Prime Minister in 1979.
+Snippet B:
+Her name was Margaret Thatcher.
+Distractor Snippet:
+Theresa May became Prime Minister in 2016.
+
+Question:
+Who was Britain’s first female Prime Minister?
+
+Answer:
+
+================================================================================
+
+QID: POL004 | Domain: politics
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Constitution is the highest law in the United States.
+Snippet B:
+It overrides state laws.
+
+Question:
+What is the supreme law of the United States?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Constitution is the highest law in the United States.
+Snippet B:
+It overrides state laws.
+
+Question:
+What is the highest law in the United States?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Constitution is the highest law in the United States.
+Snippet B:
+It overrides state laws.
+Distractor Snippet:
+The Magna Carta was signed in 1215.
+
+Question:
+What is the supreme law of the United States?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Constitution is the highest law in the United States.
+Snippet B:
+It overrides state laws.
+Distractor Snippet:
+The Magna Carta was signed in 1215.
+
+Question:
+What is the highest law in the United States?
+
+Answer:
+
+================================================================================
+
+QID: POL005 | Domain: politics
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Apartheid in South Africa ended in the 1990s.
+Snippet B:
+Nelson Mandela became the first black president in 1994.
+
+Question:
+Who was the first President of South Africa elected after apartheid?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Apartheid in South Africa ended in the 1990s.
+Snippet B:
+Nelson Mandela became the first black president in 1994.
+
+Question:
+Who became South Africa’s first president after apartheid?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Apartheid in South Africa ended in the 1990s.
+Snippet B:
+Nelson Mandela became the first black president in 1994.
+Distractor Snippet:
+Frederik de Klerk was the last white president.
+
+Question:
+Who was the first President of South Africa elected after apartheid?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Apartheid in South Africa ended in the 1990s.
+Snippet B:
+Nelson Mandela became the first black president in 1994.
+Distractor Snippet:
+Frederik de Klerk was the last white president.
+
+Question:
+Who became South Africa’s first president after apartheid?
+
+Answer:
+
+================================================================================
+
+QID: POL006 | Domain: politics
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Kremlin is a fortified complex in Moscow.
+Snippet B:
+It is the seat of Russia’s government.
+
+Question:
+Which country has the Kremlin as a seat of government?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Kremlin is a fortified complex in Moscow.
+Snippet B:
+It is the seat of Russia’s government.
+
+Question:
+Which country’s government operates from the Kremlin?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Kremlin is a fortified complex in Moscow.
+Snippet B:
+It is the seat of Russia’s government.
+Distractor Snippet:
+The White House is the US executive residence.
+
+Question:
+Which country has the Kremlin as a seat of government?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Kremlin is a fortified complex in Moscow.
+Snippet B:
+It is the seat of Russia’s government.
+Distractor Snippet:
+The White House is the US executive residence.
+
+Question:
+Which country’s government operates from the Kremlin?
+
+Answer:
+
+================================================================================
+
+QID: POL007 | Domain: politics
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Barack Obama served as US President until 2017.
+Snippet B:
+Donald Trump succeeded him that year.
+
+Question:
+Who succeeded Barack Obama as US President?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Barack Obama served as US President until 2017.
+Snippet B:
+Donald Trump succeeded him that year.
+
+Question:
+Who came after Barack Obama as US President?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Barack Obama served as US President until 2017.
+Snippet B:
+Donald Trump succeeded him that year.
+Distractor Snippet:
+Joe Biden succeeded Trump in 2021.
+
+Question:
+Who succeeded Barack Obama as US President?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Barack Obama served as US President until 2017.
+Snippet B:
+Donald Trump succeeded him that year.
+Distractor Snippet:
+Joe Biden succeeded Trump in 2021.
+
+Question:
+Who came after Barack Obama as US President?
+
+Answer:
+
+================================================================================
+
+QID: POL008 | Domain: politics
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1990, Germany reunified after decades of division.
+Snippet B:
+Chancellor Helmut Kohl oversaw reunification.
+
+Question:
+Which German leader oversaw reunification in 1990?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1990, Germany reunified after decades of division.
+Snippet B:
+Chancellor Helmut Kohl oversaw reunification.
+
+Question:
+Which German leader oversaw reunification in 1990?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1990, Germany reunified after decades of division.
+Snippet B:
+Chancellor Helmut Kohl oversaw reunification.
+Distractor Snippet:
+Angela Merkel became Chancellor in 2005.
+
+Question:
+Which German leader oversaw reunification in 1990?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1990, Germany reunified after decades of division.
+Snippet B:
+Chancellor Helmut Kohl oversaw reunification.
+Distractor Snippet:
+Angela Merkel became Chancellor in 2005.
+
+Question:
+Which German leader oversaw reunification in 1990?
+
+Answer:
+
+================================================================================

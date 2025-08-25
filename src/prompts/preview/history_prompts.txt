@@ -1,0 +1,579 @@
+# Domain: history | Items: 9
+# Settings: gold, para, dist, para_dist
+================================================================================
+
+QID: HIST001 | Domain: history
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Declaration of Independence was adopted on July 4, 1776.
+Snippet B:
+In 1776, the King of Great Britain and Ireland was George III.
+
+Question:
+Who was the monarch of England when the United States declared independence?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Declaration of Independence was adopted on July 4, 1776.
+Snippet B:
+In 1776, the King of Great Britain and Ireland was George III.
+
+Question:
+Which British king ruled when America declared independence?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Declaration of Independence was adopted on July 4, 1776.
+Snippet B:
+In 1776, the King of Great Britain and Ireland was George III.
+Distractor Snippet:
+George IV became king in 1820.
+
+Question:
+Who was the monarch of England when the United States declared independence?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Declaration of Independence was adopted on July 4, 1776.
+Snippet B:
+In 1776, the King of Great Britain and Ireland was George III.
+Distractor Snippet:
+George IV became king in 1820.
+
+Question:
+Which British king ruled when America declared independence?
+
+Answer:
+
+================================================================================
+
+QID: HIST002 | Domain: history
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Colosseum is an ancient amphitheatre in Rome.
+Snippet B:
+It was built under the Roman Empire during the reign of Vespasian.
+
+Question:
+Which empire built the Colosseum in Rome?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Colosseum is an ancient amphitheatre in Rome.
+Snippet B:
+It was built under the Roman Empire during the reign of Vespasian.
+
+Question:
+Which empire constructed the Colosseum in Rome?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Colosseum is an ancient amphitheatre in Rome.
+Snippet B:
+It was built under the Roman Empire during the reign of Vespasian.
+Distractor Snippet:
+The Greek city-states built theatres such as Epidaurus.
+
+Question:
+Which empire built the Colosseum in Rome?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Colosseum is an ancient amphitheatre in Rome.
+Snippet B:
+It was built under the Roman Empire during the reign of Vespasian.
+Distractor Snippet:
+The Greek city-states built theatres such as Epidaurus.
+
+Question:
+Which empire constructed the Colosseum in Rome?
+
+Answer:
+
+================================================================================
+
+QID: HIST003 | Domain: history
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Cuban Missile Crisis took place in October 1962.
+Snippet B:
+At the time, John F. Kennedy was president of the United States.
+
+Question:
+Who was the US president during the Cuban Missile Crisis?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Cuban Missile Crisis took place in October 1962.
+Snippet B:
+At the time, John F. Kennedy was president of the United States.
+
+Question:
+Who was US president during the 1962 Cuban Missile Crisis?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Cuban Missile Crisis took place in October 1962.
+Snippet B:
+At the time, John F. Kennedy was president of the United States.
+Distractor Snippet:
+Dwight Eisenhower had left office in 1961.
+
+Question:
+Who was the US president during the Cuban Missile Crisis?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The Cuban Missile Crisis took place in October 1962.
+Snippet B:
+At the time, John F. Kennedy was president of the United States.
+Distractor Snippet:
+Dwight Eisenhower had left office in 1961.
+
+Question:
+Who was US president during the 1962 Cuban Missile Crisis?
+
+Answer:
+
+================================================================================
+
+QID: HIST004 | Domain: history
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The French Revolution began in 1789.
+Snippet B:
+It marked the overthrow of the Bourbon monarchy.
+
+Question:
+Which revolution began in 1789 in France?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The French Revolution began in 1789.
+Snippet B:
+It marked the overthrow of the Bourbon monarchy.
+
+Question:
+Which revolution started in France in 1789?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The French Revolution began in 1789.
+Snippet B:
+It marked the overthrow of the Bourbon monarchy.
+Distractor Snippet:
+The Russian Revolution occurred in 1917.
+
+Question:
+Which revolution began in 1789 in France?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The French Revolution began in 1789.
+Snippet B:
+It marked the overthrow of the Bourbon monarchy.
+Distractor Snippet:
+The Russian Revolution occurred in 1917.
+
+Question:
+Which revolution started in France in 1789?
+
+Answer:
+
+================================================================================
+
+QID: HIST005 | Domain: history
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+World War II lasted from 1939 to 1945.
+Snippet B:
+The Soviet Union was led by Joseph Stalin during this period.
+
+Question:
+Who led the Soviet Union during World War II?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+World War II lasted from 1939 to 1945.
+Snippet B:
+The Soviet Union was led by Joseph Stalin during this period.
+
+Question:
+Who was leading the Soviet Union in World War II?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+World War II lasted from 1939 to 1945.
+Snippet B:
+The Soviet Union was led by Joseph Stalin during this period.
+Distractor Snippet:
+Vladimir Lenin died in 1924.
+
+Question:
+Who led the Soviet Union during World War II?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+World War II lasted from 1939 to 1945.
+Snippet B:
+The Soviet Union was led by Joseph Stalin during this period.
+Distractor Snippet:
+Vladimir Lenin died in 1924.
+
+Question:
+Who was leading the Soviet Union in World War II?
+
+Answer:
+
+================================================================================
+
+QID: HIST006 | Domain: history
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Genghis Khan united the Mongol tribes.
+Snippet B:
+He founded and led the Mongol Empire.
+
+Question:
+Which empire was ruled by Genghis Khan?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Genghis Khan united the Mongol tribes.
+Snippet B:
+He founded and led the Mongol Empire.
+
+Question:
+Genghis Khan ruled which empire?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Genghis Khan united the Mongol tribes.
+Snippet B:
+He founded and led the Mongol Empire.
+Distractor Snippet:
+The Ottoman Empire was ruled by Suleiman the Magnificent.
+
+Question:
+Which empire was ruled by Genghis Khan?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Genghis Khan united the Mongol tribes.
+Snippet B:
+He founded and led the Mongol Empire.
+Distractor Snippet:
+The Ottoman Empire was ruled by Suleiman the Magnificent.
+
+Question:
+Genghis Khan ruled which empire?
+
+Answer:
+
+================================================================================
+
+QID: HIST007 | Domain: history
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1914, an assassination in Sarajevo triggered World War I.
+Snippet B:
+Archduke Franz Ferdinand of Austria-Hungary was the victim.
+
+Question:
+Who was assassinated in Sarajevo in 1914 sparking World War I?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1914, an assassination in Sarajevo triggered World War I.
+Snippet B:
+Archduke Franz Ferdinand of Austria-Hungary was the victim.
+
+Question:
+Whose assassination in Sarajevo sparked World War I?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1914, an assassination in Sarajevo triggered World War I.
+Snippet B:
+Archduke Franz Ferdinand of Austria-Hungary was the victim.
+Distractor Snippet:
+Tsar Nicholas II was executed later in 1918.
+
+Question:
+Who was assassinated in Sarajevo in 1914 sparking World War I?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1914, an assassination in Sarajevo triggered World War I.
+Snippet B:
+Archduke Franz Ferdinand of Austria-Hungary was the victim.
+Distractor Snippet:
+Tsar Nicholas II was executed later in 1918.
+
+Question:
+Whose assassination in Sarajevo sparked World War I?
+
+Answer:
+
+================================================================================
+
+QID: HIST008 | Domain: history
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1989, a wall dividing East and West Berlin was torn down.
+Snippet B:
+The fall of the Berlin Wall symbolized the end of the Cold War.
+
+Question:
+Which wall fell in 1989 symbolizing the end of the Cold War?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1989, a wall dividing East and West Berlin was torn down.
+Snippet B:
+The fall of the Berlin Wall symbolized the end of the Cold War.
+
+Question:
+Which wall fell in 1989 marking the Cold War’s end?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1989, a wall dividing East and West Berlin was torn down.
+Snippet B:
+The fall of the Berlin Wall symbolized the end of the Cold War.
+Distractor Snippet:
+The Great Wall of China still stands.
+
+Question:
+Which wall fell in 1989 symbolizing the end of the Cold War?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+In 1989, a wall dividing East and West Berlin was torn down.
+Snippet B:
+The fall of the Berlin Wall symbolized the end of the Cold War.
+Distractor Snippet:
+The Great Wall of China still stands.
+
+Question:
+Which wall fell in 1989 marking the Cold War’s end?
+
+Answer:
+
+================================================================================
+
+QID: HIST009 | Domain: history
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+China’s first emperor unified the country in 221 BCE.
+Snippet B:
+His name was Qin Shi Huang.
+
+Question:
+Who was the first emperor of China?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+China’s first emperor unified the country in 221 BCE.
+Snippet B:
+His name was Qin Shi Huang.
+
+Question:
+Who was China’s first emperor?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+China’s first emperor unified the country in 221 BCE.
+Snippet B:
+His name was Qin Shi Huang.
+Distractor Snippet:
+Confucius was a philosopher, not an emperor.
+
+Question:
+Who was the first emperor of China?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+China’s first emperor unified the country in 221 BCE.
+Snippet B:
+His name was Qin Shi Huang.
+Distractor Snippet:
+Confucius was a philosopher, not an emperor.
+
+Question:
+Who was China’s first emperor?
+
+Answer:
+
+================================================================================

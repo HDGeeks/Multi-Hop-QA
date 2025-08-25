@@ -1,0 +1,515 @@
+# Domain: science | Items: 8
+# Settings: gold, para, dist, para_dist
+================================================================================
+
+QID: SCI001 | Domain: science
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Water is composed of hydrogen and oxygen.
+Snippet B:
+Its formula is H2O.
+
+Question:
+What is the chemical symbol for water?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Water is composed of hydrogen and oxygen.
+Snippet B:
+Its formula is H2O.
+
+Question:
+What is water’s chemical formula?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Water is composed of hydrogen and oxygen.
+Snippet B:
+Its formula is H2O.
+Distractor Snippet:
+O2 is the formula for oxygen.
+
+Question:
+What is the chemical symbol for water?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Water is composed of hydrogen and oxygen.
+Snippet B:
+Its formula is H2O.
+Distractor Snippet:
+O2 is the formula for oxygen.
+
+Question:
+What is water’s chemical formula?
+
+Answer:
+
+================================================================================
+
+QID: SCI002 | Domain: science
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Mars is the fourth planet from the Sun.
+Snippet B:
+It is called the Red Planet due to its iron oxide surface.
+
+Question:
+Which planet is known as the Red Planet?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Mars is the fourth planet from the Sun.
+Snippet B:
+It is called the Red Planet due to its iron oxide surface.
+
+Question:
+Which planet is known as the Red Planet?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Mars is the fourth planet from the Sun.
+Snippet B:
+It is called the Red Planet due to its iron oxide surface.
+Distractor Snippet:
+Venus is sometimes called Earth’s twin.
+
+Question:
+Which planet is known as the Red Planet?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Mars is the fourth planet from the Sun.
+Snippet B:
+It is called the Red Planet due to its iron oxide surface.
+Distractor Snippet:
+Venus is sometimes called Earth’s twin.
+
+Question:
+Which planet is known as the Red Planet?
+
+Answer:
+
+================================================================================
+
+QID: SCI003 | Domain: science
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The theory of relativity revolutionized physics.
+Snippet B:
+It was proposed by Albert Einstein in 1905.
+
+Question:
+Who proposed the theory of relativity?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The theory of relativity revolutionized physics.
+Snippet B:
+It was proposed by Albert Einstein in 1905.
+
+Question:
+Who developed the theory of relativity?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The theory of relativity revolutionized physics.
+Snippet B:
+It was proposed by Albert Einstein in 1905.
+Distractor Snippet:
+Isaac Newton formulated the laws of motion.
+
+Question:
+Who proposed the theory of relativity?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The theory of relativity revolutionized physics.
+Snippet B:
+It was proposed by Albert Einstein in 1905.
+Distractor Snippet:
+Isaac Newton formulated the laws of motion.
+
+Question:
+Who developed the theory of relativity?
+
+Answer:
+
+================================================================================
+
+QID: SCI004 | Domain: science
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Humans inhale oxygen.
+Snippet B:
+They exhale carbon dioxide during respiration.
+
+Question:
+What gas do humans exhale in respiration?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Humans inhale oxygen.
+Snippet B:
+They exhale carbon dioxide during respiration.
+
+Question:
+Which gas do humans breathe out during respiration?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Humans inhale oxygen.
+Snippet B:
+They exhale carbon dioxide during respiration.
+Distractor Snippet:
+Helium is an inert gas not used in respiration.
+
+Question:
+What gas do humans exhale in respiration?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Humans inhale oxygen.
+Snippet B:
+They exhale carbon dioxide during respiration.
+Distractor Snippet:
+Helium is an inert gas not used in respiration.
+
+Question:
+Which gas do humans breathe out during respiration?
+
+Answer:
+
+================================================================================
+
+QID: SCI005 | Domain: science
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Atoms are composed of protons, neutrons, and electrons.
+Snippet B:
+Electrons carry a negative charge.
+
+Question:
+Which particle carries a negative charge?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Atoms are composed of protons, neutrons, and electrons.
+Snippet B:
+Electrons carry a negative charge.
+
+Question:
+Which subatomic particle has a negative charge?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Atoms are composed of protons, neutrons, and electrons.
+Snippet B:
+Electrons carry a negative charge.
+Distractor Snippet:
+Protons carry a positive charge.
+
+Question:
+Which particle carries a negative charge?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Atoms are composed of protons, neutrons, and electrons.
+Snippet B:
+Electrons carry a negative charge.
+Distractor Snippet:
+Protons carry a positive charge.
+
+Question:
+Which subatomic particle has a negative charge?
+
+Answer:
+
+================================================================================
+
+QID: SCI006 | Domain: science
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Penicillin was discovered accidentally from mold.
+Snippet B:
+The discoverer was Alexander Fleming in 1928.
+
+Question:
+Who discovered penicillin?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Penicillin was discovered accidentally from mold.
+Snippet B:
+The discoverer was Alexander Fleming in 1928.
+
+Question:
+Who discovered the antibiotic penicillin?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Penicillin was discovered accidentally from mold.
+Snippet B:
+The discoverer was Alexander Fleming in 1928.
+Distractor Snippet:
+Louis Pasteur studied vaccination.
+
+Question:
+Who discovered penicillin?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Penicillin was discovered accidentally from mold.
+Snippet B:
+The discoverer was Alexander Fleming in 1928.
+Distractor Snippet:
+Louis Pasteur studied vaccination.
+
+Question:
+Who discovered the antibiotic penicillin?
+
+Answer:
+
+================================================================================
+
+QID: SCI007 | Domain: science
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Cells contain organelles such as mitochondria.
+Snippet B:
+Mitochondria produce energy (ATP).
+
+Question:
+What is the powerhouse of the cell?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Cells contain organelles such as mitochondria.
+Snippet B:
+Mitochondria produce energy (ATP).
+
+Question:
+Which cell organelle is called the powerhouse?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Cells contain organelles such as mitochondria.
+Snippet B:
+Mitochondria produce energy (ATP).
+Distractor Snippet:
+The nucleus stores DNA.
+
+Question:
+What is the powerhouse of the cell?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+Cells contain organelles such as mitochondria.
+Snippet B:
+Mitochondria produce energy (ATP).
+Distractor Snippet:
+The nucleus stores DNA.
+
+Question:
+Which cell organelle is called the powerhouse?
+
+Answer:
+
+================================================================================
+
+QID: SCI008 | Domain: science
+--------------------------------------------------------------------------------
+[GOLD]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The element with atomic number 6 is carbon.
+Snippet B:
+Carbon is essential to organic chemistry.
+
+Question:
+Which element has the atomic number 6?
+
+Answer:
+
+[PARA]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The element with atomic number 6 is carbon.
+Snippet B:
+Carbon is essential to organic chemistry.
+
+Question:
+Which element has atomic number six?
+
+Answer:
+
+[DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The element with atomic number 6 is carbon.
+Snippet B:
+Carbon is essential to organic chemistry.
+Distractor Snippet:
+Hydrogen is atomic number 1.
+
+Question:
+Which element has the atomic number 6?
+
+Answer:
+
+[PARA_DIST]
+Use the snippets to answer the question.
+Rules: Output only the final answer as a short span. No explanations.
+
+Snippet A:
+The element with atomic number 6 is carbon.
+Snippet B:
+Carbon is essential to organic chemistry.
+Distractor Snippet:
+Hydrogen is atomic number 1.
+
+Question:
+Which element has atomic number six?
+
+Answer:
+
+================================================================================
