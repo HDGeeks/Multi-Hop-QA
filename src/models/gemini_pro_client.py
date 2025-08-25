@@ -11,6 +11,7 @@ def query_gemini_pro(
     max_tokens: int = 64,
     timeout: int = 30,
     retries: int = 2,
+    model_override: Optional[str] = None,  # <-- add this
 ):
     """
     Normalized dict: version, output, finish_reason, usage, error
