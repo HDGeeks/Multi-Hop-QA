@@ -1,2 +1,0 @@
-model,n_items,bertscore_gold_median,bertscore_para_median,bertscore_dist_median,bertscore_para_dist_median,drop_bertscore_para_median_pp,drop_bertscore_dist_median_pp,drop_bertscore_para_dist_median_pp
-gpt4o,50,0.9999982118606567,0.9999978542327881,0.9999978542327881,0.9999963045120239,0.0,0.0,0.0
