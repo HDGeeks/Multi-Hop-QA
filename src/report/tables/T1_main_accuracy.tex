@@ -1,0 +1,18 @@
+\begin{table}[t]\centering
+\caption{Main accuracy by setting and model (EM and F1; \%).}
+\label{tab:main-accuracy}
+\begin{tabular}{lrrrrrr}
+\toprule
+Setting & Macro-Avg & gemini_pro & gpt4o & gpt4o_mini & llama31_8b & mistral7b \\
+\midrule
+Gold (EM) & 68.8 & 96.0 & 88.0 & 88.0 & 0.0 & 72.0 \\
+Gold+Distractor (EM) & 69.6 & 96.0 & 88.0 & 88.0 & 0.0 & 76.0 \\
+Gold+Paraphrase (EM) & 68.8 & 96.0 & 88.0 & 88.0 & 0.0 & 72.0 \\
+Gold+Paraphrase+Distractor (EM) & 69.6 & 96.0 & 88.0 & 88.0 & 0.0 & 76.0 \\
+Gold (F1) & 100.0 & 100.0 & 100.0 & 100.0 & 0.0 & 100.0 \\
+Gold+Distractor (F1) & 100.0 & 100.0 & 100.0 & 100.0 & 0.0 & 100.0 \\
+Gold+Paraphrase (F1) & 100.0 & 100.0 & 100.0 & 100.0 & 0.0 & 100.0 \\
+Gold+Paraphrase+Distractor (F1) & 100.0 & 100.0 & 100.0 & 100.0 & 0.0 & 100.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
