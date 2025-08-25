@@ -11,6 +11,7 @@ def query_openai_4o_mini(
     max_tokens: int = 64,
     timeout: int = 30,
     retries: int = 2,
+    model_override: Optional[str] = None,  
 ):
     """
     Returns a normalized dict:
