@@ -286,16 +286,20 @@ if __name__ == "__main__":
     from pathlib import Path
 
     # Adjust paths if needed
-    q_csv = Path("src/data/mhqa_questions.csv")
-    c_csv = Path("src/data/mhqa_context.csv")
-    p_csv = Path("src/data/mhqa_paraphrases.csv")
+    # q_csv = Path("src/data/mhqa_questions.csv")
+    # c_csv = Path("src/data/mhqa_context.csv")
+    # p_csv = Path("src/data/mhqa_paraphrases.csv")
+
+    q_csv = Path("src/data_50/mhqa_questions_50.csv")
+    c_csv = Path("src/data_50/mhqa_context_50.csv")
+    p_csv = Path("src/data_50/mhqa_paraphrases_50.csv")
 
     items = load_items(q_csv, c_csv, p_csv, shuffle=True, seed=42)
 
-    out_path = Path("src/results/preview.txt")
+    out_path = Path("src/data_50/preview_all.txt")
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", encoding="utf-8") as f:
-        for it in items[:5]:  # preview first 5
+        for it in items: 
             f.write(f"QID: {it.qid}\n")
             f.write(f"Domain: {it.domain}\n")
             f.write(f"Question: {it.question}\n")

@@ -1,0 +1,500 @@
+QID: POL006
+Domain: politics
+Question: Which organization was founded in 1945 to promote peace?
+Paraphrase: Which organization founded in 1945 aims to promote international peace and cooperation?
+Snippet A: An international organization formed after World War II sought to maintain peace and cooperation....
+Snippet B: This organization, founded in 1945, is the United Nations....
+Distractor: The League of Nations was founded after World War I and dissolved earlier....
+Answer: United Nations
+Aliases: UN
+----------------------------------------
+QID: POL004
+Domain: politics
+Question: What body serves as the upper chamber of the U.S. Congress?
+Paraphrase: What is the name of the upper chamber of the U.S. Congress?
+Snippet A: The U.S. Congress is bicameral, consisting of two chambers....
+Snippet B: The upper chamber is the United States Senate....
+Distractor: The House of Representatives is the lower chamber....
+Answer: Senate
+Aliases: US Senate
+----------------------------------------
+QID: SCI010
+Domain: science
+Question: What is the largest organ in the human body?
+Paraphrase: What is the largest organ of the human body by surface area?
+Snippet A: The human integumentary system includes the skin covering the body....
+Snippet B: By area, the skin is the largest organ of the human body....
+Distractor: The liver is often cited as the largest internal solid organ, not overall largest....
+Answer: Skin
+Aliases: Epidermis
+----------------------------------------
+QID: SCI002
+Domain: science
+Question: Which element has the atomic number 6?
+Paraphrase: Which element has atomic number 6?
+Snippet A: An element’s atomic number equals the number of protons in its nucleus....
+Snippet B: The element with atomic number 6 is carbon....
+Distractor: Nitrogen has atomic number 7, one higher than carbon....
+Answer: Carbon
+Aliases: C
+----------------------------------------
+QID: HIST005
+Domain: history
+Question: Who was the first emperor of a unified China?
+Paraphrase: Who became the first emperor after unifying China in 221 BCE?
+Snippet A: In 221 BCE, the state of Qin unified China after conquering rival states....
+Snippet B: Its king Ying Zheng took the title Qin Shi Huang, becoming the first emperor of a unified China....
+Distractor: Emperor Wu of Han expanded the Han Empire later, not the first unifier....
+Answer: Qin Shi Huang
+Aliases: Shi Huangdi
+----------------------------------------
+QID: GEO006
+Domain: geography
+Question: Which ocean is the deepest?
+Paraphrase: Which ocean contains the deepest oceanic trenches?
+Snippet A: The deepest oceanic trenches, including the Mariana Trench, are located in one major ocean....
+Snippet B: Therefore, the Pacific Ocean is the deepest....
+Distractor: The Atlantic Ocean contains deep trenches but not the very deepest....
+Answer: Pacific Ocean
+Aliases: Pacific
+----------------------------------------
+QID: POL007
+Domain: politics
+Question: What is the highest court in the United States?
+Paraphrase: What is the highest court in the United States?
+Snippet A: The U.S. federal judiciary is headed by its highest tribunal....
+Snippet B: The highest court in the United States is the Supreme Court....
+Distractor: Federal courts of appeals are intermediate courts below the Supreme Court....
+Answer: Supreme Court
+Aliases: SCOTUS
+----------------------------------------
+QID: HIST010
+Domain: history
+Question: Which ancient civilization built Machu Picchu?
+Paraphrase: Which civilization built Machu Picchu in the Andes?
+Snippet A: Machu Picchu is a 15th‑century citadel in the Andes of Peru....
+Snippet B: It was constructed by the Inca civilization, traditionally linked to the reign of Pachacuti....
+Distractor: Tikal is a major Maya site in Guatemala, not Inca....
+Answer: Inca
+Aliases: Incas
+----------------------------------------
+QID: POL010
+Domain: politics
+Question: Who became South Africa’s first Black president in 1994?
+Paraphrase: Who became South Africa’s first Black president in 1994?
+Snippet A: After the end of apartheid, South Africa held its first fully inclusive elections in 1994....
+Snippet B: Nelson Mandela was elected as the country’s first Black president that year....
+Distractor: Thabo Mbeki succeeded Mandela later, becoming president in 1999....
+Answer: Nelson Mandela
+Aliases: Mandela
+----------------------------------------
+QID: SCI007
+Domain: science
+Question: What particle carries a negative charge?
+Paraphrase: Which subatomic particle carries a negative charge?
+Snippet A: Atoms contain negatively charged electrons, positively charged protons, and neutral neutrons....
+Snippet B: The subatomic particle with negative charge is the electron....
+Distractor: Protons carry positive charge, the opposite of electrons....
+Answer: Electron
+Aliases: Electrons
+----------------------------------------
+QID: LIT002
+Domain: literature
+Question: Who wrote 'Pride and Prejudice'?
+Paraphrase: Who is the author of 'Pride and Prejudice'?
+Snippet A: A 19th‑century novel features Elizabeth Bennet and Mr. Darcy in a tale of manners and marriage....
+Snippet B: 'Pride and Prejudice' was written by Jane Austen....
+Distractor: Charlotte Brontë authored 'Jane Eyre,' not this novel....
+Answer: Jane Austen
+Aliases: Austen
+----------------------------------------
+QID: POL002
+Domain: politics
+Question: Who was the first female Prime Minister of the UK?
+Paraphrase: Who was the first woman to serve as Prime Minister of the United Kingdom?
+Snippet A: A 1979 general election in the UK brought the Conservative Party to power....
+Snippet B: Its leader Margaret Thatcher thus became the first female Prime Minister of the United Kingdom....
+Distractor: Indira Gandhi was India’s Prime Minister, not the UK’s....
+Answer: Margaret Thatcher
+Aliases: Thatcher, Iron Lady
+----------------------------------------
+QID: SCI003
+Domain: science
+Question: What gas do humans exhale during respiration?
+Paraphrase: What gas do humans primarily exhale during respiration?
+Snippet A: Cellular respiration in humans produces carbon dioxide as a waste product....
+Snippet B: Humans exhale carbon dioxide (CO2) during breathing....
+Distractor: Oxygen (O2) is primarily inhaled and used by tissues rather than exhaled....
+Answer: Carbon dioxide
+Aliases: CO2
+----------------------------------------
+QID: HIST004
+Domain: history
+Question: Who signed the Treaty of Versailles on behalf of France?
+Paraphrase: Which French leader signed the Treaty of Versailles for France in 1919?
+Snippet A: The Treaty of Versailles was signed in 1919 at the Paris Peace Conference by the Allied powers....
+Snippet B: France was represented and its delegation led by Prime Minister Georges Clemenceau, who signed the treaty....
+Distractor: Aristide Briand was a prominent French statesman but was not the principal signatory at Versailles in 1919....
+Answer: Georges Clemenceau
+Aliases: Clemenceau
+----------------------------------------
+QID: LIT010
+Domain: literature
+Question: Which poet wrote 'The Raven'?
+Paraphrase: Who wrote the poem 'The Raven'?
+Snippet A: A narrative poem with the refrain 'Nevermore' made its author famous in American literature....
+Snippet B: 'The Raven' was written by Edgar Allan Poe....
+Distractor: T. S. Eliot wrote 'The Waste Land,' not 'The Raven.'...
+Answer: Edgar Allan Poe
+Aliases: Poe
+----------------------------------------
+QID: LIT009
+Domain: literature
+Question: Who is the tragic king in Shakespeare’s play 'Macbeth'?
+Paraphrase: Who is the Scottish general who becomes king in a Shakespeare tragedy?
+Snippet A: A Shakespearean tragedy depicts a Scottish general’s bloody rise to the throne and disastrous fall....
+Snippet B: The tragic king in that play is Macbeth....
+Distractor: 'King Lear' is a different Shakespeare tragedy about an aging monarch....
+Answer: Macbeth
+Aliases: King Macbeth
+----------------------------------------
+QID: SCI001
+Domain: science
+Question: What is the chemical symbol for water?
+Paraphrase: What is the chemical formula for water?
+Snippet A: A water molecule consists of two hydrogen atoms bonded to one oxygen atom....
+Snippet B: The chemical formula that represents water is H2O....
+Distractor: Hydrogen peroxide has the formula H2O2, not water....
+Answer: H2O
+Aliases: H₂O
+----------------------------------------
+QID: POL005
+Domain: politics
+Question: Who was the first president of the United States?
+Paraphrase: Who was the first President of the United States?
+Snippet A: The first inauguration under the U.S. Constitution occurred in 1789 in New York City....
+Snippet B: The first President of the United States was George Washington....
+Distractor: John Adams was the first vice president and later became the second president....
+Answer: George Washington
+Aliases: Washington
+----------------------------------------
+QID: LIT006
+Domain: literature
+Question: Who created the detective Sherlock Holmes?
+Paraphrase: Who created the detective who lives at 221B Baker Street?
+Snippet A: A British author created a brilliant detective living at 221B Baker Street....
+Snippet B: Sherlock Holmes was created by Arthur Conan Doyle....
+Distractor: Agatha Christie created Hercule Poirot and Miss Marple, not Holmes....
+Answer: Arthur Conan Doyle
+Aliases: Conan Doyle
+----------------------------------------
+QID: HIST001
+Domain: history
+Question: Who was the U.S. president during the Cuban Missile Crisis?
+Paraphrase: Which U.S. president was in office during the 1962 Cuban Missile Crisis?
+Snippet A: In October 1962 the United States and the Soviet Union faced off over missiles in Cuba, a confrontation known as the Cuban Missile Crisis....
+Snippet B: At that time, the sitting U.S. president (January 1961–November 1963) was John F. Kennedy....
+Distractor: Dwight D. Eisenhower left office in 1961 after overseeing the 1960 U‑2 incident....
+Answer: John F. Kennedy
+Aliases: Kennedy, JFK
+----------------------------------------
+QID: GEO004
+Domain: geography
+Question: Which continent is known as the 'Dark Continent'?
+Paraphrase: Which continent was historically labeled the 'Dark Continent' in 19th‑century Europe?
+Snippet A: In 19th‑century European writings, one continent was pejoratively referred to as the 'Dark Continent.'...
+Snippet B: That label was applied to Africa....
+Distractor: Australia was sometimes called the 'unknown south land' but not the 'Dark Continent.'...
+Answer: Africa
+Aliases: African continent
+----------------------------------------
+QID: SCI009
+Domain: science
+Question: What is the process by which plants make food?
+Paraphrase: What is the name of the process plants use to make food from light?
+Snippet A: Using light energy, plants convert carbon dioxide and water into sugars and oxygen....
+Snippet B: This food‑producing process is called photosynthesis....
+Distractor: Cellular respiration breaks down sugars; it does not produce them from light....
+Answer: Photosynthesis
+Aliases: Photo-synthesis
+----------------------------------------
+QID: LIT004
+Domain: literature
+Question: Who wrote 'The Odyssey'?
+Paraphrase: Who is credited with composing 'The Odyssey'?
+Snippet A: An ancient Greek epic poem recounts Odysseus’s long voyage home after the Trojan War....
+Snippet B: This epic, 'The Odyssey,' is attributed to Homer....
+Distractor: Virgil wrote the 'Aeneid,' a Roman epic, not 'The Odyssey.'...
+Answer: Homer
+Aliases: Poet Homer
+----------------------------------------
+QID: GEO009
+Domain: geography
+Question: Which sea separates Europe and Africa?
+Paraphrase: What is the name of the nearly enclosed sea between southern Europe and North Africa?
+Snippet A: A nearly enclosed sea connects the Atlantic and separates southern Europe from North Africa....
+Snippet B: This is the Mediterranean Sea....
+Distractor: The Black Sea lies between southeastern Europe and western Asia....
+Answer: Mediterranean Sea
+Aliases: Mediterranean
+----------------------------------------
+QID: GEO002
+Domain: geography
+Question: Which river is the longest in the world?
+Paraphrase: Which river is widely cited as the longest in the world?
+Snippet A: The Nile flows northward through northeastern Africa into the Mediterranean Sea....
+Snippet B: It is widely cited as the world’s longest river at about 6,650 km....
+Distractor: Some measurements argue the Amazon may be longer depending on sources....
+Answer: Nile
+Aliases: River Nile
+----------------------------------------
+QID: LIT001
+Domain: literature
+Question: Who wrote 'Romeo and Juliet'?
+Paraphrase: Who wrote the tragedy set in Verona about star‑crossed lovers?
+Snippet A: A tragic love story set in Verona is among the most famous works of an English playwright....
+Snippet B: 'Romeo and Juliet' was written by William Shakespeare....
+Distractor: Christopher Marlowe was a contemporary dramatist but not the author of this play....
+Answer: William Shakespeare
+Aliases: Shakespeare
+----------------------------------------
+QID: POL009
+Domain: politics
+Question: What is the term for rule by a king or queen?
+Paraphrase: What is the form of government headed by a king or queen called?
+Snippet A: A system where a state is headed by a king or queen, typically hereditary, is one form of government....
+Snippet B: That form is called a monarchy....
+Distractor: An aristocracy denotes rule by a privileged class, not necessarily a single monarch....
+Answer: Monarchy
+Aliases: Monarchies
+----------------------------------------
+QID: POL001
+Domain: politics
+Question: Which political system is based on rule by the people?
+Paraphrase: What is the term for a government run by the people directly or via representatives?
+Snippet A: In this political system, citizens hold power directly or through elected representatives....
+Snippet B: Government by the people is termed democracy....
+Distractor: An autocracy concentrates power in one ruler rather than the people....
+Answer: Democracy
+Aliases: Democratic system
+----------------------------------------
+QID: POL003
+Domain: politics
+Question: Which U.S. document begins with 'We the People'?
+Paraphrase: Which U.S. document opens with the words 'We the People'?
+Snippet A: The preamble that begins with the words 'We the People' introduces a foundational U.S. document....
+Snippet B: Those words open the Constitution of the United States....
+Distractor: The Declaration of Independence begins with a different preamble in 1776....
+Answer: U.S. Constitution
+Aliases: Constitution
+----------------------------------------
+QID: GEO003
+Domain: geography
+Question: What is the capital of Japan?
+Paraphrase: What is the capital city of Japan?
+Snippet A: Japan’s national government is based in its capital city on Honshu....
+Snippet B: The capital of Japan is Tokyo....
+Distractor: Kyoto is a historic former capital, not the current one....
+Answer: Tokyo
+Aliases: Tokyo City
+----------------------------------------
+QID: GEO007
+Domain: geography
+Question: What is the smallest country in the world?
+Paraphrase: Which independent state is the smallest by both area and population?
+Snippet A: The smallest independent state by both area and population is an enclave within Rome....
+Snippet B: This state is Vatican City....
+Distractor: Monaco is very small but larger than Vatican City....
+Answer: Vatican City
+Aliases: Holy See
+----------------------------------------
+QID: LIT007
+Domain: literature
+Question: Which book series features Harry Potter?
+Paraphrase: What is the title of the series about a boy wizard at a magic school?
+Snippet A: A fantasy series follows a young wizard attending a school of witchcraft and wizardry....
+Snippet B: This book series is 'Harry Potter.'...
+Distractor: 'The Chronicles of Narnia' is a separate fantasy series by C. S. Lewis....
+Answer: Harry Potter
+Aliases: HP
+----------------------------------------
+QID: LIT003
+Domain: literature
+Question: What is the name of the hobbit who carries the One Ring?
+Paraphrase: Who is the hobbit that carries the One Ring to Mount Doom?
+Snippet A: In Tolkien’s epic, a hobbit carries the One Ring toward Mount Doom to destroy it....
+Snippet B: The ring‑bearer in 'The Lord of the Rings' is Frodo Baggins....
+Distractor: Bilbo Baggins carried the ring earlier in 'The Hobbit,' not in the main quest to Mordor....
+Answer: Frodo Baggins
+Aliases: Frodo
+----------------------------------------
+QID: GEO005
+Domain: geography
+Question: Mount Everest lies on the border of Nepal and which country?
+Paraphrase: Mount Everest lies on the border of Nepal and which country?
+Snippet A: Mount Everest straddles the frontier between Nepal and another country’s Tibet Autonomous Region....
+Snippet B: Thus, Everest lies on the border of Nepal and China....
+Distractor: India borders Nepal but not at Everest’s summit region....
+Answer: China
+Aliases: Tibet
+----------------------------------------
+QID: SCI004
+Domain: science
+Question: Who proposed the theory of general relativity?
+Paraphrase: Who proposed the theory of general relativity?
+Snippet A: A 1915 theory described gravity as the curvature of spacetime caused by mass and energy....
+Snippet B: This theory of general relativity was developed by Albert Einstein....
+Distractor: Isaac Newton’s theory of gravitation preceded relativity and uses forces, not curved spacetime....
+Answer: Albert Einstein
+Aliases: Einstein
+----------------------------------------
+QID: GEO010
+Domain: geography
+Question: What is the capital city of Australia?
+Paraphrase: What is the capital of Australia?
+Snippet A: Australia’s planned capital lies inland between Sydney and Melbourne....
+Snippet B: The capital city of Australia is Canberra....
+Distractor: Sydney is the largest city but not the capital....
+Answer: Canberra
+Aliases: 
+----------------------------------------
+QID: GEO008
+Domain: geography
+Question: Which U.S. state is the largest by area?
+Paraphrase: Which U.S. state is the largest by total area?
+Snippet A: By total area, one non‑contiguous U.S. state far exceeds all others....
+Snippet B: Alaska is the largest U.S. state by area....
+Distractor: Texas is the second‑largest state by area....
+Answer: Alaska
+Aliases: AK
+----------------------------------------
+QID: HIST003
+Domain: history
+Question: Who was the British monarch when the United States declared independence?
+Paraphrase: Who was the British monarch when the colonies declared independence in 1776?
+Snippet A: The American Declaration of Independence was issued in 1776 against the British crown....
+Snippet B: The British monarch in 1776 was King George III (reigned 1760–1820)....
+Distractor: Lord North served as British Prime Minister during the American Revolution....
+Answer: George III
+Aliases: King George III, George 3
+----------------------------------------
+QID: POL008
+Domain: politics
+Question: Which treaty established the European Union?
+Paraphrase: Which 1992 treaty established the European Union?
+Snippet A: A 1992 treaty signed in Maastricht created a new political and economic union....
+Snippet B: This Treaty on European Union established the European Union (EU)....
+Distractor: The Lisbon Treaty reformed the EU later but did not originally establish it....
+Answer: Maastricht Treaty
+Aliases: Treaty on European Union
+----------------------------------------
+QID: LIT008
+Domain: literature
+Question: Who wrote '1984'?
+Paraphrase: Who wrote the dystopian novel featuring Big Brother?
+Snippet A: A dystopian novel features Big Brother and the Thought Police in a totalitarian state....
+Snippet B: '1984' was written by George Orwell....
+Distractor: Aldous Huxley wrote 'Brave New World,' a different dystopia....
+Answer: George Orwell
+Aliases: Orwell
+----------------------------------------
+QID: HIST006
+Domain: history
+Question: Which war began after the assassination of Archduke Franz Ferdinand?
+Paraphrase: What event in Sarajevo set off the chain of events leading to World War I?
+Snippet A: Archduke Franz Ferdinand was assassinated in Sarajevo in June 1914....
+Snippet B: This event triggered alliances and mobilizations that led to the outbreak of World War I....
+Distractor: The Crimean War occurred in the 1850s and was unrelated to the 1914 assassination....
+Answer: World War I
+Aliases: First World War, WWI
+----------------------------------------
+QID: LIT005
+Domain: literature
+Question: Which novel begins with the line 'Call me Ishmael'?
+Paraphrase: Which novel begins with the line 'Call me Ishmael'?
+Snippet A: A novel opens with the famous line 'Call me Ishmael.'...
+Snippet B: That opening belongs to Herman Melville’s 'Moby‑Dick.'...
+Distractor: 'The Old Man and the Sea' is a novella by Ernest Hemingway with a different opening....
+Answer: Moby-Dick
+Aliases: Moby Dick
+----------------------------------------
+QID: HIST007
+Domain: history
+Question: Who led the Soviet Union during World War II?
+Paraphrase: Who led the Soviet Union during World War II?
+Snippet A: After consolidating power in the 1930s, Joseph Stalin led the Soviet Union during the Great Patriotic War (1941–1945)....
+Snippet B: Thus, the USSR’s leader during World War II was Joseph Stalin....
+Distractor: Nikita Khrushchev led the USSR later, primarily in the late 1950s and early 1960s....
+Answer: Joseph Stalin
+Aliases: Stalin
+----------------------------------------
+QID: HIST009
+Domain: history
+Question: Who was the first female Prime Minister of the United Kingdom?
+Paraphrase: Who became the UK’s first female Prime Minister in 1979?
+Snippet A: In 1979, the Conservative Party won the UK general election....
+Snippet B: Its leader, Margaret Thatcher, became the first woman to serve as Prime Minister of the United Kingdom....
+Distractor: Theresa May became Prime Minister in 2016, not the first female PM....
+Answer: Margaret Thatcher
+Aliases: Thatcher, Iron Lady
+----------------------------------------
+QID: SCI005
+Domain: science
+Question: What is the powerhouse of the cell?
+Paraphrase: Which organelle is known as the powerhouse of the cell?
+Snippet A: Cells generate most ATP within an organelle responsible for aerobic respiration....
+Snippet B: This organelle—the mitochondrion—is commonly called the powerhouse of the cell....
+Distractor: The nucleus stores genetic material but does not produce most ATP....
+Answer: Mitochondria
+Aliases: Mitochondrion
+----------------------------------------
+QID: SCI006
+Domain: science
+Question: What planet is known as the Red Planet?
+Paraphrase: Which planet is nicknamed the Red Planet?
+Snippet A: The fourth planet from the Sun appears reddish because of iron oxide on its surface....
+Snippet B: This world is nicknamed the Red Planet—Mars....
+Distractor: Jupiter is known for the Great Red Spot but is not called the Red Planet....
+Answer: Mars
+Aliases: Planet Mars
+----------------------------------------
+QID: SCI008
+Domain: science
+Question: Which vitamin is produced when skin is exposed to sunlight?
+Paraphrase: Which vitamin is synthesized in human skin under sunlight?
+Snippet A: Ultraviolet B radiation on skin initiates synthesis of cholecalciferol....
+Snippet B: This process produces Vitamin D in the human body....
+Distractor: Vitamin C must be obtained from diet and is not synthesized by skin....
+Answer: Vitamin D
+Aliases: Vit D
+----------------------------------------
+QID: HIST002
+Domain: history
+Question: Which empire built the Colosseum in Rome?
+Paraphrase: Under which dynasty was Rome’s Colosseum constructed?
+Snippet A: The Colosseum is a large amphitheatre in Rome constructed in the first century CE....
+Snippet B: It was built under the Flavian emperors of the Roman Empire, beginning with Vespasian....
+Distractor: The Theatre of Dionysus in Athens is a major Greek theatre, not the Colosseum....
+Answer: Roman Empire
+Aliases: Rome, Romans
+----------------------------------------
+QID: HIST008
+Domain: history
+Question: Which U.S. president abolished slavery?
+Paraphrase: Which U.S. president issued the Emancipation Proclamation?
+Snippet A: In 1863, the Emancipation Proclamation declared enslaved people in rebellious states to be free....
+Snippet B: President Abraham Lincoln pressed for the Thirteenth Amendment (1865), which abolished slavery nationwide....
+Distractor: Andrew Johnson succeeded Lincoln after his assassination but did not author the Proclamation....
+Answer: Abraham Lincoln
+Aliases: Lincoln
+----------------------------------------
+QID: GEO001
+Domain: geography
+Question: What is the largest desert in the world?
+Paraphrase: What is the world’s largest hot desert?
+Snippet A: The Sahara covers much of North Africa and is Earth’s largest hot desert by area....
+Snippet B: Among hot deserts, the Sahara is the largest....
+Distractor: Some classifications call Antarctica the largest desert overall due to low precipitation....
+Answer: Sahara
+Aliases: Sahara Desert
+----------------------------------------
