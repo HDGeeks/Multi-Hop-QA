@@ -14,7 +14,8 @@ fi
 # shellcheck disable=SC1091
 source "$ROOT/.venv/bin/activate"
 
-MODEL="gpt4o"
+# ---------- args ----------
+MODEL="${1:-gpt4o}"
 
 RAW_DIR="$ROOT/src/results/$MODEL"
 METRICS_DIR="$ROOT/src/results/$MODEL/metrics"
@@ -26,23 +27,17 @@ CANDIDATES=(
   "$ROOT/src/data/mhqa_questions.csv"
   "$ROOT/datasets/mhqa_questions.csv"
 )
-
 GOLD_CSV=""
 for p in "${CANDIDATES[@]}"; do
-  if [ -f "$p" ]; then
-    GOLD_CSV="$p"
-    break
-  fi
+  if [ -f "$p" ]; then GOLD_CSV="$p"; break; fi
 done
-
 if [ -z "${GOLD_CSV:-}" ]; then
   echo "❌ Gold CSV not found. Expected at one of:"
   printf '   - %s\n' "${CANDIDATES[@]}"
   echo "Tip: move or symlink your file to: data/mhqa_questions.csv"
   exit 1
 fi
-
-# turn into a repo-root-relative path for the Python module
+# repo-root-relative for Python
 GOLD_CSV_REL="${GOLD_CSV#$ROOT/}"
 
 # ---------- sanity: raw files ----------
