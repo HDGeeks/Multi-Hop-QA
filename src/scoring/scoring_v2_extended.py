@@ -1,9 +1,8 @@
 # src/scoring/scoring_v2_extended.py
-import argparse, json
+import argparse, json, re
 from pathlib import Path
+from collections import Counter
 import pandas as pd
-import re
-from collections import defaultdict
 
 # ---------- Normalization ----------
 def normalize(text: str) -> str:
@@ -15,15 +14,17 @@ def normalize(text: str) -> str:
     return t
 
 def f1_score(pred: str, gold: str) -> float:
-    p_tokens = pred.split()
-    g_tokens = gold.split()
-    if not p_tokens or not g_tokens:
+    """Token F1 using multiset overlap (proper precision/recall)."""
+    p = pred.split()
+    g = gold.split()
+    if not p or not g:
         return 0.0
-    common = set(p_tokens) & set(g_tokens)
-    if not common:
+    cp, cg = Counter(p), Counter(g)
+    overlap = sum((cp & cg).values())
+    if overlap == 0:
         return 0.0
-    precision = len(common) / len(p_tokens)
-    recall = len(common) / len(g_tokens)
+    precision = overlap / len(p)
+    recall    = overlap / len(g)
     return 2 * precision * recall / (precision + recall)
 
 # ---------- Gold Loader ----------
@@ -33,111 +34,137 @@ def load_gold(gold_csv: Path):
     for _, row in df.iterrows():
         qid = str(row["qid"])
         ans = normalize(str(row["answer"]))
-        aliases = [normalize(a) for a in str(row.get("aliases", "")).split("|") if a.strip()]
-        refs = [ans] + aliases
-        gold_map[qid] = {"answer": ans, "aliases": aliases, "refs": refs, "domain": row["domain"]}
+        aliases_raw = str(row.get("aliases", "") or "")
+        aliases = [normalize(a) for a in aliases_raw.split("|") if a.strip()]
+        refs = [x for x in [ans, *aliases] if x] or [""]
+        gold_map[qid] = {
+            "answer": ans,
+            "aliases": aliases,
+            "refs": refs,
+            "domain": row["domain"],
+        }
     return gold_map
 
 # ---------- Main ----------
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--glob", required=True, help="Glob pattern for jsonl files")
+    ap = argparse.ArgumentParser(description="Lightweight scoring (EM/F1), drops, domains.")
+    ap.add_argument("--glob", required=True, help='e.g. "src/results_50/gpt4o/*.jsonl"')
     ap.add_argument("--gold-csv", required=True)
     ap.add_argument("--out-json", required=True)
     args = ap.parse_args()
 
-    # Load
     paths = sorted(Path().glob(args.glob))
     if not paths:
         raise FileNotFoundError(f"No files matched {args.glob}")
 
+    # Load raw rows
     rows = []
     for p in paths:
         with open(p, "r", encoding="utf-8") as f:
             for line in f:
-                rows.append(json.loads(line))
+                line = line.strip()
+                if line:
+                    rows.append(json.loads(line))
+    if not rows:
+        raise RuntimeError("No rows found in matched JSONL files.")
     df = pd.DataFrame(rows)
+
+    # Basic column sanity
+    for col in ["qid", "setting", "output"]:
+        if col not in df.columns:
+            raise ValueError(f"Missing column '{col}' in input JSONL.")
 
     gold_map = load_gold(Path(args.gold_csv))
 
-    # Score
-    ems, f1s = [], []
-    results = []
-    for _, row in df.iterrows():
-        qid = str(row["qid"])
-        pred = normalize(str(row.get("output", "")))
-        refs = gold_map.get(qid, {}).get("refs", [""])
+    # Per-response scoring
+    scored_rows = []
+    for _, r in df.iterrows():
+        qid = str(r["qid"])
+        setting = str(r["setting"]).lower().strip()
+        pred = normalize(str(r.get("output", "")))
+        gold_entry = gold_map.get(qid, {"refs": [""], "domain": "unknown"})
+        refs = gold_entry["refs"] or [""]
         best_em = 0
         best_f1 = 0.0
         for ref in refs:
             if pred == ref:
                 best_em = 1
             best_f1 = max(best_f1, f1_score(pred, ref))
-        results.append({
+        scored_rows.append({
             "qid": qid,
-            "domain": gold_map.get(qid, {}).get("domain", "unknown"),
-            "setting": row["setting"],
+            "domain": gold_entry["domain"],
+            "setting": setting,
             "em": best_em,
             "f1": best_f1,
         })
-        ems.append(best_em); f1s.append(best_f1)
-
-    scored = pd.DataFrame(results)
+    scored = pd.DataFrame(scored_rows)
 
     # ---------- Aggregates ----------
     summary = {}
 
-    # Overall
+    # Overall micro
     summary["overall"] = {
-        "exact_match_percent": 100 * sum(ems) / len(ems),
-        "f1_percent": 100 * (sum(f1s) / len(f1s)),
-        "n": len(ems),
+        "exact_match_percent": 100.0 * scored["em"].mean(),
+        "f1_percent":         100.0 * scored["f1"].mean(),
+        "n": int(len(scored)),
     }
 
-    # By setting
+    # By setting (ensure all 4 keys exist)
     by_setting = scored.groupby("setting").agg(
         em_mean=("em", "mean"),
-        f1_mean=("f1", "mean")
-    ).reset_index()
-    summary["by_setting"] = {
-        row["setting"]: {
-            "em_percent": 100 * row["em_mean"],
-            "f1_percent": 100 * row["f1_mean"],
-        }
-        for _, row in by_setting.iterrows()
-    }
+        f1_mean=("f1", "mean"),
+        n=("qid", "count")
+    )
+    settings = ["gold", "para", "dist", "para_dist"]
+    summary["by_setting"] = {}
+    for s in settings:
+        if s in by_setting.index:
+            row = by_setting.loc[s]
+            summary["by_setting"][s] = {
+                "em_percent": 100.0 * float(row["em_mean"]),
+                "f1_percent": 100.0 * float(row["f1_mean"]),
+                "n": int(row["n"]),
+            }
+        else:
+            summary["by_setting"][s] = {"em_percent": None, "f1_percent": None, "n": 0}
 
-    # By domain
+    # By domain (micro across all settings)
     by_domain = scored.groupby("domain").agg(
         em_mean=("em", "mean"),
-        f1_mean=("f1", "mean")
+        f1_mean=("f1", "mean"),
+        n=("qid", "count")
     ).reset_index()
     summary["by_domain"] = {
         row["domain"]: {
-            "em_percent": 100 * row["em_mean"],
-            "f1_percent": 100 * row["f1_mean"],
+            "em_percent": 100.0 * float(row["em_mean"]),
+            "f1_percent": 100.0 * float(row["f1_mean"]),
+            "n": int(row["n"]),
         }
         for _, row in by_domain.iterrows()
     }
 
-    # Perturbation drops (relative to gold)
+    # Drops vs GOLD (positive = degradation in pp)
     drops = {}
-    gold_row = summary["by_setting"].get("gold", {})
-    gold_em = gold_row.get("em_percent", 0)
-    gold_f1 = gold_row.get("f1_percent", 0)
-    for setting in ["para", "dist", "para_dist"]:
-        if setting in summary["by_setting"]:
-            drops[setting] = {
-                "em_drop_pp": summary["by_setting"][setting]["em_percent"] - gold_em,
-                "f1_drop_pp": summary["by_setting"][setting]["f1_percent"] - gold_f1,
+    gold_em = summary["by_setting"]["gold"]["em_percent"] or 0.0
+    gold_f1 = summary["by_setting"]["gold"]["f1_percent"] or 0.0
+    for s in ["para", "dist", "para_dist"]:
+        s_em = summary["by_setting"][s]["em_percent"]
+        s_f1 = summary["by_setting"][s]["f1_percent"]
+        if s_em is None or s_f1 is None:
+            drops[s] = {"em_drop_pp": None, "f1_drop_pp": None}
+        else:
+            drops[s] = {
+                "em_drop_pp": gold_em - s_em,  # positive is worse
+                "f1_drop_pp": gold_f1 - s_f1,
             }
     summary["drops_vs_gold"] = drops
 
     # Save
-    with open(args.out_json, "w", encoding="utf-8") as f:
+    out_path = Path(args.out_json)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with out_path.open("w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2)
-
-    print(f"✅ scoring_v2_extended complete → {args.out_json}")
+    print(f"✅ scoring_v2_extended complete → {out_path}")
 
 if __name__ == "__main__":
     main()
