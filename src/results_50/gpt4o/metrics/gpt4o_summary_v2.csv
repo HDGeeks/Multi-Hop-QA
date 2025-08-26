@@ -1,5 +1,0 @@
-model,setting,em_mean_x,f1_median_x,latency_median_ms,refusal_rate,invalid_rate,stability_median,em_mean_y,f1_median_y,drop_em_pp,drop_f1_pp
-gpt4o,dist,82.0,100.0,815.5,0.0,0.0,0.0,82.0,100.0,-4.0,0.0
-gpt4o,gold,86.0,100.0,783.0,0.0,0.0,0.0,,,0.0,0.0
-gpt4o,para,82.0,100.0,715.0,0.0,0.0,0.0,82.0,100.0,-4.0,0.0
-gpt4o,para_dist,78.0,100.0,806.5,0.0,0.0,0.0,78.0,100.0,-8.0,0.0

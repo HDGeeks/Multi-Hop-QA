@@ -1,64 +1,34 @@
 {
-  "counts_by_setting": {
-    "gold": 50,
-    "para": 50,
-    "dist": 50,
-    "para_dist": 50
+  "micro_overall": {
+    "exact_match_percent": 82.16666666666667,
+    "f1_percent": 91.72619047619048,
+    "n": 600
   },
-  "em_f1_by_setting": {
+  "by_setting": {
+    "dist": {
+      "exact_match_percent": 82.66666666666667,
+      "f1_percent": 92.36825396825395,
+      "n": 150
+    },
     "gold": {
-      "exact_match": 86.0,
-      "f1": 94.39999999999999
+      "exact_match_percent": 86.0,
+      "f1_percent": 94.39999999999999,
+      "n": 150
     },
     "para": {
-      "exact_match": 82.0,
-      "f1": 90.86666666666666
-    },
-    "dist": {
-      "exact_match": 82.0,
-      "f1": 92.17142857142856
+      "exact_match_percent": 81.33333333333333,
+      "f1_percent": 90.46666666666667,
+      "n": 150
     },
     "para_dist": {
-      "exact_match": 80.0,
-      "f1": 90.10476190476189
+      "exact_match_percent": 78.66666666666666,
+      "f1_percent": 89.66984126984127,
+      "n": 150
     }
   },
-  "invalid_rate_by_setting": {
-    "gold": 0.0,
-    "para": 0.0,
-    "dist": 0.0,
-    "para_dist": 0.0
-  },
-  "refusal_rate_by_setting": {
-    "gold": 0.0,
-    "para": 0.0,
-    "dist": 0.0,
-    "para_dist": 0.0
-  },
-  "latency_by_setting": {
-    "gold": {
-      "avg_ms": 958.4,
-      "p50_ms": 854.5,
-      "p90_ms": 1494
-    },
-    "para": {
-      "avg_ms": 1003.8,
-      "p50_ms": 895.0,
-      "p90_ms": 1359
-    },
-    "dist": {
-      "avg_ms": 898.18,
-      "p50_ms": 818.5,
-      "p90_ms": 1228
-    },
-    "para_dist": {
-      "avg_ms": 880.7,
-      "p50_ms": 779.5,
-      "p90_ms": 1121
-    }
-  },
-  "overall": {
-    "exact_match": 82.5,
-    "f1": 91.8857142857143
+  "paths": {
+    "per_run_csv": "src/results_50/gpt4o/metrics/per_run_v2.csv",
+    "aggregated_items_csv": "src/results_50/gpt4o/metrics/aggregated_items_v2.csv",
+    "summary_csv": "src/results_50/gpt4o/metrics/summary_v2.csv"
   }
 }
