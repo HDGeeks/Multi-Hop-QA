@@ -1,0 +1,5 @@
+model,setting,n_items,em_mean_percent,f1_median_percent,latency_p50_ms,refusal_rate_percent,invalid_rate_percent,stability_mad_f1_median,drop_em_vs_gold_pp,drop_f1_vs_gold_pp
+gpt4o_mini,gold,50,88.0,100.0,711.0,0.0,0.0,0.0,,
+gpt4o_mini,para,50,88.0,100.0,704.0,0.0,0.0,0.0,0.0,0.0
+gpt4o_mini,dist,50,92.0,100.0,701.5,0.0,0.0,0.0,4.0,0.0
+gpt4o_mini,para_dist,50,88.0,100.0,699.5,0.0,0.0,0.0,0.0,0.0

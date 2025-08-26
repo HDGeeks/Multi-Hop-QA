@@ -1,0 +1,70 @@
+{
+  "overall": {
+    "exact_match_percent": 0.0,
+    "f1_percent": 10.197438672438672,
+    "n": 600
+  },
+  "by_setting": {
+    "gold": {
+      "em_percent": 0.0,
+      "f1_percent": 9.704761904761906,
+      "n": 150
+    },
+    "para": {
+      "em_percent": 0.0,
+      "f1_percent": 10.038095238095238,
+      "n": 150
+    },
+    "dist": {
+      "em_percent": 0.0,
+      "f1_percent": 10.801731601731602,
+      "n": 150
+    },
+    "para_dist": {
+      "em_percent": 0.0,
+      "f1_percent": 10.245165945165944,
+      "n": 150
+    }
+  },
+  "by_domain": {
+    "geography": {
+      "em_percent": 0.0,
+      "f1_percent": 6.25,
+      "n": 120
+    },
+    "history": {
+      "em_percent": 0.0,
+      "f1_percent": 15.708333333333336,
+      "n": 120
+    },
+    "literature": {
+      "em_percent": 0.0,
+      "f1_percent": 7.303030303030303,
+      "n": 120
+    },
+    "politics": {
+      "em_percent": 0.0,
+      "f1_percent": 17.725829725829726,
+      "n": 120
+    },
+    "science": {
+      "em_percent": 0.0,
+      "f1_percent": 4.000000000000001,
+      "n": 120
+    }
+  },
+  "drops_vs_gold": {
+    "para": {
+      "em_drop_pp": 0.0,
+      "f1_drop_pp": -0.33333333333333215
+    },
+    "dist": {
+      "em_drop_pp": 0.0,
+      "f1_drop_pp": -1.0969696969696958
+    },
+    "para_dist": {
+      "em_drop_pp": 0.0,
+      "f1_drop_pp": -0.540404040404038
+    }
+  }
+}

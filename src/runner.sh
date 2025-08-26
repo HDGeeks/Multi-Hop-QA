@@ -1,54 +1,65 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# -------- CONFIG --------
+# ===== Resolve repo root and use relative paths =====
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-VENV="$ROOT/.venv/bin/python3"
-RESULTS="$ROOT/src/results_50"
-DATA="$ROOT/src/data_50"
+cd "$ROOT"
+
+PY="$ROOT/.venv/bin/python3"
+RESULTS_REL="src/results_50"
+DATA_REL="src/data_50"
+
 MODELS=("gpt4o" "gemini_pro" "llama31_8b" "mistral7b" "gpt4o_mini")
 RUNS=3
 
-# -------- RUN MODELS --------
-# -------- RUN MODELS --------
-for model in "${MODELS[@]}"; do
-  echo "=== Running $model ($RUNS runs) ==="
-  for run_id in $(seq 1 $RUNS); do
-    $VENV -m src.runner --model "$model" --run-id "$run_id"
-  done
-done
+# ===== Run models =====
+# for model in "${MODELS[@]}"; do
+#   echo "=== Running $model ($RUNS runs) ==="
+#   for run_id in $(seq 1 "$RUNS"); do
+#     "$PY" -m src.runner --model "$model" --run-id "$run_id"
+#   done
+# done
 
-# -------- SCORING --------
+# ===== Scoring (v2) =====
 for model in "${MODELS[@]}"; do
   echo "=== Scoring $model (v2) ==="
-  METRICS_DIR="$RESULTS/$model/metrics"
+  METRICS_DIR="$RESULTS_REL/$model/metrics"
   mkdir -p "$METRICS_DIR"
 
-  $VENV -m src.scoring.scoring_v2 \
-    --glob "$RESULTS/$model/*.jsonl" \
-    --gold-csv "$DATA/mhqa_questions_50.csv" \
-    --context-csv "$DATA/mhqa_context_50.csv" \
-    --paras-csv "$DATA/mhqa_paraphrases_50.csv" \
+  # Use RELATIVE glob so v2 scorers don't see absolute patterns
+  GLOB_PATTERN="$RESULTS_REL/$model/*.jsonl"
+
+  # Quick sanity: skip if no files (prevents confusing traceback)
+  if ! compgen -G "$GLOB_PATTERN" > /dev/null; then
+    echo "[WARN] No JSONL files for $model at $GLOB_PATTERN — skipping scoring."
+    continue
+  fi
+
+  "$PY" -m src.scoring.scoring_v2 \
+    --glob "$GLOB_PATTERN" \
+    --gold-csv "$DATA_REL/mhqa_questions_50.csv" \
+    --context-csv "$DATA_REL/mhqa_context_50.csv" \
+    --paras-csv "$DATA_REL/mhqa_paraphrases_50.csv" \
     --out-json "$METRICS_DIR/${model}_scoring_v2.json"
 
-  $VENV -m src.scoring.scoring_v2_extended \
-    --glob "$RESULTS/$model/*.jsonl" \
-    --gold-csv "$DATA/mhqa_questions_50.csv" \
+  "$PY" -m src.scoring.scoring_v2_extended \
+    --glob "$GLOB_PATTERN" \
+    --gold-csv "$DATA_REL/mhqa_questions_50.csv" \
     --out-json "$METRICS_DIR/${model}_scoring_v2_extended.json"
 
-  $VENV -m src.scoring.bertscore_scoring_v2 \
-    --glob "$RESULTS/$model/*.jsonl" \
-    --gold-csv "$DATA/mhqa_questions_50.csv" \
+  "$PY" -m src.scoring.bertscore_scoring_v2 \
+    --glob "$GLOB_PATTERN" \
+    --gold-csv "$DATA_REL/mhqa_questions_50.csv" \
     --model "$model" \
     --outdir "$METRICS_DIR" \
     --bertscore-model "roberta-large" --bertscore-lang "en"
 done
 
-# -------- REPORT --------
+# ===== Report assets =====
 echo "=== Building report assets ==="
-$VENV src/report/build_report_assets.py \
-  --results-root "$RESULTS" \
-  --out-root "$ROOT/src/report_50" \
+"$PY" -m src.report.build_report_assets \
+  --results-root "$RESULTS_REL" \
+  --out-root "src/report_50" \
   --models "${MODELS[@]}"
 
 echo "✅ All done. Tables → src/report_50/tables, Figures → src/report_50/figures"
