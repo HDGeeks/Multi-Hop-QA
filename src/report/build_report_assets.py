@@ -277,7 +277,7 @@ def table_T1_main_accuracy(all_summaries: pd.DataFrame, out_tex: Path):
             vals = [_fmt(row[c]) for c in f1_pvt.columns]
             f.write(f"{idx} (F1) & " + " & ".join(vals) + " \\\\\n")
         f.write("\\bottomrule\n\\end{tabular}\n\\end{table}\n")
-        
+
 def table_T2_drops(all_summaries: pd.DataFrame, out_tex: Path):
     want = []
     for model, sdf in all_summaries.groupby("model"):
@@ -313,22 +313,69 @@ def table_T2_drops(all_summaries: pd.DataFrame, out_tex: Path):
             ) + " \\\\\n")
         f.write("\\bottomrule\n\\end{tabular}\n\\end{table}\n")
 
-def table_T3_domain(per_domain_jsons: Dict[str, Dict], out_tex: Path):
+def table_T3_domain(per_domain_jsons: Dict[str, Dict], items_map: Dict[str, pd.DataFrame], out_tex: Path):
+    """
+    Build per-model domain table. Prefer per_domain_json if present.
+    If missing, compute from items_map[model] (aggregated_items_v2.csv):
+      - EM = mean(em_majority)*100
+      - F1 = median(f1_median)*100
+    Shows Gold vs Gold+Distractor.
+    """
+    models_done = 0
     with open(out_tex, "w") as f:
-        for model, payload in per_domain_jsons.items():
-            gold = payload.get("gold", payload.get("Gold", {}))
-            dist = payload.get("dist", payload.get("Gold+Distractor", {}))
+        for model in sorted(set(list(per_domain_jsons.keys()) + list(items_map.keys()))):
+            payload = per_domain_jsons.get(model)
+
+            # Fallback: compute from items if payload is absent
+            if not payload:
+                df = items_map.get(model)
+                if df is None or df.empty:
+                    continue
+                df = df.copy()
+                df["domain"] = df["domain"].str.capitalize()
+                def agg_for(setting):
+                    sdf = df[df["setting"] == setting]
+                    if sdf.empty:
+                        return {}
+                    stats = (sdf.groupby("domain")
+                               .agg(em=("em_majority","mean"),
+                                    f1=("f1_median","median"))
+                               .reset_index())
+                    out = {}
+                    for _, r in stats.iterrows():
+                        out[str(r["domain"])] = {
+                            "em": float(r["em"])*100.0,
+                            "f1": float(r["f1"])*100.0,
+                        }
+                    return out
+                payload = {
+                    "gold": agg_for("gold"),
+                    "dist": agg_for("dist"),
+                }
+
+            gold = payload.get("gold") or payload.get("Gold") or {}
+            dist = payload.get("dist") or payload.get("Gold+Distractor") or {}
+
+            # domains to show (sorted for stable output)
+            doms = sorted(set(list(gold.keys()) + list(dist.keys())))
+            if not doms:
+                continue
+
             f.write("\\begin{table}[t]\\centering\n")
-            f.write(f"\\caption{{Domain breakdown for \\texttt{{{model}}}: Gold vs. Gold+Distractor (\\%).}}\n")
+            f.write(f"\\caption{{Domain breakdown for \\texttt{{{model}}}: Gold vs. Gold+Distractor. Values are percent.}}\n")
             f.write(f"\\label{{tab:domain-{model}}}\n")
             f.write("\\begin{tabular}{lrrrr}\n\\toprule\n")
             f.write("Domain & EM$_{Gold}$ & F1$_{Gold}$ & EM$_{Gold+Dist}$ & F1$_{Gold+Dist}$ \\\\\n\\midrule\n")
-            for dom in ["History","Science","Politics","Geography","Literature"]:
+            def fmt(v): return "--" if v is None else f"{v:.1f}"
+            for dom in doms:
                 g = gold.get(dom, {})
                 d = dist.get(dom, {})
-                fmt = lambda v: "--" if v is None else f"{v:.1f}"
                 f.write(f"{dom} & {fmt(g.get('em'))} & {fmt(g.get('f1'))} & {fmt(d.get('em'))} & {fmt(d.get('f1'))} \\\\\n")
             f.write("\\bottomrule\n\\end{tabular}\n\\end{table}\n\n")
+            models_done += 1
+
+    if models_done == 0:
+        print("[WARN] T3: no domain data available (neither JSON nor items fallback).")
 
 def table_T4_behavior(all_per_run: Dict[str, pd.DataFrame], out_tex: Path):
     rows = []
@@ -460,9 +507,10 @@ def main():
     all_summaries = pd.concat(all_summaries, ignore_index=True, sort=False)
 
     # ---------- Tables ----------
+    # ---------- Tables ----------
     table_T1_main_accuracy(all_summaries, out_root/"tables"/"T1_main_accuracy.tex")
     table_T2_drops(all_summaries, out_root/"tables"/"T2_drops.tex")
-    table_T3_domain(per_domain_map, out_root/"tables"/"T3_domain_breakdown.tex")
+    table_T3_domain(per_domain_map, items_map, out_root/"tables"/"T3_domain_breakdown.tex")  # <— pass items_map too
     table_T4_behavior(per_run_map, out_root/"tables"/"T4_behavior.tex")
 
     # ---------- Figures ----------
