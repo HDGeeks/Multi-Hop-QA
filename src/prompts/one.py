@@ -1,4 +1,22 @@
+
 # src/prompts/one.py
+"""
+one.py
+
+This script provides a utility for displaying prompt variants for a specific question ID (qid) from a multi-hop QA dataset.
+It loads question, context, and paraphrase data from a 50-question subset, finds the requested item, and prints out all prompt settings
+("gold", "para", "dist", "para_dist") for inspection. Intended for debugging and prompt engineering.
+
+Functions:
+    show(qid: str):
+        Loads the dataset, finds the item with the given qid, and prints all prompt variants for that item.
+
+Usage:
+    Run as a script with an optional QID argument:
+        python one.py SCI002
+
+# This file is a utility for inspecting prompt variants for individual questions in the 50-question multi-hop QA dataset.
+"""
 import sys
 from pathlib import Path
 
@@ -33,5 +51,5 @@ def show(qid: str):
         print("\n" + "="*80 + "\n")
 
 if __name__ == "__main__":
-    arg_qid = sys.argv[1] if len(sys.argv) > 1 else "SCI002"
+    arg_qid = sys.argv[1] if len(sys.argv) > 1 else "SCI001"
     show(arg_qid)
