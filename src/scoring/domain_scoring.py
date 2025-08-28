@@ -1,4 +1,57 @@
 # src/scoring/domain_scoring.py
+"""
+domain_scoring.py
+
+This module aggregates per-domain performance metrics from a CSV file containing item-level scores, and outputs a structured JSON summary.
+It is designed for evaluating models across different domains and settings in multi-hop question answering tasks.
+
+Main Functionality:
+-------------------
+- Reads a CSV file with expected columns: 'qid', 'domain', 'model', 'setting', 'em_majority', 'f1_median', 'latency_median_ms', etc.
+- Groups data by 'model', 'domain', and 'setting'.
+- Computes:
+    - Mean Exact Match (EM) score (as a percentage)
+    - Median F1 score (as a percentage)
+    - Median latency (in milliseconds)
+    - Number of items per group
+- Outputs a nested JSON file summarizing these metrics per model, domain, and setting.
+
+Functions:
+----------
+- main(): Parses command-line arguments, performs aggregation, and writes the output JSON.
+
+Usage:
+------
+Run from the command line:
+
+    python domain_scoring.py --in-csv path/to/scores_aggregated_items.csv --out-json path/to/output_summary.json
+
+Arguments:
+----------
+--in-csv      (required) : Path to the input CSV file containing aggregated item scores.
+--out-json    (required) : Path to the output JSON file for saving the per-domain summary.
+
+Inputs:
+-------
+- CSV file with required columns: 'qid', 'domain', 'model', 'setting', 'em_majority', 'f1_median', 'latency_median_ms'.
+
+Outputs:
+--------
+- JSON file containing nested dictionaries with aggregated metrics per model, domain, and setting.
+
+Example:
+--------
+Suppose you have a CSV file at './data/scores_aggregated_items.csv' and want to save the summary to './results/domain_summary.json':
+
+    python domain_scoring.py --in-csv ./data/scores_aggregated_items.csv --out-json ./results/domain_summary.json
+
+Notes:
+------
+- The script will raise an error if required columns are missing from the input CSV.
+- Output JSON will be created with parent directories if they do not exist.
+"""
+
+
 import pandas as pd
 from pathlib import Path
 import argparse

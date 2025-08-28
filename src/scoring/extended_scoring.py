@@ -1,5 +1,62 @@
-from __future__ import annotations
+"""
+extended_scoring.py
 
+This module provides a comprehensive pipeline for scoring and analyzing multi-hop QA model outputs.
+It processes model predictions, compares them against gold answers, computes various metrics (Exact Match, F1, refusals, format violations, latency), aggregates results, and generates summary statistics with confidence intervals.
+
+Main Features:
+---------------
+- Text normalization and token-level F1 scoring.
+- Detection of refusals and format violations in model outputs.
+- Bootstrap-based confidence interval computation with fallback.
+- Data classes for gold answer management.
+- Aggregation of per-run, per-item, and per-setting metrics.
+- Output of results to CSV files for further analysis.
+
+Functions:
+----------
+- normalize_text(s): Normalize and clean input text.
+- token_f1(pred, gold): Compute token-level F1 score between prediction and gold answer.
+- is_refusal(s): Detect if a model output is a refusal.
+- is_format_violation(s): Heuristically flag format violations.
+- ci_with_fallback(samples, stat_fn, ...): Compute confidence intervals for metrics.
+- load_gold(path): Load gold answers and aliases from a CSV file.
+- best_match_metrics(pred, candidates): Compute best EM and F1 over candidate answers.
+- mad(values): Median absolute deviation for stability analysis.
+- main(): Pipeline entry point; parses arguments, runs scoring, outputs CSVs.
+
+Usage:
+------
+Run as a script from the command line. Requires input JSONL logs and a gold answers CSV.
+
+Arguments:
+----------
+--glob         : Glob pattern for input JSONL logs (required).
+--model        : Model identifier string (required).
+--outdir       : Output directory for metrics CSVs (required).
+--gold-csv     : Path to gold answers CSV (default: "data/mhqa_questions.csv").
+
+Outputs:
+--------
+- Per-run metrics CSV: <outdir>/<model>_per_run.csv
+- Aggregated item metrics CSV: <outdir>/<model>_aggregated_items.csv
+- Summary statistics CSV: <outdir>/<model>_summary.csv
+
+Example:
+--------
+$ python extended_scoring.py \
+    --glob "src/results/gpt4o/*.jsonl" \
+    --model "gpt4o" \
+    --outdir "src/results/gpt4o/metrics" \
+    --gold-csv "data/mhqa_questions.csv"
+
+This will process all matching JSONL logs, score them against the gold answers, and write detailed metrics and summaries to the specified output directory.
+
+
+
+"""
+
+from __future__ import annotations
 import argparse
 import json
 import math

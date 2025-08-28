@@ -1,4 +1,85 @@
 # src/scoring/bertscore_scoring_v2.py
+"""
+This module provides a comprehensive pipeline for evaluating the quality of generated answers in multi-hop question answering tasks using BERTScore.
+It processes model outputs, compares them to gold answers and aliases, aggregates scores, and produces detailed summaries and CSV reports.
+
+Main Features:
+--------------
+- Loads gold answers and aliases from a CSV file.
+- Reads multiple JSONL files containing model outputs using a glob pattern.
+- Computes BERTScore F1 for each prediction against all possible references (canonical + aliases), selecting the best score per prediction.
+- Aggregates scores per question and setting, computes medians, and calculates drops in performance relative to the gold setting.
+- Produces per-run, per-item, and per-domain CSV reports, as well as a compact JSON summary.
+
+Functions:
+----------
+- read_jsonl_many(glob_pattern: str) -> pd.DataFrame:
+    Reads multiple JSONL files matching a glob pattern and returns a concatenated DataFrame.
+
+- load_gold(gold_csv: Path) -> Dict[str, Dict[str, List[str]]]:
+    Loads gold answers and aliases from a CSV file into a dictionary keyed by question ID.
+
+- best_ref_bertscore_f1(preds, refs_lists, model_type, lang, rescale_with_baseline) -> List[float]:
+    Computes BERTScore F1 for each prediction against all references, returning the best score per prediction.
+
+- pp(x: float) -> float:
+    Utility to convert a score to percentage points.
+
+- main():
+    Orchestrates the loading, scoring, aggregation, and output writing. Handles command-line arguments.
+
+Usage:
+------
+Run this script from the command line with the required arguments:
+
+    python bertscore_scoring_v2.py \
+        --glob "src/results_50/gpt4o/*.jsonl" \
+        --gold-csv "src/data_50/mhqa_questions_50.csv" \
+        --model "gpt4o" \
+        --outdir "src/scoring_results" \
+        [--bertscore-model "roberta-large"] \
+        [--bertscore-lang "en"] \
+        [--no-rescale]
+
+Arguments:
+----------
+--glob:           Glob pattern for input JSONL files containing model outputs (required).
+--gold-csv:       Path to the CSV file with gold answers and aliases (required).
+--model:          Model identifier for output filenames (required).
+--outdir:         Directory to write output files (required).
+--bertscore-model: BERTScore model type (default: "roberta-large").
+--bertscore-lang:  Language for BERTScore (default: "en").
+--no-rescale:      Disable BERTScore baseline rescaling (flag).
+
+Inputs:
+-------
+- JSONL files with columns: run_id, qid, domain, model, setting, output, latency_ms.
+- Gold CSV file with columns: qid, answer, aliases, domain.
+
+Outputs:
+--------
+- Per-run CSV:   <outdir>/<model>_bertscore_per_run_v2.csv
+- Per-item CSV:  <outdir>/<model>_bertscore_aggregated_items_v2.csv
+- By-domain CSV: <outdir>/<model>_bertscore_by_domain_v2.csv
+- Summary JSON:  <outdir>/<model>_bertscore_summary_v2.json
+
+Example:
+--------
+Suppose you have model outputs in "src/results_50/gpt4o/*.jsonl" and gold answers in "src/data_50/mhqa_questions_50.csv". To score and aggregate results for model "gpt4o":
+
+    python bertscore_scoring_v2.py \
+        --glob "src/results_50/gpt4o/*.jsonl" \
+        --gold-csv "src/data_50/mhqa_questions_50.csv" \
+        --model "gpt4o" \
+        --outdir "src/scoring_results"
+
+This will produce detailed BERTScore evaluations and summaries in the specified output directory.
+
+
+"""
+
+
+
 import argparse, json
 from pathlib import Path
 from typing import Dict, List, Tuple

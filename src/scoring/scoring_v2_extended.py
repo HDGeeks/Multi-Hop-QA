@@ -1,3 +1,68 @@
+"""
+scoring_v2_extended.py
+
+This module provides lightweight scoring utilities for evaluating question-answering (QA) system outputs using Exact Match (EM) and F1 metrics.
+It processes prediction files and gold-standard answers, computes per-response scores, and aggregates results by setting and domain.
+The script is designed for batch evaluation of multi-hop QA tasks, supporting analysis of performance drops across different experimental settings.
+
+Main Features:
+---------------
+- Normalizes textual answers for robust comparison.
+- Computes token-level F1 scores and exact matches.
+- Loads gold answers and aliases from a CSV file.
+- Processes prediction results from JSONL files.
+- Aggregates scores overall, by experimental setting, and by domain.
+- Calculates performance drops relative to the "gold" setting.
+- Outputs a summary report in JSON format.
+
+Functions:
+-----------
+- normalize(text: str) -> str:
+    Lowercases and strips punctuation from input text for consistent comparison.
+
+- f1_score(pred: str, gold: str) -> float:
+    Computes token-level F1 score between predicted and gold answers.
+
+- load_gold(gold_csv: Path):
+    Loads gold answers and aliases from a CSV file, returning a mapping from question IDs to answer references.
+
+- main():
+    Entry point. Parses command-line arguments, loads data, computes scores, aggregates results, and writes output.
+
+Usage:
+------
+This script is intended to be run from the command line.
+
+Required Arguments:
+-------------------
+--glob       : Glob pattern for input JSONL files containing predictions (e.g., "src/results_50/gpt4o/*.jsonl").
+--gold-csv   : Path to the gold answers CSV file.
+--out-json   : Path to output the summary JSON file.
+
+Example:
+--------
+$ python scoring_v2_extended.py \
+    --glob "src/results_50/gpt4o/*.jsonl" \
+    --gold-csv "src/gold_answers.csv" \
+    --out-json "src/results_50/gpt4o/summary.json"
+
+Inputs:
+-------
+- Prediction files: JSONL format, each line is a dict with at least "qid", "setting", and "output".
+- Gold answers: CSV file with columns "qid", "answer", "aliases", "domain".
+
+Outputs:
+--------
+- Summary JSON file containing overall, per-setting, and per-domain EM/F1 scores, and performance drops.
+
+Notes:
+------
+- All input files must be properly formatted.
+- The script will raise errors if required columns or files are missing.
+- Designed for extensibility and integration into QA evaluation pipelines.
+
+"""
+
 # src/scoring/scoring_v2_extended.py
 import argparse, json, re
 from pathlib import Path
