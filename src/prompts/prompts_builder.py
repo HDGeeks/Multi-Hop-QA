@@ -1,22 +1,57 @@
-# src/prompts/prompt_builder.py
+
 """
-This module provides utilities for constructing prompt texts for multi-hop question answering tasks
-under different experimental conditions. It defines the possible settings (gold, para, dist, para_dist)
-and builds prompts that combine questions (original or paraphrased), relevant snippets, and optional distractors.
-The prompts are formatted to instruct models to answer concisely without explanations.
+prompts_builder.py
 
-Functions:
-    build_prompt(item: Item, setting: str) -> str:
-        Constructs a prompt for a given item and condition, including the appropriate question,
-        snippets, and distractor if required.
+This module provides utilities for constructing prompt texts for multi-hop question answering tasks under various experimental conditions. 
+It is designed to generate prompts that combine questions (original or paraphrased), supporting snippets, 
+and optional distractor information, formatted for use with language models.
 
-    make_all_prompts(item: Item) -> Dict[str, str]:
-        Generates prompts for all four settings for a given item, returning a dictionary mapping
-        each setting to its corresponding prompt text.
+Main Functions:
+---------------
+- build_prompt(item: Item, setting: str) -> str:
+    Constructs a prompt string for a given data item and experimental setting.
+    Inputs:
+        - item: An instance of Item (from src.data.load_data), containing question, paraphrase, snippets, and distractor.
+        - setting: A string specifying the prompt condition. Must be one of: "gold", "para", "dist", "para_dist".
+    Output:
+        - Returns a formatted prompt string suitable for model input.
+    Raises:
+        - ValueError if an unknown setting is provided.
+
+- make_all_prompts(item: Item) -> Dict[str, str]:
+    Generates a dictionary of prompts for all supported settings for a given item.
+    Inputs:
+        - item: An instance of Item.
+    Output:
+        - Dictionary mapping each setting to its corresponding prompt string.
+
+Usage:
+------
+Import the module and use `build_prompt` to create a prompt for a specific setting, or `make_all_prompts` to get prompts for all settings.
+
+Example:
+
+    item = Item(
+        question="What is the capital of France?",
+        paraphrase="Which city is the capital of France?",
+        snippet_a="France's capital is Paris.",
+        snippet_b="Paris is known for the Eiffel Tower.",
+        distractor="Berlin is the capital of Germany."
+
+    prompt = build_prompt(item, "gold")
+    all_prompts = make_all_prompts(item)
+
+Notes:
+------
+- The prompts are formatted to instruct the model to answer concisely, without explanations.
+- The module expects the Item object to have all required fields.
+- No default arguments; all inputs must be provided explicitly.
+
 """
 
 from typing import Dict
 from src.data.load_data import Item
+from src.prompts.prompts_builder import build_prompt, make_all_prompts
 
 # condition keys (shared everywhere)
 GOLD = "gold"

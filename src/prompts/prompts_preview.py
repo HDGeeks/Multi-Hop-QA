@@ -57,6 +57,7 @@ To generate prompt previews for the "science" domain, limited to 5 items, and sa
     python prompts_preview.py --domain science --limit 5 --outdir output/prompts
 
 """
+import sys
 import argparse
 from pathlib import Path
 
