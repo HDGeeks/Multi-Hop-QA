@@ -1,4 +1,45 @@
-import os
+
+"""
+ping.py
+This module provides a utility to benchmark and compare responses from multiple large language models (LLMs)
+using a standardized prompt. It queries several models (OpenAI GPT-4o, LLaMA 3.1 8B Instruct, Mistral 7B Instruct,
+OpenAI GPT-4o Mini, and Gemini Pro) and prints their outputs in a structured format for easy inspection.
+Main Functions:
+---------------
+- _as_structured_dict(...): Internal helper to normalize model responses into a consistent dictionary format.
+- ping_all(): Queries all supported models with a fixed prompt and prints their responses.
+Usage:
+------
+Run this file directly to execute the benchmark:
+    $ python ping.py
+No input arguments are required; the prompt is hardcoded as:
+    "Who was the first president of the United States?"
+Outputs:
+--------
+Results are printed to stdout, with each model's response shown in a pretty-printed dictionary containing:
+    - output: The model's answer text.
+    - error: Any error encountered (None if successful).
+    - usage: Token usage or other metadata (if available).
+    - version: Model version identifier.
+    - finish_reason: Reason for completion (if available).
+    - latency_ms: Response time in milliseconds (if available).
+Example Output:
+---------------
+=== gpt4o ===
+{ 'error': None,
+  'finish_reason': 'stop',
+  'output': 'George Washington was the first president of the United States.',
+  'usage': {...},
+  'version': 'gpt-4o',
+  'latency_ms': 123 }
+Notes:
+------
+- No external inputs or arguments are required.
+- All model clients must be properly configured and imported.
+- This script is intended for quick model health checks and qualitative comparison.
+"""
+
+
 from datetime import datetime
 from pprint import PrettyPrinter
 

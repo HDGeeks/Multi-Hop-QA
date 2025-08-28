@@ -1,4 +1,62 @@
 # src/runner.py
+
+"""
+This script orchestrates the evaluation of multiple language models on a set of multi-hop QA items using various prompt settings.
+It loads data, builds prompts, queries models, and writes results to a JSONL file for further analysis.
+
+Main Features:
+--------------
+- Loads multi-hop QA items and associated context/paraphrases from CSV files.
+- Supports multiple prompt settings: GOLD, PARA, DIST, PARA_DIST.
+- Dispatches queries to one of several supported model clients (OpenAI GPT-4o, Gemini Pro, Llama, Mistral).
+- Records model outputs, latency, usage statistics, and errors for each item/setting combination.
+- Writes results as JSONL, including full prompt for reproducibility.
+
+Functions:
+----------
+- get_model_callable(model_id: str): Returns a callable for querying the specified model.
+- ensure_dirs(path: Path): Ensures output directory exists.
+- now_iso(): Returns current UTC timestamp in ISO format.
+- main(): Entry point; parses arguments, runs evaluation, writes output.
+
+Usage:
+------
+Run from the command line with required arguments:
+
+    python src/runner.py --model gpt4o --run-id 1
+
+Arguments:
+----------
+--model    (required) : Model identifier. One of: gpt4o, gpt4o_mini, gemini_pro, llama31_8b, mistral7b
+--run-id   (default=1): Integer run index for repeatability.
+--out      (optional) : Output path for JSONL results. Defaults to 'src/results_50/{model}/{model}_run{run_id}.jsonl'
+--qid      (optional) : If provided, only runs the specified QID.
+
+Inputs:
+-------
+- Loads QA items from CSV files in 'src/data_50/' (or 'src/data/' if uncommented).
+- Requires model API keys/configuration as needed by model clients.
+
+Outputs:
+--------
+- Writes one JSONL row per (item, setting) to the specified output file, including metadata and model response.
+
+Example:
+--------
+To run GPT-4o on all items and settings, saving results to default location:
+
+    python src/runner.py --model gpt4o --run-id 1
+
+To run only QID 'Q123' and save to a custom file:
+
+    python src/runner.py --model llama31_8b --run-id 2 --qid Q123 --out results/custom_run.jsonl
+
+Notes:
+------
+- Ensure model API credentials are configured for the selected model.
+- Output JSONL includes full prompt, model output, latency, and error info for reproducibility and debugging.
+
+"""
 import json
 from pathlib import Path
 from datetime import datetime
