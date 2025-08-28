@@ -1,4 +1,85 @@
 # src/scoring/scoring_v2.py
+"""
+Alias-aware EM/F1 scoring and aggregation for multi-hop QA tasks.
+
+This module provides routines to evaluate model outputs against gold answers, supporting canonical answers and aliases.
+It computes exact match (EM) and token-level F1 metrics, detects refusals and invalid responses, and aggregates results across multiple runs and settings.
+Outputs are saved as CSV and JSON summaries for further analysis.
+
+Main Features:
+--------------
+- Text normalization and token-level metrics (EM, F1).
+- Refusal and invalid answer detection.
+- Loading gold answers and aliases from CSV.
+- Scoring model outputs from JSONL files.
+- Aggregation of results per item and per model/setting.
+- Summary statistics and drop calculations vs. gold answers.
+- CLI interface for batch scoring and artifact generation.
+
+Functions:
+----------
+- normalize(s: str) -> str
+    Normalize text for fair comparison.
+- token_f1(pred: str, gold: str) -> float
+    Compute token-level F1 score.
+- best_em_f1(pred: str, refs: List[str]) -> Tuple[int, float]
+    Compute EM and best F1 against all references.
+- is_refusal(text: str) -> bool
+    Detect refusal responses.
+- is_invalid(text: str) -> bool
+    Detect invalid (empty) responses.
+- load_gold_map(q_csv: Path) -> Dict[str, List[str]]
+    Load gold answers and aliases from CSV.
+- read_jsonl_many(glob_pattern: str) -> pd.DataFrame
+    Read multiple JSONL files into a DataFrame.
+- compute_per_run(df: pd.DataFrame, gold_map: Dict[str, List[str]]) -> pd.DataFrame
+    Score each run against gold answers.
+- aggregate_items(per_run: pd.DataFrame) -> pd.DataFrame
+    Aggregate results per item across runs.
+- summarize_model_setting(items_ag: pd.DataFrame) -> pd.DataFrame
+    Summarize results per model and setting.
+- main()
+    CLI entry point for batch scoring.
+
+Usage:
+------
+Run from the command line with required arguments:
+
+    python scoring_v2.py \
+        --glob "src/results_50/gpt4o/*.jsonl" \
+        --gold-csv "src/data_50/mhqa_questions_50.csv" \
+        --context-csv "src/data_50/mhqa_contexts_50.csv" \
+        --paras-csv "src/data_50/mhqa_paragraphs_50.csv" \
+        --out-json "src/results_50/gpt4o/summary_v2.json"
+
+Inputs:
+-------
+- --glob: Glob pattern for input JSONL files containing model outputs.
+- --gold-csv: CSV file with gold answers and aliases.
+- --context-csv: CSV file with question contexts (checked for existence).
+- --paras-csv: CSV file with supporting paragraphs (checked for existence).
+- --out-json: Path to output summary JSON.
+
+Outputs:
+--------
+- per_run_v2.csv: Per-run scoring results.
+- aggregated_items_v2.csv: Aggregated item-level results.
+- summary_v2.csv: Model/setting summary statistics.
+- summary_v2.json: Compact JSON summary with micro and by-setting metrics.
+
+Example:
+--------
+Suppose you have model outputs in JSONL files and gold answers in a CSV:
+
+    python scoring_v2.py \
+        --glob "results/*.jsonl" \
+        --gold-csv "data/gold.csv" \
+        --context-csv "data/context.csv" \
+        --paras-csv "data/paras.csv" \
+        --out-json "results/summary.json"
+
+This will score all runs, aggregate results, and save CSV/JSON summaries in the specified output directory.
+"""
 from __future__ import annotations
 import argparse, json, re
 from pathlib import Path

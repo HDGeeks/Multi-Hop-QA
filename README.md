@@ -21,4 +21,4 @@ python3 -m src.scoring.bertscore_scoring_v2 \
 
   
   add a good comment and explanation on what this file does . should be professional .must include
-   what it does , the functions , how to use it , if inputs needed , outputs to where , if it takes args and defaults ,and small example
+   what it does , the functions , how to use it , if inputs needed , outputs to where , if it takes args and defaults ,and small example, put it in doc string """ content """

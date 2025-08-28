@@ -1,4 +1,76 @@
 # src/scoring/score_runs.py
+"""
+
+This module provides comprehensive scoring and evaluation utilities for Multi-Hop QA runs,
+including exact match (EM) and F1 metrics (using Hugging Face's SQuAD metric), 
+refusal/invalid output detection, latency aggregation, and robustness analysis across different experimental settings.
+
+Main Features:
+---------------
+- Loads gold answers from project data sources and maps them to question IDs.
+- Reads prediction files in JSONL format and aggregates results by experimental setting.
+- Calculates EM/F1 scores per setting and overall, using Hugging Face's 'evaluate' library.
+- Detects refusals and invalid outputs based on customizable markers.
+- Computes latency statistics (average, p50, p90) for each setting.
+- Assesses robustness by comparing EM deltas between settings and the gold baseline.
+- Provides a command-line interface (CLI) for batch scoring and outputting results in JSON and CSV formats.
+
+Functions:
+----------
+- is_refusal(text: str) -> bool
+    Detects if a given output text is a refusal based on predefined markers.
+- is_invalid(text: str) -> bool
+    Determines if an output is invalid (empty or trivial).
+- load_gold_map() -> Dict[str, List[str]]
+    Loads and returns a mapping from question IDs to lists of acceptable gold answers.
+- read_jsonl(path: Path) -> List[dict]
+    Reads a JSONL file and returns a list of dictionaries (rows).
+- aggregate_latency(ms_list: List[int]) -> Dict[str, float]
+    Computes average, p50, and p90 latency statistics from a list of millisecond values.
+- score_files(files: List[Path], gold_map: Dict[str, List[str]]) -> Dict
+    Core function that scores prediction files against gold answers, returning a summary dictionary with all metrics.
+- main()
+    CLI entry point. Parses arguments, runs scoring, and writes output files.
+
+Usage:
+------
+This module is typically run from the command line. Example:
+
+    python src/scoring/scoring.py \
+        --glob "src/results/raw/gpt4o_run*.jsonl" \
+        --out-json "src/results/metrics/gpt4o_summary.json" \
+        --out-csv "src/results/metrics/gpt4o_summary.csv"
+
+Arguments:
+----------
+--glob (required): Glob pattern for input JSONL files containing predictions.
+--out-json (optional): Path to write the JSON summary of metrics. Default: src/results/metrics/summary.json
+--out-csv (optional): Path to write a wide CSV summary (one row per setting).
+
+Inputs:
+-------
+- Prediction files in JSONL format, each line containing at least: qid, output, setting, model, latency_ms, run_id.
+- Gold answer data loaded from project CSVs via load_items.
+
+Outputs:
+--------
+- JSON summary file with all metrics (EM, F1, invalid/refusal rates, latency, robustness).
+- Optional CSV file with per-setting metrics for easy analysis.
+
+Example Output:
+---------------
+After running the CLI, you will find:
+- A JSON file with nested metrics for each setting and overall.
+- A CSV file with columns: model, setting, count, EM, F1, InvalidRate(%), RefusalRate(%), Latency.avg_ms, Latency.p50_ms, Latency.p90_ms, ΔEM_vs_GOLD_pp.
+
+Note:
+-----
+- This script is designed for use within the Multi-Hop QA repository and expects data files and schemas as defined in the project.
+- For custom answer schemas, adjust the field names in load_gold_map() as needed.
+
+
+"""
+
 import json
 from pathlib import Path
 import argparse
