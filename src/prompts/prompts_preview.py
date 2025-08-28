@@ -1,6 +1,62 @@
-# src/prompts/prompts_preview.py
 
-import sys
+"""
+prompts_preview.py
+
+This script is designed to generate and export prompt previews for multi-hop question answering tasks, organized by domain.
+It loads question, context, and paraphrase data, constructs prompts using various settings, and writes the results to text files for inspection or further use.
+
+Main Features:
+--------------
+- Loads items from CSV files containing questions, contexts, and paraphrases.
+- Constructs prompts for each item using multiple settings (e.g., "gold", "para", "dist", "para_dist").
+- Filters items by domain and optionally limits the number of items processed.
+- Writes formatted prompt previews to domain-specific text files in a specified output directory.
+
+Functions:
+----------
+- write_domain(items, domain, out_dir, limit):
+    Filters items by domain, constructs prompts for each, and writes them to a text file.
+    Inputs:
+        - items: List of loaded question items.
+        - domain: Domain to filter (e.g., "history", "science").
+        - out_dir: Output directory for the text files.
+        - limit: Optional maximum number of items to process.
+    Output:
+        - Writes a text file named "{domain}_prompts.txt" in the output directory.
+
+- main():
+    Parses command-line arguments, loads data, and calls write_domain for each selected domain.
+
+Usage:
+------
+Run this script from the command line to generate prompt previews:
+
+    python prompts_preview.py --domain history --limit 10 --outdir /path/to/output
+
+Arguments:
+----------
+--domain   : Domain to process ("history", "science", "politics", "all"). Default: "all".
+--limit    : Optional maximum number of items per domain. Default: None (no limit).
+--outdir   : Output directory for prompt files. Default: "src/prompts/preview" under repo root.
+
+Inputs:
+-------
+- CSV files in "src/data_50" directory:
+    - mhqa_questions_50.csv
+    - mhqa_context_50.csv
+    - mhqa_paraphrases_50.csv
+
+Outputs:
+--------
+- Text files containing prompt previews for each domain, written to the specified output directory.
+
+Example:
+--------
+To generate prompt previews for the "science" domain, limited to 5 items, and save them to "output/prompts":
+
+    python prompts_preview.py --domain science --limit 5 --outdir output/prompts
+
+"""
 import argparse
 from pathlib import Path
 

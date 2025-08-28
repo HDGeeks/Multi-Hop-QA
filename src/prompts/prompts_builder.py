@@ -1,4 +1,20 @@
 # src/prompts/prompt_builder.py
+"""
+This module provides utilities for constructing prompt texts for multi-hop question answering tasks
+under different experimental conditions. It defines the possible settings (gold, para, dist, para_dist)
+and builds prompts that combine questions (original or paraphrased), relevant snippets, and optional distractors.
+The prompts are formatted to instruct models to answer concisely without explanations.
+
+Functions:
+    build_prompt(item: Item, setting: str) -> str:
+        Constructs a prompt for a given item and condition, including the appropriate question,
+        snippets, and distractor if required.
+
+    make_all_prompts(item: Item) -> Dict[str, str]:
+        Generates prompts for all four settings for a given item, returning a dictionary mapping
+        each setting to its corresponding prompt text.
+"""
+
 from typing import Dict
 from src.data.load_data import Item
 
