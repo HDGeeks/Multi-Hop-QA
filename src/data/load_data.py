@@ -1,4 +1,70 @@
+
 # src/data/load_data.py
+"""
+Multi-Hop QA Data Loader and Validator
+------------------------------------------------------------------------------
+
+This module provides utilities for loading, validating, and joining multi-hop QA datasets from CSV files. 
+It is designed to support prompt-building and scoring workflows for multi-hop question answering tasks, 
+ensuring data integrity and providing convenient preview and manifest outputs.
+
+------------------------------------------------------------------------------
+What It Does
+------------------------------------------------------------------------------
+- Loads multi-hop QA examples from three CSV files: questions, context, and optional paraphrases.
+- Joins rows by unique question IDs (`qid`), validates schema and content, and constructs a list of fully-materialized QA items.
+- Supports filtering by domain, shuffling, sampling, and strict paraphrase requirements.
+- Provides helpers for writing compact JSONL manifests and text previews for inspection.
+
+------------------------------------------------------------------------------
+Main Functions
+------------------------------------------------------------------------------
+- `load_items(...)`: Loads, joins, and validates QA items from CSVs. Supports domain filtering, shuffling, sampling, and strict paraphrase enforcement.
+- `write_manifest_jsonl(items, out_path)`: Writes a compact JSONL preview of items for quick inspection.
+- Internal helpers for reading CSVs, validating items, parsing aliases, and reporting stray rows.
+
+------------------------------------------------------------------------------
+How to Use
+------------------------------------------------------------------------------
+1. Prepare your CSV files according to the expected schemas:
+    - `mhqa_questions.csv`: qid, domain, question, answer, aliases
+    - `mhqa_context.csv`: qid, snippet_a, snippet_b, distractor
+    - `mhqa_paraphrases.csv` (optional): qid, paraphrase
+
+2. Call `load_items()` with paths to your CSV files:
+    - Required: `questions_csv`, `context_csv`
+    - Optional: `paraphrases_csv`, `required_domains`, `shuffle`, `seed`, `sample_n`, `strict_paraphrase`
+
+3. Use the returned list of `Item` objects for prompt construction, scoring, or inspection.
+
+4. Optionally, write a manifest for inspection:
+    - `write_manifest_jsonl(items, out_path)`
+
+------------------------------------------------------------------------------
+Inputs and Arguments
+------------------------------------------------------------------------------
+- `questions_csv` (Path): Path to questions CSV file.
+- `context_csv` (Path): Path to context CSV file.
+- `paraphrases_csv` (Optional[Path]): Path to paraphrases CSV file (optional).
+- `required_domains` (Optional[Iterable[str]]): Filter items by domain (case-insensitive).
+- `shuffle` (bool): Shuffle the final list of items (default: False).
+- `seed` (Optional[int]): RNG seed for deterministic shuffling/sampling.
+- `sample_n` (Optional[int]): Keep only the first N items after filtering/shuffling.
+- `strict_paraphrase` (bool): Require paraphrase for every qid (default: False).
+
+------------------------------------------------------------------------------
+Outputs
+------------------------------------------------------------------------------
+- Returns: `List[Item]` — Each item is a fully-materialized QA example.
+- Manifest: Optionally writes a JSONL or text preview to disk for inspection.
+
+------------------------------------------------------------------------------
+Example Usage
+------------------------------------------------------------------------------
+
+"""
+
+
 from __future__ import annotations
 
 import csv
