@@ -1,4 +1,17 @@
 # src/models/gemini_client.py
+"""
+This module provides a wrapper for querying Google's Gemini Flash generative model via the official SDK.
+It normalizes the output into a consistent dictionary format, handles retries with exponential backoff,
+and abstracts away SDK-specific details for easier integration into multi-hop QA pipelines.
+
+Functions:
+    query_gemini_flash(prompt: str, model: str = "gemini-1.5-flash", temperature: float = 0.0,
+                       top_p: float = 1.0, max_tokens: int = 64, timeout: int = 30, retries: int = 2)
+        Sends a prompt to the Gemini Flash model and returns a normalized response dict.
+        Handles API key configuration, error handling, and retry logic.
+
+"""
+
 from ._common import clean_text, get_env_or_raise, backoff_sleep
 import time
 from typing import Optional
