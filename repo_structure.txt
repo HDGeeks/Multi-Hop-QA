@@ -1,0 +1,248 @@
+.
+├── README.md
+├── repo_structure.txt
+└── src
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-310.pyc
+    │   └── runner.cpython-310.pyc
+    ├── config
+    │   ├── experiment.yaml
+    │   ├── models.csv
+    │   └── run.yml
+    ├── data
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   │   ├── __init__.cpython-310.pyc
+    │   │   └── load_data.cpython-310.pyc
+    │   ├── load_data.py
+    │   ├── mhqa_context.csv
+    │   ├── mhqa_paraphrases.csv
+    │   └── mhqa_questions.csv
+    ├── data_50
+    │   ├── __pycache__
+    │   │   └── validate_50.cpython-310.pyc
+    │   ├── mhqa_context_50.csv
+    │   ├── mhqa_paraphrases_50.csv
+    │   ├── mhqa_questions_50.csv
+    │   ├── preview_all.txt
+    │   └── validate_50.py
+    ├── models
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   │   ├── __init__.cpython-310.pyc
+    │   │   ├── _common.cpython-310.pyc
+    │   │   ├── gemini_client.cpython-310.pyc
+    │   │   ├── gemini_flash_client.cpython-310.pyc
+    │   │   ├── gemini_pro_client.cpython-310.pyc
+    │   │   ├── llama_client.cpython-310.pyc
+    │   │   ├── mistral_client.cpython-310.pyc
+    │   │   ├── openai_4o_client.cpython-310.pyc
+    │   │   ├── openai_4o_mini_client.cpython-310.pyc
+    │   │   ├── openai_client.cpython-310.pyc
+    │   │   ├── openai_mini_client.cpython-310.pyc
+    │   │   └── qwen_client.cpython-310.pyc
+    │   ├── _common.py
+    │   ├── gemini_flash_client.py
+    │   ├── gemini_pro_client.py
+    │   ├── llama_client.py
+    │   ├── mistral_client.py
+    │   ├── openai_4o_client.py
+    │   └── openai_4o_mini_client.py
+    ├── ping.py
+    ├── prompts
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   │   ├── __init__.cpython-310.pyc
+    │   │   ├── prompts_builder.cpython-310.pyc
+    │   │   └── prompts_preview.cpython-310.pyc
+    │   ├── one.py
+    │   ├── preview
+    │   │   ├── geography_prompts.txt
+    │   │   ├── history_prompts.txt
+    │   │   ├── literature_prompts.txt
+    │   │   ├── politics_prompts.txt
+    │   │   └── science_prompts.txt
+    │   ├── preview_prompts.txt
+    │   ├── prompts_builder.py
+    │   └── prompts_preview.py
+    ├── report
+    │   ├── __pycache__
+    │   │   └── build_report_assets.cpython-310.pyc
+    │   ├── build_report_assets.py
+    │   ├── build_table_stability.py
+    │   ├── make_bar_charts.py
+    │   ├── make_per_domain_json.py
+    │   ├── make_report_assets.sh
+    │   └── plot.py
+    ├── report_50
+    │   ├── figures
+    │   │   ├── bar_delta_f1.png
+    │   │   ├── bar_em_by_setting.png
+    │   │   ├── bar_f1_by_setting.png
+    │   │   └── bar_latency.png
+    │   └── tables
+    │       ├── T_stability.tex
+    │       ├── T1_main_accuracy.tex
+    │       ├── T2_drops.tex
+    │       ├── T3_domain_breakdown.tex
+    │       └── T4_behavior.tex
+    ├── requirements.txt
+    ├── results
+    │   ├── gemini_pro
+    │   │   ├── gemini_pro_run1.jsonl
+    │   │   ├── gemini_pro_run2.jsonl
+    │   │   ├── gemini_pro_run3.jsonl
+    │   │   └── metrics
+    │   │       ├── gemini_pro_aggregated_items.csv
+    │   │       ├── gemini_pro_bertscore_aggregated_items.csv
+    │   │       ├── gemini_pro_bertscore_per_run.csv
+    │   │       ├── gemini_pro_bertscore_summary.csv
+    │   │       ├── gemini_pro_per_domain.json
+    │   │       ├── gemini_pro_per_run.csv
+    │   │       ├── gemini_pro_summary.csv
+    │   │       └── gemini_pro_summary.json
+    │   ├── gpt4o
+    │   │   ├── gpt4o_run1.jsonl
+    │   │   ├── gpt4o_run2.jsonl
+    │   │   ├── gpt4o_run3.jsonl
+    │   │   └── metrics
+    │   │       ├── gpt4o_aggregated_items.csv
+    │   │       ├── gpt4o_bertscore_aggregated_items.csv
+    │   │       ├── gpt4o_bertscore_per_run.csv
+    │   │       ├── gpt4o_bertscore_summary.csv
+    │   │       ├── gpt4o_per_domain.json
+    │   │       ├── gpt4o_per_run.csv
+    │   │       ├── gpt4o_summary.csv
+    │   │       └── gpt4o_summary.json
+    │   ├── gpt4o_mini
+    │   │   ├── gpt4o_mini_run1.jsonl
+    │   │   ├── gpt4o_mini_run2.jsonl
+    │   │   ├── gpt4o_mini_run3.jsonl
+    │   │   └── metrics
+    │   │       ├── gpt4o_mini_aggregated_items.csv
+    │   │       ├── gpt4o_mini_bertscore_aggregated_items.csv
+    │   │       ├── gpt4o_mini_bertscore_per_run.csv
+    │   │       ├── gpt4o_mini_bertscore_summary.csv
+    │   │       ├── gpt4o_mini_per_domain.json
+    │   │       ├── gpt4o_mini_per_run.csv
+    │   │       ├── gpt4o_mini_summary.csv
+    │   │       └── gpt4o_mini_summary.json
+    │   ├── llama31_8b
+    │   │   ├── llama31_8b_run1.jsonl
+    │   │   ├── llama31_8b_run2.jsonl
+    │   │   ├── llama31_8b_run3.jsonl
+    │   │   └── metrics
+    │   │       ├── llama31_8b_aggregated_items.csv
+    │   │       ├── llama31_8b_bertscore_aggregated_items.csv
+    │   │       ├── llama31_8b_bertscore_per_run.csv
+    │   │       ├── llama31_8b_bertscore_summary.csv
+    │   │       ├── llama31_8b_per_domain.json
+    │   │       ├── llama31_8b_per_run.csv
+    │   │       ├── llama31_8b_summary.csv
+    │   │       └── llama31_8b_summary.json
+    │   └── mistral7b
+    │       ├── metrics
+    │       │   ├── mistral7b_aggregated_items.csv
+    │       │   ├── mistral7b_bertscore_aggregated_items.csv
+    │       │   ├── mistral7b_bertscore_per_run.csv
+    │       │   ├── mistral7b_bertscore_summary.csv
+    │       │   ├── mistral7b_per_domain.json
+    │       │   ├── mistral7b_per_run.csv
+    │       │   ├── mistral7b_summary.csv
+    │       │   └── mistral7b_summary.json
+    │       ├── mistral7b_run1.jsonl
+    │       ├── mistral7b_run2.jsonl
+    │       └── mistral7b_run3.jsonl
+    ├── results_50
+    │   ├── gemini_pro
+    │   │   ├── gemini_pro_run1.jsonl
+    │   │   ├── gemini_pro_run2.jsonl
+    │   │   ├── gemini_pro_run3.jsonl
+    │   │   └── metrics
+    │   │       ├── aggregated_items_v2.csv
+    │   │       ├── gemini_pro_bertscore_aggregated_items_v2.csv
+    │   │       ├── gemini_pro_bertscore_by_domain_v2.csv
+    │   │       ├── gemini_pro_bertscore_per_run_v2.csv
+    │   │       ├── gemini_pro_bertscore_summary_v2.json
+    │   │       ├── gemini_pro_scoring_v2_extended.json
+    │   │       ├── gemini_pro_scoring_v2.json
+    │   │       ├── per_run_v2.csv
+    │   │       └── summary_v2.csv
+    │   ├── gpt4o
+    │   │   ├── gpt4o_run1.jsonl
+    │   │   ├── gpt4o_run2.jsonl
+    │   │   ├── gpt4o_run3.jsonl
+    │   │   └── metrics
+    │   │       ├── aggregated_items_v2.csv
+    │   │       ├── gpt4o_bertscore_aggregated_items_v2.csv
+    │   │       ├── gpt4o_bertscore_by_domain_v2.csv
+    │   │       ├── gpt4o_bertscore_per_run_v2.csv
+    │   │       ├── gpt4o_bertscore_summary_v2.json
+    │   │       ├── gpt4o_scoring_v2_extended.json
+    │   │       ├── gpt4o_scoring_v2.json
+    │   │       ├── per_run_v2.csv
+    │   │       └── summary_v2.csv
+    │   ├── gpt4o_mini
+    │   │   ├── gpt4o_mini_run1.jsonl
+    │   │   ├── gpt4o_mini_run2.jsonl
+    │   │   ├── gpt4o_mini_run3.jsonl
+    │   │   └── metrics
+    │   │       ├── aggregated_items_v2.csv
+    │   │       ├── gpt4o_mini_bertscore_aggregated_items_v2.csv
+    │   │       ├── gpt4o_mini_bertscore_by_domain_v2.csv
+    │   │       ├── gpt4o_mini_bertscore_per_run_v2.csv
+    │   │       ├── gpt4o_mini_bertscore_summary_v2.json
+    │   │       ├── gpt4o_mini_scoring_v2_extended.json
+    │   │       ├── gpt4o_mini_scoring_v2.json
+    │   │       ├── per_run_v2.csv
+    │   │       └── summary_v2.csv
+    │   ├── llama31_8b
+    │   │   ├── llama31_8b_run1.jsonl
+    │   │   ├── llama31_8b_run2.jsonl
+    │   │   ├── llama31_8b_run3.jsonl
+    │   │   └── metrics
+    │   │       ├── aggregated_items_v2.csv
+    │   │       ├── llama31_8b_bertscore_aggregated_items_v2.csv
+    │   │       ├── llama31_8b_bertscore_by_domain_v2.csv
+    │   │       ├── llama31_8b_bertscore_per_run_v2.csv
+    │   │       ├── llama31_8b_bertscore_summary_v2.json
+    │   │       ├── llama31_8b_scoring_v2_extended.json
+    │   │       ├── llama31_8b_scoring_v2.json
+    │   │       ├── per_run_v2.csv
+    │   │       └── summary_v2.csv
+    │   └── mistral7b
+    │       ├── metrics
+    │       │   ├── aggregated_items_v2.csv
+    │       │   ├── mistral7b_bertscore_aggregated_items_v2.csv
+    │       │   ├── mistral7b_bertscore_by_domain_v2.csv
+    │       │   ├── mistral7b_bertscore_per_run_v2.csv
+    │       │   ├── mistral7b_bertscore_summary_v2.json
+    │       │   ├── mistral7b_scoring_v2_extended.json
+    │       │   ├── mistral7b_scoring_v2.json
+    │       │   ├── per_run_v2.csv
+    │       │   └── summary_v2.csv
+    │       ├── mistral7b_run1.jsonl
+    │       ├── mistral7b_run2.jsonl
+    │       └── mistral7b_run3.jsonl
+    ├── runner.py
+    ├── runner.sh
+    ├── score.sh
+    └── scoring
+        ├── __pycache__
+        │   ├── bertscore_scoring_v2.cpython-310.pyc
+        │   ├── bertscore_scoring.cpython-310.pyc
+        │   ├── domain_scoring.cpython-310.pyc
+        │   ├── extended_scoring.cpython-310.pyc
+        │   ├── scoring_v2_extended.cpython-310.pyc
+        │   ├── scoring_v2.cpython-310.pyc
+        │   └── scoring.cpython-310.pyc
+        ├── bertscore_scoring_v2.py
+        ├── bertscore_scoring.py
+        ├── domain_scoring.py
+        ├── extended_scoring.py
+        ├── scoring_v2_extended.py
+        ├── scoring_v2.py
+        └── scoring.py
+
+42 directories, 204 files
