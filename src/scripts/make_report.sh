@@ -61,7 +61,7 @@ echo ">>> Models: ${MODELS[*]}"
 
 # 1) Build TABLES from metrics (no plotting inside)
 set -x
-"$PY" -m src.report.build_from_metrics \
+"$PY" -m src.reporters.build_from_metrics \
   --results-dir "$RESULTS_DIR" \
   --reports-dir "$REPORTS_DIR" \
   --models "${MODELS[@]}"
@@ -72,14 +72,14 @@ set +x
 shopt -s nullglob
 rm -f "$REPORTS_DIR/figures"/*.png || true
 set -x
-"$PY" -m src.report.make_bar_charts \
+"$PY" -m src.reporters.make_bar_charts \
   --results-root "$RESULTS_DIR" \
   --out-dir "$REPORTS_DIR/figures"
 set +x
 
 # 3) Write LaTeX results section
 set -x
-"$PY" -m src.report.write_results_tex \
+"$PY" -m src.reporters.write_results_tex \
   --tables-dir "$REPORTS_DIR/tables" \
   --figs-dir   "$REPORTS_DIR/figures" \
   --out-tex    "$REPORTS_DIR/results.tex" \
