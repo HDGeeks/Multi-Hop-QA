@@ -1,0 +1,144 @@
+\subsection{Per-setting Accuracy (EM / F1 / BERT)}
+\begin{table}[H]\centering
+\caption{Per-setting performance. Each cell is \textbf{EM / F1 / BERTScore F1 (median)}.}
+\label{tab:mega-per-setting}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.05}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l ccc ccc ccc ccc}
+\toprule
+& \multicolumn{3}{c}{Gold} & \multicolumn{3}{c}{Para} & \multicolumn{3}{c}{Dist} & \multicolumn{3}{c}{Para+Dist} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}\cmidrule(lr){11-13}
+Model & EM & F1 & BERT & EM & F1 & BERT & EM & F1 & BERT & EM & F1 & BERT \\
+\midrule
+Gemini Pro \\
+& 98.0 & 99.0 & 99.999928 & 92.0 & 94.3 & 99.999893 & 98.0 & 99.0 & 99.999928 & 92.0 & 94.3 & 99.999893 \\
+GPT-4o Mini \\
+& 88.0 & 95.0 & 99.999928 & 88.0 & 92.2 & 99.999928 & 88.0 & 94.1 & 99.999911 & 88.0 & 92.5 & 99.999893 \\
+GPT-4o \\
+& 86.0 & 94.7 & 99.999803 & 82.0 & 90.5 & 99.999595 & 86.0 & 93.0 & 99.999771 & 80.0 & 89.9 & 99.999523 \\
+Mistral-7B \\
+& 78.0 & 89.4 & 99.999875 & 82.0 & 87.8 & 99.999875 & 80.0 & 88.2 & 99.999857 & 76.0 & 84.9 & 99.999857 \\
+LLaMA-3.1-8B \\
+& 78.0 & 92.9 & 2.502188 & 76.0 & 88.9 & -0.742964 & 72.0 & 90.6 & 2.372984 & 72.0 & 88.0 & -0.742964 \\
+\bottomrule
+\end{tabular}%
+}
+\caption*{\scriptsize
+\textbf{What this shows.} Side-by-side accuracy per model for each setting.\;
+\textbf{How computed.} EM = \emph{mean across items} of exact span match (after SQuAD-style normalization). 
+F1 = \emph{median across items} of token-level precision/recall F1 (computed per item, max over golds).
+BERTScore F1 = \emph{median across items} of contextual similarity (computed on original strings, max over golds).
+All values are in \%.}
+\par\medskip
+\caption*{\scriptsize \textbf{Remark.} \textit{LLaMA-3.1-8B often returned full sentences instead of short spans, yielding 0\% EM despite F1≈55–58; strict span-EM penalizes formatting rather than content.}}
+\end{table}
+
+\subsection{Robustness and Latency}
+\begin{table}[H]\centering
+\caption{Robustness and behavior. Drops are relative to Gold (percentage points).}
+\label{tab:robustness-behavior}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{l rrr rrr rr}
+\toprule
+& \multicolumn{3}{c}{\(\Delta\)EM (pp)} & \multicolumn{3}{c}{\(\Delta\)F1 (pp)} & \multicolumn{2}{c}{Latency (ms)} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-9}
+Model & Para & Dist & Para+Dist & Para & Dist & Para+Dist & p50 & p90 \\
+\midrule
+Gemini Pro & -6.0 & 0.0 & -6.0 & -4.7 & 0.0 & -4.7 & 513.0 & 807.1 \\
+GPT-4o Mini & 0.0 & 0.0 & 0.0 & -2.8 & -0.9 & -2.5 & 648.0 & 921.0 \\
+GPT-4o & -4.0 & 0.0 & -6.0 & -4.2 & -1.7 & -4.8 & 714.5 & 1004.7 \\
+Mistral-7B & 4.0 & 2.0 & -2.0 & -1.6 & -1.2 & -4.5 & 904.5 & 1025.0 \\
+LLaMA-3.1-8B & -2.0 & -6.0 & -6.0 & -3.9 & -2.2 & -4.8 & 874.5 & 1024.0 \\
+\bottomrule
+\end{tabular}
+\caption*{\scriptsize
+\textbf{What this shows.} Sensitivity to paraphrases/distractors and speed.\;
+\textbf{How computed.} For each model, $\Delta$EM/F1 are \emph{percentage-point} differences vs. Gold for that model. Latency p50/p90 are medians/90th percentiles over responses (ms).}
+\end{table}
+
+\subsection{Run-to-Run Stability (Aggregated)}
+\begin{table}[H]\centering
+\caption{Run-to-run stability aggregated across settings.}
+\label{tab:stability}
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{lccc}
+\toprule
+Model & EM-Agree (\%) & F1-MAD (pp) & Latency p50 (ms) \\
+\midrule
+Gemini Pro & 99.5 & 0.0 & 513.0 \\
+GPT-4o Mini & 99.0 & 0.0 & 648.0 \\
+GPT-4o & 98.3 & 0.0 & 714.5 \\
+Mistral-7B & 93.7 & 0.0 & 904.5 \\
+LLaMA-3.1-8B & 96.5 & 0.0 & 874.5 \\
+\bottomrule
+\end{tabular}
+\caption*{\scriptsize
+\textbf{What this shows.} Stability across $n=3$ repeated runs.\;
+\textbf{How computed.} EM-Agree = average modal-agreement rate per item across runs. 
+F1-MAD = median absolute deviation of per-item F1 across runs (pp). 
+Latency p50 = overall median latency across all responses for the model (ms).}
+\end{table}
+
+\subsection{Composite Leaderboard}
+\begin{table}[H]\centering
+\caption{Leaderboard combining accuracy, robustness, and speed.}
+\label{tab:leaderboard}
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Gold F1 & Avg F1 & Avg $|\Delta$F1| (pp) & p50 (ms) & Efficiency (F1/s) & Composite $\uparrow$ \\
+\midrule
+Gemini Pro & 99.0 & 96.7 & 3.1 & 513.0 & 193.0 & \textbf{95.1} \\
+GPT-4o Mini & 95.0 & 93.5 & 2.1 & 648.0 & 146.6 & \textbf{92.4} \\
+GPT-4o & 94.7 & 92.0 & 3.5 & 714.5 & 132.5 & \textbf{90.2} \\
+Mistral-7B & 89.4 & 87.6 & 2.5 & 904.5 & 98.9 & \textbf{86.3} \\
+LLaMA-3.1-8B & 92.9 & 90.1 & 3.7 & 874.5 & 106.2 & \textbf{88.3} \\
+\bottomrule
+\end{tabular}
+\caption*{\scriptsize
+\textbf{What this shows.} A single ranking balancing accuracy, robustness, and speed.\;
+\textbf{How computed.} Avg F1 = mean over \{Gold, Para, Dist, Para+Dist\}. 
+Avg\,$|\Delta$F1| = mean \emph{absolute} drop vs.\ Gold over \{Para, Dist, Para+Dist\}. 
+Efficiency = Gold F1 / (p50 latency in sec). 
+Composite = Avg F1 $- \tfrac{1}{2}$\,Avg\,$|\Delta$F1|.}
+\end{table}
+
+\subsection{Domain Breakdown (Gold Only)}
+\begin{table}[H]\centering
+\caption{Domain breakdown (EM / F1; \%) on \textbf{Gold}.}
+\label{tab:domain-breakdown}
+\scriptsize
+\setlength{\tabcolsep}{3.8pt}
+\renewcommand{\arraystretch}{1.05}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l cc cc cc cc cc  }
+\toprule
+& \multicolumn{2}{c}{geography} & \multicolumn{2}{c}{history} & \multicolumn{2}{c}{literature} & \multicolumn{2}{c}{politics} & \multicolumn{2}{c}{science} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}
+Model & EM & F1 & EM & F1 & EM & F1 & EM & F1 & EM & F1 \\
+\midrule
+Gemini Pro & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 & 90.0 & 95.0 & 100.0 & 100.0 \\
+GPT-4o Mini & 80.0 & 91.7 & 90.0 & 96.7 & 100.0 & 100.0 & 70.0 & 86.7 & 100.0 & 100.0 \\
+GPT-4o & 90.0 & 96.7 & 90.0 & 96.7 & 100.0 & 100.0 & 70.0 & 85.3 & 80.0 & 94.7 \\
+Mistral-7B & 70.0 & 88.3 & 80.0 & 89.5 & 100.0 & 100.0 & 60.0 & 85.5 & 80.0 & 83.8 \\
+LLaMA-3.1-8B & 70.0 & 91.3 & 90.0 & 96.7 & 100.0 & 100.0 & 50.0 & 81.7 & 80.0 & 94.7 \\
+\midrule
+Avg. & 82.0 & 93.6 & 90.0 & 95.9 & 100.0 & 100.0 & 68.0 & 86.9 & 88.0 & 94.6 \\
+\bottomrule
+\end{tabular}%
+}
+\caption*{\scriptsize
+\textbf{What this shows.} Which domains are easier/harder under \emph{Gold} (no perturbations).\;
+\textbf{How computed.} Items grouped by domain; 
+EM = \emph{mean of per-item EM} (per-item EM = mean across 3 runs). 
+F1 = \emph{median of per-item F1} (per-item F1 = median across 3 runs). 
+Both scaled to \%.}
+\end{table}

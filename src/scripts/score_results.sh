@@ -45,9 +45,9 @@ fi
 
 MODELS=("gpt4o" "gpt4o_mini" "gemini_pro" "llama31_8b" "mistral7b")
 
-QUESTIONS="$PROJECT_ROOT/src/data_50/mhqa_questions_50.csv"
-CONTEXT="$PROJECT_ROOT/src/data_50/mhqa_context_50.csv"
-PARAS="$PROJECT_ROOT/src/data_50/mhqa_paraphrases_50.csv"
+QUESTIONS="$PROJECT_ROOT/src/data/mhqa_questions_50.csv"
+CONTEXT="$PROJECT_ROOT/src/data/mhqa_context_50.csv"
+PARAS="$PROJECT_ROOT/src/data/mhqa_paraphrases_50.csv"
 
 echo ">>> PROJECT_ROOT=$PROJECT_ROOT"
 echo ">>> RESULTS_DIR=$RESULTS_DIR"

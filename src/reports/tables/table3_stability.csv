@@ -1,0 +1,6 @@
+Model,EM-Agree (%),F1-MAD (pp),Latency p50 (ms)
+gemini_pro,99.5,0.0,513.0
+gpt4o,98.33333333333333,0.0,714.5
+gpt4o_mini,99.0,0.0,648.0
+llama31_8b,96.5,0.0,874.5
+mistral7b,93.66666666666666,0.0,904.5
