@@ -1,0 +1,5 @@
+model,setting,n_items,em_mean_percent,f1_mean_of_medians_percent,latency_p50_ms,refusal_rate_percent,invalid_rate_percent,stability_mad_f1_median,f1_median_percent,drop_em_vs_gold_pp,drop_f1_vs_gold_pp
+gemini_pro,gold,50,98.0,99.0,617.0,0.0,0.0,0.0,99.0,,
+gemini_pro,para,50,92.0,94.33333333333333,615.5,0.0,0.0,0.0,94.33333333333333,-6.0,-4.666666666666671
+gemini_pro,dist,50,98.0,99.0,614.0,0.0,0.0,0.0,99.0,0.0,0.0
+gemini_pro,para_dist,50,94.0,95.0,613.0,0.0,0.0,0.0,95.0,-4.0,-4.0

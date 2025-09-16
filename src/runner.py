@@ -75,6 +75,10 @@ from src.models.llama_client import query_llama
 from src.models.mistral_client import query_mistral
 
 SETTINGS = [GOLD, PARA, DIST, PARA_DIST]
+# decoding defaults for all models
+DEFAULT_TEMPERATURE = 0.7
+DEFAULT_TOP_P = 0.9
+DEFAULT_MAX_TOKENS = 64
 
 # ---- model dispatch (one model per run) ----
 def get_model_callable(model_id: str):
@@ -85,17 +89,30 @@ def get_model_callable(model_id: str):
     """
     model_id = model_id.lower()
     if model_id == "gpt4o":
-        return lambda p: query_openai_4o(p, temperature=0.0, max_tokens=64)
+        # your openai 4o wrapper typically ignores top_p; keep temperature/max_tokens
+        return lambda p: query_openai_4o(
+            p, temperature=DEFAULT_TEMPERATURE, max_tokens=DEFAULT_MAX_TOKENS
+        )
     if model_id == "gpt4o_mini":
-        return lambda p: query_openai_4o_mini(p, temperature=0.0, max_tokens=64, model_override="gpt-4o-mini")
+        return lambda p: query_openai_4o_mini(
+            p, temperature=DEFAULT_TEMPERATURE, max_tokens=DEFAULT_MAX_TOKENS, model_override="gpt-4o-mini"
+        )
     if model_id == "gemini_pro":
-        return lambda p: query_gemini_pro(p, temperature=0.0, max_tokens=64, model_override="gemini-1.5-pro")
+        return lambda p: query_gemini_pro(
+            p, temperature=DEFAULT_TEMPERATURE, top_p=DEFAULT_TOP_P,
+            max_tokens=DEFAULT_MAX_TOKENS, model_override="gemini-1.5-pro"
+        )
     if model_id == "llama31_8b":
-        return lambda p: query_llama(p, temperature=0.0, top_p=1.0, max_tokens=64, model="meta-llama/Llama-3.1-8B-Instruct")
+        return lambda p: query_llama(
+            p, temperature=DEFAULT_TEMPERATURE, top_p=DEFAULT_TOP_P,
+            max_tokens=DEFAULT_MAX_TOKENS, model="meta-llama/Llama-3.1-8B-Instruct"
+        )
     if model_id == "mistral7b":
-        return lambda p: query_mistral(p, temperature=0.0, top_p=1.0, max_tokens=64, model="mistralai/Mistral-7B-Instruct-v0.3")
+        return lambda p: query_mistral(
+            p, temperature=DEFAULT_TEMPERATURE, top_p=DEFAULT_TOP_P,
+            max_tokens=DEFAULT_MAX_TOKENS, model="mistralai/Mistral-7B-Instruct-v0.3"
+        )
     raise ValueError(f"Unknown model_id: {model_id}")
-
 def ensure_dirs(path: Path):
     path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -120,7 +137,7 @@ def main():
     # paras_csv     = base / "mhqa_paraphrases.csv"
     # items = load_items(questions_csv, context_csv, paras_csv)
 
-    base = Path("src/data_50")
+    base = Path("src/data")
     questions_csv = base / "mhqa_questions_50.csv"
     context_csv   = base / "mhqa_context_50.csv"
     paras_csv     = base / "mhqa_paraphrases_50.csv"
@@ -135,8 +152,8 @@ def main():
     if args.out:
         out_path = Path(args.out)
     else:
-        stamp = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
-        out_path = Path(args.out) if args.out else Path(f"src/results_50/{model_id}/{model_id}_run{run_id}.jsonl")
+        out_path = Path(f"src/results/{model_id}/{model_id}_run{run_id}.jsonl")
+
     ensure_dirs(out_path)
 
     call = get_model_callable(model_id)

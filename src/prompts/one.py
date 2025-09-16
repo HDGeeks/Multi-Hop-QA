@@ -51,5 +51,5 @@ def show(qid: str):
         print("\n" + "="*80 + "\n")
 
 if __name__ == "__main__":
-    arg_qid = sys.argv[1] if len(sys.argv) > 1 else "SCI001"
+    arg_qid = sys.argv[1] if len(sys.argv) > 1 else "HIST009"
     show(arg_qid)

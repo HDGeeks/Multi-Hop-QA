@@ -1,5 +1,0 @@
-model,setting,n_items,em_mean_percent,f1_median_percent,latency_p50_ms,refusal_rate_percent,invalid_rate_percent,stability_mad_f1_median,drop_em_vs_gold_pp,drop_f1_vs_gold_pp
-mistral7b,gold,50,78.0,100.0,815.5,0.0,0.0,0.0,,
-mistral7b,para,50,76.0,100.0,808.0,0.0,0.0,0.0,-2.0,0.0
-mistral7b,dist,50,80.0,100.0,792.0,0.0,0.0,0.0,2.0,0.0
-mistral7b,para_dist,50,76.0,100.0,741.0,0.0,0.0,0.0,-2.0,0.0

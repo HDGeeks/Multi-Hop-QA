@@ -38,8 +38,8 @@ def bar_with_labels(ax, x, heights, width=0.2, label=None, offset=0.0):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--results-root", default="src/results_50")
-    ap.add_argument("--out-dir", default="src/report_50/figures")
+    ap.add_argument("--results-root", default="src/results_test")
+    ap.add_argument("--out-dir", default="src/reports_test/figures")
     args = ap.parse_args()
 
     out = Path(args.out_dir); out.mkdir(parents=True, exist_ok=True)

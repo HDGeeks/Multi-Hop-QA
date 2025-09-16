@@ -356,9 +356,9 @@ if __name__ == "__main__":
     # c_csv = Path("src/data/mhqa_context.csv")
     # p_csv = Path("src/data/mhqa_paraphrases.csv")
 
-    q_csv = Path("src/data_50/mhqa_questions_50.csv")
-    c_csv = Path("src/data_50/mhqa_context_50.csv")
-    p_csv = Path("src/data_50/mhqa_paraphrases_50.csv")
+    q_csv = Path("src/data/mhqa_questions_50.csv")
+    c_csv = Path("src/data/mhqa_context_50.csv")
+    p_csv = Path("src/data/mhqa_paraphrases_50.csv")
 
     items = load_items(q_csv, c_csv, p_csv, shuffle=True, seed=42)
 

@@ -51,7 +51,8 @@ Notes:
 
 from typing import Dict
 from src.data.load_data import Item
-from src.prompts.prompts_builder import build_prompt, make_all_prompts
+#from prompts.prompts_builder import build_prompt, make_all_prompts
+#from src.prompts.prompts_builder import build_prompt, make_all_prompts
 
 # condition keys (shared everywhere)
 GOLD = "gold"

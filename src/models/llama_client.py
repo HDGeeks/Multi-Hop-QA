@@ -19,8 +19,8 @@ _client = InferenceClient(api_key=HF_TOKEN)
 def query_llama(
     prompt: str,
     *,
-    temperature: float = 0.0,
-    top_p: float = 1.0,
+    temperature: float = 0.7,
+    top_p: float = 0.9,
     max_tokens: int = 64,
     model: Optional[str] = None
 ) -> Dict[str, Any]:

@@ -1,0 +1,251 @@
+model,qid,setting,output,has_html,ts
+gpt4o,HIST001,gold,John F. Kennedy,False,2025-09-16T11:56:58.141898
+gpt4o,HIST001,para,John F. Kennedy,False,2025-09-16T11:56:59.758856
+gpt4o,HIST001,dist,John F. Kennedy,False,2025-09-16T11:57:01.194220
+gpt4o,HIST001,para_dist,John F. Kennedy,False,2025-09-16T11:57:02.330441
+gpt4o,HIST002,gold,Roman Empire,False,2025-09-16T11:57:03.548574
+gpt4o,HIST002,para,Flavian dynasty,False,2025-09-16T11:57:05.130415
+gpt4o,HIST002,dist,Roman Empire,False,2025-09-16T11:57:05.779587
+gpt4o,HIST002,para_dist,Flavian dynasty,False,2025-09-16T11:57:07.131805
+gpt4o,HIST003,gold,King George III,False,2025-09-16T11:57:07.606161
+gpt4o,HIST003,para,King George III,False,2025-09-16T11:57:08.194701
+gpt4o,HIST003,dist,King George III,False,2025-09-16T11:57:08.963617
+gpt4o,HIST003,para_dist,King George III,False,2025-09-16T11:57:09.596871
+gpt4o,HIST004,gold,Georges Clemenceau,False,2025-09-16T11:57:10.203788
+gpt4o,HIST004,para,Georges Clemenceau,False,2025-09-16T11:57:10.921746
+gpt4o,HIST004,dist,Georges Clemenceau,False,2025-09-16T11:57:12.458338
+gpt4o,HIST004,para_dist,Georges Clemenceau,False,2025-09-16T11:57:13.483677
+gpt4o,HIST005,gold,Qin Shi Huang,False,2025-09-16T11:57:14.096150
+gpt4o,HIST005,para,Qin Shi Huang,False,2025-09-16T11:57:14.791297
+gpt4o,HIST005,dist,Qin Shi Huang,False,2025-09-16T11:57:15.736063
+gpt4o,HIST005,para_dist,Qin Shi Huang,False,2025-09-16T11:57:16.349669
+gpt4o,HIST006,gold,World War I,False,2025-09-16T11:57:16.941730
+gpt4o,HIST006,para,Archduke Franz Ferdinand was assassinated.,False,2025-09-16T11:57:17.766179
+gpt4o,HIST006,dist,World War I.,False,2025-09-16T11:57:18.398280
+gpt4o,HIST006,para_dist,Archduke Franz Ferdinand was assassinated.,False,2025-09-16T11:57:19.835998
+gpt4o,HIST007,gold,Joseph Stalin,False,2025-09-16T11:57:20.304100
+gpt4o,HIST007,para,Joseph Stalin,False,2025-09-16T11:57:21.170574
+gpt4o,HIST007,dist,Joseph Stalin.,False,2025-09-16T11:57:22.104176
+gpt4o,HIST007,para_dist,Joseph Stalin,False,2025-09-16T11:57:23.012307
+gpt4o,HIST008,gold,Abraham Lincoln,False,2025-09-16T11:57:23.849322
+gpt4o,HIST008,para,Abraham Lincoln,False,2025-09-16T11:57:24.363431
+gpt4o,HIST008,dist,Abraham Lincoln,False,2025-09-16T11:57:25.164083
+gpt4o,HIST008,para_dist,Abraham Lincoln,False,2025-09-16T11:57:25.667665
+gpt4o,HIST009,gold,Margaret Thatcher,False,2025-09-16T11:57:26.385255
+gpt4o,HIST009,para,Margaret Thatcher,False,2025-09-16T11:57:27.100654
+gpt4o,HIST009,dist,Margaret Thatcher,False,2025-09-16T11:57:27.710576
+gpt4o,HIST009,para_dist,Margaret Thatcher,False,2025-09-16T11:57:28.642555
+gpt4o,HIST010,gold,Inca civilization,False,2025-09-16T11:57:29.354038
+gpt4o,HIST010,para,Inca civilization,False,2025-09-16T11:57:30.129533
+gpt4o,HIST010,dist,Inca civilization,False,2025-09-16T11:57:31.133948
+gpt4o,HIST010,para_dist,Inca civilization,False,2025-09-16T11:57:31.934369
+gpt4o,SCI001,gold,H2O,False,2025-09-16T11:57:32.733614
+gpt4o,SCI001,para,H2O,False,2025-09-16T11:57:33.454339
+gpt4o,SCI001,dist,H2O,False,2025-09-16T11:57:34.167307
+gpt4o,SCI001,para_dist,H2O,False,2025-09-16T11:57:34.781525
+gpt4o,SCI002,gold,Carbon,False,2025-09-16T11:57:35.498868
+gpt4o,SCI002,para,Carbon,False,2025-09-16T11:57:36.123797
+gpt4o,SCI002,dist,Carbon,False,2025-09-16T11:57:36.726057
+gpt4o,SCI002,para_dist,carbon,False,2025-09-16T11:57:37.337546
+gpt4o,SCI003,gold,carbon dioxide (CO2),False,2025-09-16T11:57:38.058138
+gpt4o,SCI003,para,carbon dioxide (CO2),False,2025-09-16T11:57:39.079957
+gpt4o_mini,HIST001,gold,John F. Kennedy,False,2025-09-16T12:04:38.236009
+gpt4o_mini,HIST001,para,John F. Kennedy,False,2025-09-16T12:04:38.882004
+gpt4o_mini,HIST001,dist,John F. Kennedy,False,2025-09-16T12:04:39.553950
+gpt4o_mini,HIST001,para_dist,John F. Kennedy,False,2025-09-16T12:04:40.216687
+gpt4o_mini,HIST002,gold,Roman Empire,False,2025-09-16T12:04:40.871965
+gpt4o_mini,HIST002,para,Flavian dynasty,False,2025-09-16T12:04:41.387664
+gpt4o_mini,HIST002,dist,Roman Empire,False,2025-09-16T12:04:41.895299
+gpt4o_mini,HIST002,para_dist,Flavian dynasty,False,2025-09-16T12:04:42.618848
+gpt4o_mini,HIST003,gold,King George III,False,2025-09-16T12:04:43.229223
+gpt4o_mini,HIST003,para,King George III,False,2025-09-16T12:04:43.841755
+gpt4o_mini,HIST003,dist,King George III,False,2025-09-16T12:04:44.455169
+gpt4o_mini,HIST003,para_dist,King George III,False,2025-09-16T12:04:45.070613
+gpt4o_mini,HIST004,gold,Georges Clemenceau,False,2025-09-16T12:04:45.825258
+gpt4o_mini,HIST004,para,Georges Clemenceau,False,2025-09-16T12:04:47.118866
+gpt4o_mini,HIST004,dist,Georges Clemenceau,False,2025-09-16T12:04:47.837064
+gpt4o_mini,HIST004,para_dist,Georges Clemenceau,False,2025-09-16T12:04:48.345166
+gpt4o_mini,HIST005,gold,Qin Shi Huang,False,2025-09-16T12:04:48.859411
+gpt4o_mini,HIST005,para,Qin Shi Huang,False,2025-09-16T12:04:49.583708
+gpt4o_mini,HIST005,dist,Qin Shi Huang,False,2025-09-16T12:04:50.118891
+gpt4o_mini,HIST005,para_dist,Qin Shi Huang,False,2025-09-16T12:04:50.811895
+gpt4o_mini,HIST006,gold,World War I,False,2025-09-16T12:04:51.524816
+gpt4o_mini,HIST006,para,The assassination of Archduke Franz Ferdinand.,False,2025-09-16T12:04:52.091405
+gpt4o_mini,HIST006,dist,World War I,False,2025-09-16T12:04:52.655038
+gpt4o_mini,HIST006,para_dist,Archduke Franz Ferdinand's assassination,False,2025-09-16T12:04:53.469163
+gpt4o_mini,HIST007,gold,Joseph Stalin,False,2025-09-16T12:04:54.132259
+gpt4o_mini,HIST007,para,Joseph Stalin,False,2025-09-16T12:04:54.810739
+gpt4o_mini,HIST007,dist,Joseph Stalin,False,2025-09-16T12:04:56.846825
+gpt4o_mini,HIST007,para_dist,Joseph Stalin,False,2025-09-16T12:04:57.469713
+gpt4o_mini,HIST008,gold,Abraham Lincoln,False,2025-09-16T12:04:58.589349
+gpt4o_mini,HIST008,para,Abraham Lincoln,False,2025-09-16T12:04:59.304264
+gpt4o_mini,HIST008,dist,Abraham Lincoln,False,2025-09-16T12:04:59.918201
+gpt4o_mini,HIST008,para_dist,Abraham Lincoln,False,2025-09-16T12:05:00.637426
+gpt4o_mini,HIST009,gold,Margaret Thatcher,False,2025-09-16T12:05:01.454407
+gpt4o_mini,HIST009,para,Margaret Thatcher,False,2025-09-16T12:05:02.069462
+gpt4o_mini,HIST009,dist,Margaret Thatcher,False,2025-09-16T12:05:02.685805
+gpt4o_mini,HIST009,para_dist,Margaret Thatcher,False,2025-09-16T12:05:03.400167
+gpt4o_mini,HIST010,gold,Inca civilization,False,2025-09-16T12:05:04.428561
+gpt4o_mini,HIST010,para,Inca civilization,False,2025-09-16T12:05:05.039081
+gpt4o_mini,HIST010,dist,Inca,False,2025-09-16T12:05:05.651400
+gpt4o_mini,HIST010,para_dist,Inca civilization,False,2025-09-16T12:05:06.369966
+gpt4o_mini,SCI001,gold,H2O,False,2025-09-16T12:05:07.061311
+gpt4o_mini,SCI001,para,H2O,False,2025-09-16T12:05:07.805406
+gpt4o_mini,SCI001,dist,H2O,False,2025-09-16T12:05:08.426914
+gpt4o_mini,SCI001,para_dist,H2O,False,2025-09-16T12:05:09.134675
+gpt4o_mini,SCI002,gold,Carbon,False,2025-09-16T12:05:09.572761
+gpt4o_mini,SCI002,para,Carbon,False,2025-09-16T12:05:10.100189
+gpt4o_mini,SCI002,dist,Carbon,False,2025-09-16T12:05:10.671005
+gpt4o_mini,SCI002,para_dist,Carbon,False,2025-09-16T12:05:11.293711
+gpt4o_mini,SCI003,gold,Carbon dioxide,False,2025-09-16T12:05:11.867525
+gpt4o_mini,SCI003,para,Carbon dioxide,False,2025-09-16T12:05:12.556574
+gemini_pro,HIST001,gold,John F. Kennedy,False,2025-09-16T12:12:21.243483
+gemini_pro,HIST001,para,John F. Kennedy,False,2025-09-16T12:12:22.061512
+gemini_pro,HIST001,dist,John F. Kennedy,False,2025-09-16T12:12:22.646689
+gemini_pro,HIST001,para_dist,John F. Kennedy,False,2025-09-16T12:12:23.494862
+gemini_pro,HIST002,gold,Roman Empire,False,2025-09-16T12:12:23.911465
+gemini_pro,HIST002,para,Flavian,False,2025-09-16T12:12:24.447902
+gemini_pro,HIST002,dist,Roman Empire,False,2025-09-16T12:12:25.134220
+gemini_pro,HIST002,para_dist,Flavian,False,2025-09-16T12:12:25.842190
+gemini_pro,HIST003,gold,King George III,False,2025-09-16T12:12:26.974323
+gemini_pro,HIST003,para,King George III,False,2025-09-16T12:12:27.590152
+gemini_pro,HIST003,dist,King George III,False,2025-09-16T12:12:28.105505
+gemini_pro,HIST003,para_dist,King George III,False,2025-09-16T12:12:28.869051
+gemini_pro,HIST004,gold,Georges Clemenceau,False,2025-09-16T12:12:29.435625
+gemini_pro,HIST004,para,Georges Clemenceau,False,2025-09-16T12:12:30.049751
+gemini_pro,HIST004,dist,Georges Clemenceau,False,2025-09-16T12:12:30.519924
+gemini_pro,HIST004,para_dist,Georges Clemenceau,False,2025-09-16T12:12:30.996669
+gemini_pro,HIST005,gold,Qin Shi Huang,False,2025-09-16T12:12:31.480447
+gemini_pro,HIST005,para,Qin Shi Huang,False,2025-09-16T12:12:32.050103
+gemini_pro,HIST005,dist,Qin Shi Huang,False,2025-09-16T12:12:32.609231
+gemini_pro,HIST005,para_dist,Qin Shi Huang,False,2025-09-16T12:12:33.119721
+gemini_pro,HIST006,gold,World War I,False,2025-09-16T12:12:33.737432
+gemini_pro,HIST006,para,The assassination of Archduke Franz Ferdinand,False,2025-09-16T12:12:34.348938
+gemini_pro,HIST006,dist,World War I,False,2025-09-16T12:12:34.859190
+gemini_pro,HIST006,para_dist,Assassination of Archduke Franz Ferdinand,False,2025-09-16T12:12:35.407148
+gemini_pro,HIST007,gold,Joseph Stalin,False,2025-09-16T12:12:35.986965
+gemini_pro,HIST007,para,Joseph Stalin,False,2025-09-16T12:12:36.406320
+gemini_pro,HIST007,dist,Joseph Stalin,False,2025-09-16T12:12:36.909075
+gemini_pro,HIST007,para_dist,Joseph Stalin,False,2025-09-16T12:12:37.628710
+gemini_pro,HIST008,gold,Abraham Lincoln,False,2025-09-16T12:12:38.051110
+gemini_pro,HIST008,para,Abraham Lincoln,False,2025-09-16T12:12:38.546976
+gemini_pro,HIST008,dist,Abraham Lincoln,False,2025-09-16T12:12:39.368362
+gemini_pro,HIST008,para_dist,Abraham Lincoln,False,2025-09-16T12:12:39.878232
+gemini_pro,HIST009,gold,Margaret Thatcher,False,2025-09-16T12:12:40.392324
+gemini_pro,HIST009,para,Margaret Thatcher,False,2025-09-16T12:12:41.061276
+gemini_pro,HIST009,dist,Margaret Thatcher,False,2025-09-16T12:12:41.516594
+gemini_pro,HIST009,para_dist,Margaret Thatcher,False,2025-09-16T12:12:42.028764
+gemini_pro,HIST010,gold,Inca,False,2025-09-16T12:12:42.539875
+gemini_pro,HIST010,para,Inca,False,2025-09-16T12:12:43.052871
+gemini_pro,HIST010,dist,Inca,False,2025-09-16T12:12:43.666941
+gemini_pro,HIST010,para_dist,Inca,False,2025-09-16T12:12:44.196054
+gemini_pro,SCI001,gold,H2O,False,2025-09-16T12:12:44.793381
+gemini_pro,SCI001,para,H2O,False,2025-09-16T12:12:45.477762
+gemini_pro,SCI001,dist,H2O,False,2025-09-16T12:12:46.123792
+gemini_pro,SCI001,para_dist,H2O,False,2025-09-16T12:12:46.738641
+gemini_pro,SCI002,gold,Carbon,False,2025-09-16T12:12:47.238401
+gemini_pro,SCI002,para,Carbon,False,2025-09-16T12:12:47.660848
+gemini_pro,SCI002,dist,Carbon,False,2025-09-16T12:12:48.484336
+gemini_pro,SCI002,para_dist,Carbon,False,2025-09-16T12:12:48.991511
+gemini_pro,SCI003,gold,Carbon dioxide,False,2025-09-16T12:12:49.504348
+gemini_pro,SCI003,para,Carbon dioxide,False,2025-09-16T12:12:50.014381
+llama31_8b,HIST001,gold,<span>John F. Kennedy</span>,True,2025-09-16T12:18:30.849816
+llama31_8b,HIST001,para,<span>John F. Kennedy</span>,True,2025-09-16T12:18:31.624050
+llama31_8b,HIST001,dist,<span>John F. Kennedy</span>,True,2025-09-16T12:18:32.430805
+llama31_8b,HIST001,para_dist,<span>John F. Kennedy</span>,True,2025-09-16T12:18:33.338999
+llama31_8b,HIST002,gold,<span>Roman Empire</span>,True,2025-09-16T12:18:34.214349
+llama31_8b,HIST002,para,<span>Flavian</span>,True,2025-09-16T12:18:35.108709
+llama31_8b,HIST002,dist,<span>Roman Empire</span>,True,2025-09-16T12:18:35.925836
+llama31_8b,HIST002,para_dist,<span>Flavian</span>,True,2025-09-16T12:18:36.845677
+llama31_8b,HIST003,gold,<span>King George III</span>,True,2025-09-16T12:18:37.767741
+llama31_8b,HIST003,para,<span>King George III</span>,True,2025-09-16T12:18:38.689270
+llama31_8b,HIST003,dist,<span>King George III</span>,True,2025-09-16T12:18:39.580522
+llama31_8b,HIST003,para_dist,<span>King George III</span>,True,2025-09-16T12:18:40.533019
+llama31_8b,HIST004,gold,<span>Georges Clemenceau</span>,True,2025-09-16T12:18:41.399951
+llama31_8b,HIST004,para,<span>Georges Clemenceau</span>,True,2025-09-16T12:18:42.374346
+llama31_8b,HIST004,dist,<span>Georges Clemenceau</span>,True,2025-09-16T12:18:43.194358
+llama31_8b,HIST004,para_dist,<span>Georges Clemenceau</span>,True,2025-09-16T12:18:44.116856
+llama31_8b,HIST005,gold,<span>Qin Shi Huang</span>,True,2025-09-16T12:18:45.041864
+llama31_8b,HIST005,para,<span>Qin Shi Huang</span>,True,2025-09-16T12:18:46.369819
+llama31_8b,HIST005,dist,<span>Qin Shi Huang</span>,True,2025-09-16T12:18:47.186672
+llama31_8b,HIST005,para_dist,<span>Qin Shi Huang</span>,True,2025-09-16T12:18:48.725589
+llama31_8b,HIST006,gold,<span>World War I</span>,True,2025-09-16T12:18:49.542926
+llama31_8b,HIST006,para,<span>Assassination of Archduke Franz Ferdinand</span>,True,2025-09-16T12:18:50.417774
+llama31_8b,HIST006,dist,<span>World War I</span>,True,2025-09-16T12:18:51.387045
+llama31_8b,HIST006,para_dist,<span>Archduke Franz Ferdinand's assassination</span>,True,2025-09-16T12:18:52.207298
+llama31_8b,HIST007,gold,<span>Joseph Stalin</span>,True,2025-09-16T12:18:53.129279
+llama31_8b,HIST007,para,<span>Joseph Stalin</span>,True,2025-09-16T12:18:53.990085
+llama31_8b,HIST007,dist,<span>Joseph Stalin</span>,True,2025-09-16T12:18:54.714857
+llama31_8b,HIST007,para_dist,<span>Joseph Stalin</span>,True,2025-09-16T12:18:55.493288
+llama31_8b,HIST008,gold,<span>Abraham Lincoln</span>,True,2025-09-16T12:18:56.504512
+llama31_8b,HIST008,para,<span>Abraham Lincoln</span>,True,2025-09-16T12:18:57.531796
+llama31_8b,HIST008,dist,<span>Abraham Lincoln</span>,True,2025-09-16T12:18:58.658123
+llama31_8b,HIST008,para_dist,<span>Abraham Lincoln</span>,True,2025-09-16T12:18:59.567030
+llama31_8b,HIST009,gold,<span>Margaret Thatcher</span>,True,2025-09-16T12:19:00.708045
+llama31_8b,HIST009,para,<span>Margaret Thatcher</span>,True,2025-09-16T12:19:01.626842
+llama31_8b,HIST009,dist,<span>Margaret Thatcher</span>,True,2025-09-16T12:19:03.371007
+llama31_8b,HIST009,para_dist,<span>Margaret Thatcher</span>,True,2025-09-16T12:19:04.288294
+llama31_8b,HIST010,gold,<span>Inca civilization</span>,True,2025-09-16T12:19:05.106663
+llama31_8b,HIST010,para,<span>The Inca civilization</span>,True,2025-09-16T12:19:05.925949
+llama31_8b,HIST010,dist,<span>The Inca civilization.</span>,True,2025-09-16T12:19:06.922828
+llama31_8b,HIST010,para_dist,<span>The Inca civilization.</span>,True,2025-09-16T12:19:07.727733
+llama31_8b,SCI001,gold,<span>H<sub>2</sub>O</span>,True,2025-09-16T12:19:08.618434
+llama31_8b,SCI001,para,<span>H2O</span>,True,2025-09-16T12:19:09.513812
+llama31_8b,SCI001,dist,<span>H2O</span>,True,2025-09-16T12:19:10.433985
+llama31_8b,SCI001,para_dist,<span>H2O</span>,True,2025-09-16T12:19:11.710065
+llama31_8b,SCI002,gold,<span>Carbon</span>,True,2025-09-16T12:19:12.584548
+llama31_8b,SCI002,para,<span>Carbon</span>,True,2025-09-16T12:19:13.506135
+llama31_8b,SCI002,dist,<span>Carbon</span>,True,2025-09-16T12:19:14.220908
+llama31_8b,SCI002,para_dist,<span>Carbon</span>,True,2025-09-16T12:19:15.144451
+llama31_8b,SCI003,gold,<span>Carbon dioxide (CO2)</span>,True,2025-09-16T12:19:15.906601
+llama31_8b,SCI003,para,<span>Carbon dioxide (CO2)</span>,True,2025-09-16T12:19:16.782930
+mistral7b,HIST001,gold,John F. Kennedy,False,2025-09-16T12:27:26.767297
+mistral7b,HIST001,para,John F. Kennedy,False,2025-09-16T12:27:27.675297
+mistral7b,HIST001,dist,John F. Kennedy,False,2025-09-16T12:27:28.506743
+mistral7b,HIST001,para_dist,John F. Kennedy,False,2025-09-16T12:27:29.429780
+mistral7b,HIST002,gold,The Colosseum was built under the Flavian emperors of the Roman Empire.,False,2025-09-16T12:27:30.349747
+mistral7b,HIST002,para,Flavian,False,2025-09-16T12:27:31.273383
+mistral7b,HIST002,dist,Roman Empire,False,2025-09-16T12:27:32.092285
+mistral7b,HIST002,para_dist,Flavian,False,2025-09-16T12:27:33.017530
+mistral7b,HIST003,gold,King George III,False,2025-09-16T12:27:33.833705
+mistral7b,HIST003,para,King George III,False,2025-09-16T12:27:34.651069
+mistral7b,HIST003,dist,King George III,False,2025-09-16T12:27:35.675197
+mistral7b,HIST003,para_dist,King George III,False,2025-09-16T12:27:36.494144
+mistral7b,HIST004,gold,Georges Clemenceau,False,2025-09-16T12:27:37.318628
+mistral7b,HIST004,para,Georges Clemenceau,False,2025-09-16T12:27:38.337219
+mistral7b,HIST004,dist,Prime Minister Georges Clemenceau,False,2025-09-16T12:27:39.361556
+mistral7b,HIST004,para_dist,Georges Clemenceau,False,2025-09-16T12:27:40.151798
+mistral7b,HIST005,gold,Qin Shi Huang,False,2025-09-16T12:27:40.999928
+mistral7b,HIST005,para,Qin Shi Huang,False,2025-09-16T12:27:41.948501
+mistral7b,HIST005,dist,Qin Shi Huang,False,2025-09-16T12:27:43.098551
+mistral7b,HIST005,para_dist,Qin Shi Huang,False,2025-09-16T12:27:43.884051
+mistral7b,HIST006,gold,World War I,False,2025-09-16T12:27:44.663126
+mistral7b,HIST006,para,Archduke Franz Ferdinand's assassination in Sarajevo.,False,2025-09-16T12:27:45.538352
+mistral7b,HIST006,dist,World War I,False,2025-09-16T12:27:46.297405
+mistral7b,HIST006,para_dist,Archduke Franz Ferdinand's assassination,False,2025-09-16T12:27:47.133055
+mistral7b,HIST007,gold,Joseph Stalin,False,2025-09-16T12:27:47.918184
+mistral7b,HIST007,para,Joseph Stalin,False,2025-09-16T12:27:48.690863
+mistral7b,HIST007,dist,Joseph Stalin,False,2025-09-16T12:27:49.478726
+mistral7b,HIST007,para_dist,Joseph Stalin,False,2025-09-16T12:27:50.389057
+mistral7b,HIST008,gold,Abraham Lincoln,False,2025-09-16T12:27:51.294902
+mistral7b,HIST008,para,Abraham Lincoln,False,2025-09-16T12:27:52.185626
+mistral7b,HIST008,dist,Abraham Lincoln,False,2025-09-16T12:27:53.088955
+mistral7b,HIST008,para_dist,Abraham Lincoln,False,2025-09-16T12:27:53.864504
+mistral7b,HIST009,gold,Margaret Thatcher,False,2025-09-16T12:27:54.659153
+mistral7b,HIST009,para,Margaret Thatcher,False,2025-09-16T12:27:55.466821
+mistral7b,HIST009,dist,Margaret Thatcher,False,2025-09-16T12:27:56.284525
+mistral7b,HIST009,para_dist,Margaret Thatcher,False,2025-09-16T12:27:57.065074
+mistral7b,HIST010,gold,Inca civilization,False,2025-09-16T12:27:57.855589
+mistral7b,HIST010,para,Inca civilization,False,2025-09-16T12:27:58.647982
+mistral7b,HIST010,dist,Inca,False,2025-09-16T12:27:59.407863
+mistral7b,HIST010,para_dist,Inca civilization,False,2025-09-16T12:28:00.189982
+mistral7b,SCI001,gold,H2O,False,2025-09-16T12:28:01.119120
+mistral7b,SCI001,para,H2O,False,2025-09-16T12:28:01.900707
+mistral7b,SCI001,dist,H2O,False,2025-09-16T12:28:02.665293
+mistral7b,SCI001,para_dist,H2O,False,2025-09-16T12:28:03.451638
+mistral7b,SCI002,gold,Carbon,False,2025-09-16T12:28:04.351918
+mistral7b,SCI002,para,Carbon,False,2025-09-16T12:28:05.122928
+mistral7b,SCI002,dist,Carbon,False,2025-09-16T12:28:05.897682
+mistral7b,SCI002,para_dist,Carbon,False,2025-09-16T12:28:06.829883
+mistral7b,SCI003,gold,CO2,False,2025-09-16T12:28:07.606836
+mistral7b,SCI003,para,CO2,False,2025-09-16T12:28:08.519042

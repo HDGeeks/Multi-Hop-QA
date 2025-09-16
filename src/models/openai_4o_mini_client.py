@@ -6,8 +6,8 @@ from typing import Optional
 def query_openai_4o_mini(
     prompt: str,
     model: str = "gpt-4o-mini",
-    temperature: float = 0.0,
-    top_p: float = 1.0,
+    temperature: float = 0.7,
+    top_p: float = 0.9,
     max_tokens: int = 64,
     timeout: int = 30,
     retries: int = 2,

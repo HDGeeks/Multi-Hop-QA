@@ -6,8 +6,8 @@ from typing import Optional
 def query_gemini_pro(
     prompt: str,
     model: str = "gemini-1.5-pro",
-    temperature: float = 0.0,
-    top_p: float = 1.0,
+    temperature: float = 0.7,
+    top_p: float = 0.9,
     max_tokens: int = 64,
     timeout: int = 30,
     retries: int = 2,

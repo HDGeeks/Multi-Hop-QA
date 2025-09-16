@@ -1,0 +1,5 @@
+model,setting,n_items,em_mean_percent,f1_mean_of_medians_percent,latency_p50_ms,refusal_rate_percent,invalid_rate_percent,stability_mad_f1_median,f1_median_percent,drop_em_vs_gold_pp,drop_f1_vs_gold_pp
+mistral7b,gold,50,78.0,88.6017316017316,815.5,0.0,0.0,0.0,88.6017316017316,,
+mistral7b,para,50,76.0,86.2955266955267,808.0,0.0,0.0,0.0,86.2955266955267,-2.0,-2.306204906204897
+mistral7b,dist,50,80.0,88.87863247863247,792.0,0.0,0.0,0.0,88.87863247863247,2.0,0.27690087690086784
+mistral7b,para_dist,50,76.0,85.40614940614941,741.0,0.0,0.0,0.0,85.40614940614941,-2.0,-3.1955821955821904
