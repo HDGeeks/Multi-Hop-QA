@@ -11,7 +11,7 @@
 # Usage:
 #   src/scripts/make_report.sh <RESULTS_DIR> <REPORTS_DIR>
 # Example:
-#   src/scripts/make_report.sh src/results_test src/reports_test
+#   src/scripts/make_report.sh src/results src/reports
 #
 # Outputs:
 #   <REPORTS_DIR>/tables/*.csv

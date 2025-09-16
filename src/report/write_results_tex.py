@@ -246,32 +246,7 @@ def pick_row(df: pd.DataFrame, model_display: str) -> pd.Series:
 # =========================
 
 def table1_tex(t1: pd.DataFrame, order: List[str], em_dp: int, f1_dp: int, bert_dp: int) -> str:
-    """
-    Render LaTeX for Table 1 (Per-setting accuracy).
-
-    Expected columns in `t1`:
-      - "Model"
-      - For each s in ["Gold","Para","Dist","Para+Dist"]:
-            f"{s}_EM", f"{s}_F1", f"{s}_BERT"
-
-    Parameters
-    ----------
-    t1 : pd.DataFrame
-        Wide per-setting table.
-    order : list[str]
-        Model display order to render.
-    em_dp : int
-        Decimal places for EM.
-    f1_dp : int
-        Decimal places for F1.
-    bert_dp : int
-        Decimal places for BERTScore F1.
-
-    Returns
-    -------
-    str
-        LaTeX block for the table.
-    """
+    # Expect columns like "Gold_EM","Gold_F1","Gold_BERT", etc.
     for s in SETTINGS:
         for m in ["EM", "F1", "BERT"]:
             col = f"{s}_{m}"
@@ -295,7 +270,7 @@ Model & EM & F1 & BERT & EM & F1 & BERT & EM & F1 & BERT & EM & F1 & BERT \\
 \midrule
 """.strip("\n")
 
-    lines: List[str] = [header]
+    lines = [header]
     for name in order:
         r = pick_row(t1, name)
         vals: List[str] = []
@@ -305,10 +280,7 @@ Model & EM & F1 & BERT & EM & F1 & BERT & EM & F1 & BERT & EM & F1 & BERT \\
                 fmt(r[f"{s}_F1"], f1_dp),
                 fmt(r[f"{s}_BERT"], bert_dp),
             ]
-        # FIX: emit a single LaTeX row (not two lines)
-        row = latex_escape(show_name(r["Model"])) + " & " + " & ".join(vals) + r" \\"
-        lines.append(row)
-
+        lines.append(f"{show_name(r['Model'])} & " + " & ".join(vals) + r" \\")
     tail = r"""
 \bottomrule
 \end{tabular}%
@@ -320,12 +292,13 @@ F1 = \emph{median across items} of token-level precision/recall F1 (computed per
 BERTScore F1 = \emph{median across items} of contextual similarity (computed on original strings, max over golds).
 All values are in \%.}
 \par\medskip
-\caption*{\scriptsize \textbf{Remark.} \textit{Some models occasionally return sentences or HTML-wrapped spans; EM is strict span match and may understate semantic correctness compared to F1/BERT.}}
+\caption*{\scriptsize \textbf{Remark.} 
+\textit{BERTScore values saturate near 100\%; we retain up to 6 decimal places to highlight small but consistent differences across models. 
+Some models occasionally return sentences or HTML-wrapped spans; EM is strict span match and may understate semantic correctness compared to F1/BERT.}}
 \end{table}
 """.strip("\n")
     lines.append(tail)
     return "\n".join(lines)
-
 
 # =========================
 # Table 2: Δ vs Gold + latency

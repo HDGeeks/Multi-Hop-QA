@@ -12,16 +12,11 @@
 \cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}\cmidrule(lr){11-13}
 Model & EM & F1 & BERT & EM & F1 & BERT & EM & F1 & BERT & EM & F1 & BERT \\
 \midrule
-Gemini Pro \\
-& 98.0 & 99.0 & 99.999928 & 92.0 & 94.3 & 99.999893 & 98.0 & 99.0 & 99.999928 & 92.0 & 94.3 & 99.999893 \\
-GPT-4o Mini \\
-& 88.0 & 95.0 & 99.999928 & 88.0 & 92.2 & 99.999928 & 88.0 & 94.1 & 99.999911 & 88.0 & 92.5 & 99.999893 \\
-GPT-4o \\
-& 86.0 & 94.7 & 99.999803 & 82.0 & 90.5 & 99.999595 & 86.0 & 93.0 & 99.999771 & 80.0 & 89.9 & 99.999523 \\
-Mistral-7B \\
-& 78.0 & 89.4 & 99.999875 & 82.0 & 87.8 & 99.999875 & 80.0 & 88.2 & 99.999857 & 76.0 & 84.9 & 99.999857 \\
-LLaMA-3.1-8B \\
-& 78.0 & 92.9 & 2.502188 & 76.0 & 88.9 & -0.742964 & 72.0 & 90.6 & 2.372984 & 72.0 & 88.0 & -0.742964 \\
+Gemini Pro & 98.0 & 99.0 & 99.999928 & 92.0 & 94.3 & 99.999875 & 98.0 & 99.0 & 99.999928 & 92.0 & 94.3 & 99.999875 \\
+GPT-4o Mini & 88.0 & 95.0 & 99.999928 & 88.0 & 92.2 & 99.999911 & 88.0 & 94.1 & 99.999893 & 88.0 & 92.5 & 99.999893 \\
+GPT-4o & 86.0 & 94.7 & 99.999803 & 82.0 & 90.5 & 99.999595 & 86.0 & 93.0 & 99.999785 & 80.0 & 89.9 & 99.999523 \\
+Mistral-7B & 78.0 & 89.4 & 99.999875 & 82.0 & 87.8 & 99.999875 & 80.0 & 88.2 & 99.999839 & 76.0 & 84.9 & 99.999839 \\
+LLaMA-3.1-8B & 78.0 & 92.9 & 2.502188 & 76.0 & 88.9 & -0.742929 & 72.0 & 90.6 & 2.372984 & 72.0 & 88.0 & -0.742929 \\
 \bottomrule
 \end{tabular}%
 }
@@ -32,7 +27,7 @@ F1 = \emph{median across items} of token-level precision/recall F1 (computed per
 BERTScore F1 = \emph{median across items} of contextual similarity (computed on original strings, max over golds).
 All values are in \%.}
 \par\medskip
-\caption*{\scriptsize \textbf{Remark.} \textit{LLaMA-3.1-8B often returned full sentences instead of short spans, yielding 0\% EM despite F1≈55–58; strict span-EM penalizes formatting rather than content.}}
+\caption*{\scriptsize \textbf{Remark.} \textit{Some models occasionally return sentences or HTML-wrapped spans; EM is strict span match and may understate semantic correctness compared to F1/BERT.}}
 \end{table}
 
 \subsection{Robustness and Latency}
@@ -79,7 +74,7 @@ LLaMA-3.1-8B & 96.5 & 0.0 & 874.5 \\
 \bottomrule
 \end{tabular}
 \caption*{\scriptsize
-\textbf{What this shows.} Stability across $n=3$ repeated runs.\;
+\textbf{What this shows.} Stability across repeated runs.\;
 \textbf{How computed.} EM-Agree = average modal-agreement rate per item across runs. 
 F1-MAD = median absolute deviation of per-item F1 across runs (pp). 
 Latency p50 = overall median latency across all responses for the model (ms).}
@@ -138,7 +133,7 @@ Avg. & 82.0 & 93.6 & 90.0 & 95.9 & 100.0 & 100.0 & 68.0 & 86.9 & 88.0 & 94.6 \\
 \caption*{\scriptsize
 \textbf{What this shows.} Which domains are easier/harder under \emph{Gold} (no perturbations).\;
 \textbf{How computed.} Items grouped by domain; 
-EM = \emph{mean of per-item EM} (per-item EM = mean across 3 runs). 
-F1 = \emph{median of per-item F1} (per-item F1 = median across 3 runs). 
+EM = \emph{mean of per-item EM} (per-item EM = mean across runs). 
+F1 = \emph{median of per-item F1} (per-item F1 = median across runs). 
 Both scaled to \%.}
 \end{table}
