@@ -12,8 +12,8 @@ Checks:
 - Alias parsing sanity (no dup aliases after stripping)
 
 Usage:
-  python3 -m src.data_50.validate_50 \
-    --base src/data_50 \
+  python3 -m src.data.validate_50 \
+    --base src/data \
     --questions mhqa_questions_50.csv \
     --context mhqa_context_50.csv \
     --paraphrases mhqa_paraphrases_50.csv \
