@@ -1,4 +1,4 @@
-# src/models/openai_client.py
+# src/models/openai_4o_mini_client.py
 from ._common import clean_text, get_env_or_raise, backoff_sleep
 import time
 from typing import Optional

@@ -1,3 +1,18 @@
+"""
+mistral_client.py
+
+Provides a client interface for querying Mistral models via the Hugging Face Inference API.
+Handles environment variable loading for authentication, sets up default model parameters,
+and exposes a unified function for chat-based completion requests. Responses are returned
+in a standardized dictionary schema, including output, error handling, latency, and model version.
+
+Dependencies:
+    - python-dotenv: For loading environment variables from .env files.
+    - huggingface_hub: For interfacing with Hugging Face's Inference API.
+
+Raises:
+    RuntimeError: If the Hugging Face API key is not found in the environment.
+"""
 import os, time
 from typing import Dict, Any, Optional
 from dotenv import load_dotenv
