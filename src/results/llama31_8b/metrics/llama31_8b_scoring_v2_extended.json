@@ -1,0 +1,76 @@
+{
+  "overall": {
+    "exact_match_percent": 74.33333333333333,
+    "f1_percent": 89.66427646427648,
+    "n": 600
+  },
+  "by_setting": {
+    "gold": {
+      "em_percent": 78.0,
+      "f1_percent": 92.0853886853887,
+      "n": 150
+    },
+    "para": {
+      "em_percent": 74.66666666666667,
+      "f1_percent": 88.48590668590668,
+      "n": 150
+    },
+    "dist": {
+      "em_percent": 72.66666666666667,
+      "f1_percent": 90.22886002886003,
+      "n": 150
+    },
+    "para_dist": {
+      "em_percent": 72.0,
+      "f1_percent": 87.85695045695046,
+      "n": 150
+    }
+  },
+  "by_domain": {
+    "geography": {
+      "em_percent": 68.33333333333333,
+      "f1_percent": 90.71428571428571,
+      "n": 120
+    },
+    "history": {
+      "em_percent": 78.33333333333333,
+      "f1_percent": 85.33333333333334,
+      "n": 120
+    },
+    "literature": {
+      "em_percent": 97.5,
+      "f1_percent": 98.88528138528139,
+      "n": 120
+    },
+    "politics": {
+      "em_percent": 46.666666666666664,
+      "f1_percent": 79.33292633292633,
+      "n": 120
+    },
+    "science": {
+      "em_percent": 80.83333333333333,
+      "f1_percent": 94.05555555555554,
+      "n": 120
+    }
+  },
+  "drops_vs_gold": {
+    "para": {
+      "em_drop_pp": 3.3333333333333286,
+      "f1_drop_pp": 3.599481999482009
+    },
+    "dist": {
+      "em_drop_pp": 5.333333333333329,
+      "f1_drop_pp": 1.856528656528667
+    },
+    "para_dist": {
+      "em_drop_pp": 6.0,
+      "f1_drop_pp": 4.228438228438236
+    }
+  },
+  "html_stripping_diagnostics": {
+    "by_model": {
+      "llama31_8b": 600
+    },
+    "total_rows_stripped": 600
+  }
+}

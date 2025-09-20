@@ -1,0 +1,5 @@
+model,setting,n_items,em_mean_percent,f1_mean_of_medians_percent,latency_p50_ms,refusal_rate_percent,invalid_rate_percent,stability_mad_f1_median,f1_median_percent,drop_em_vs_gold_pp,drop_f1_vs_gold_pp
+llama31_8b,gold,50,78.0,92.88253968253967,864.0,0.0,0.0,0.0,92.88253968253967,,
+llama31_8b,para,50,76.0,88.94920634920635,871.5,0.0,0.0,0.0,88.94920634920635,-2.0,-3.933333333333323
+llama31_8b,dist,50,72.0,90.63809523809523,868.0,0.0,0.0,0.0,90.63809523809523,-6.0,-2.24444444444444
+llama31_8b,para_dist,50,72.0,88.03809523809524,900.0,0.0,0.0,0.0,88.03809523809524,-6.0,-4.844444444444434

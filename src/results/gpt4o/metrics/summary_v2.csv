@@ -1,0 +1,5 @@
+model,setting,n_items,em_mean_percent,f1_mean_of_medians_percent,latency_p50_ms,refusal_rate_percent,invalid_rate_percent,stability_mad_f1_median,f1_median_percent,drop_em_vs_gold_pp,drop_f1_vs_gold_pp
+gpt4o,gold,50,86.0,94.66666666666666,713.0,0.0,0.0,0.0,94.66666666666666,,
+gpt4o,para,50,82.0,90.50476190476189,701.5,0.0,0.0,0.0,90.50476190476189,-4.0,-4.161904761904765
+gpt4o,dist,50,86.0,92.97142857142856,716.0,0.0,0.0,0.0,92.97142857142856,0.0,-1.6952380952380963
+gpt4o,para_dist,50,80.0,89.9047619047619,709.0,0.0,0.0,0.0,89.9047619047619,-6.0,-4.761904761904759

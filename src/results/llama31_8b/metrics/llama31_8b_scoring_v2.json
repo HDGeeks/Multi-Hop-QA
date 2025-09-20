@@ -1,0 +1,34 @@
+{
+  "micro_overall": {
+    "exact_match_percent": 74.33333333333333,
+    "f1_percent": 89.66427646427648,
+    "n": 600
+  },
+  "by_setting": {
+    "gold": {
+      "exact_match_percent": 78.0,
+      "f1_percent": 92.0853886853887,
+      "n": 150
+    },
+    "para": {
+      "exact_match_percent": 74.66666666666667,
+      "f1_percent": 88.48590668590668,
+      "n": 150
+    },
+    "dist": {
+      "exact_match_percent": 72.66666666666667,
+      "f1_percent": 90.22886002886003,
+      "n": 150
+    },
+    "para_dist": {
+      "exact_match_percent": 72.0,
+      "f1_percent": 87.85695045695046,
+      "n": 150
+    }
+  },
+  "paths": {
+    "per_run_csv": "/Users/hd/Desktop/Multi-Hop-QA/src/results/llama31_8b/metrics/per_run_v2.csv",
+    "aggregated_items_csv": "/Users/hd/Desktop/Multi-Hop-QA/src/results/llama31_8b/metrics/aggregated_items_v2.csv",
+    "summary_csv": "/Users/hd/Desktop/Multi-Hop-QA/src/results/llama31_8b/metrics/summary_v2.csv"
+  }
+}
