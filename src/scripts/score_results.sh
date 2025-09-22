@@ -8,7 +8,7 @@
 # Usage:
 #   src/scripts/score_results.sh <RESULTS_DIR>
 # Example:
-#   src/scripts/score_results.sh src/results_test
+#   src/scripts/score_results.sh src/results
 #
 # Outputs per model (to <RESULTS_DIR>/<model>/metrics/):
 #   1) per_run_v2.csv

@@ -27,8 +27,8 @@
     }
   },
   "paths": {
-    "per_run_csv": "/Users/hd/Desktop/Multi-Hop-QA/src/results/gpt4o_mini/metrics/per_run_v2.csv",
-    "aggregated_items_csv": "/Users/hd/Desktop/Multi-Hop-QA/src/results/gpt4o_mini/metrics/aggregated_items_v2.csv",
-    "summary_csv": "/Users/hd/Desktop/Multi-Hop-QA/src/results/gpt4o_mini/metrics/summary_v2.csv"
+    "per_run_csv": "/home/daniel-tesfai/Desktop/Multi-Hop-QA/src/results/gpt4o_mini/metrics/per_run_v2.csv",
+    "aggregated_items_csv": "/home/daniel-tesfai/Desktop/Multi-Hop-QA/src/results/gpt4o_mini/metrics/aggregated_items_v2.csv",
+    "summary_csv": "/home/daniel-tesfai/Desktop/Multi-Hop-QA/src/results/gpt4o_mini/metrics/summary_v2.csv"
   }
 }
