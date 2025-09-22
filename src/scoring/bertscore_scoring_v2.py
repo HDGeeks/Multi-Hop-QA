@@ -89,6 +89,23 @@ from pathlib import Path
 from typing import Dict, List
 import pandas as pd
 import evaluate
+import re, html  # ADD THIS
+
+
+# -------------------------
+# Minimal HTML stripping (parity with scoring_v2)
+# -------------------------
+import re, html  # ← after other imports
+
+_TAG_RE = re.compile(r"</?span[^>]*>", re.IGNORECASE)
+
+def strip_span_tags(s: str) -> str:
+    """Remove <span ...> and </span> tags but keep inner text."""
+    if not s:
+        return ""
+    s = html.unescape(s)
+    return _TAG_RE.sub("", s).strip()
+
 
 
 # -------------------------
@@ -370,6 +387,18 @@ def main():
     if missing:
         raise ValueError(f"Missing columns in jsonl: {missing}")
 
+    # Clean outputs before BERTScore (strip <span> only for LLaMA models)
+    if "model" in df.columns:
+        cleaned_outputs: List[str] = []
+        for model, out in zip(df["model"], df["output"]):
+            text = str(out)
+            if "llama" in str(model).lower():
+                # requires strip_span_tags helper defined near imports
+                text = strip_span_tags(text)
+            cleaned_outputs.append(text)
+    else:
+        cleaned_outputs = df["output"].astype(str).tolist()
+
     # Reference lists and domains (from gold)
     refs_lists: List[List[str]] = []
     domains: List[str] = []
@@ -385,7 +414,8 @@ def main():
 
     # --- Per-request BERTScore-F1 (best ref) ---
     df["bertscore_f1"] = best_ref_bertscore_f1(
-        preds=df["output"].astype(str).tolist(),
+        preds=cleaned_outputs,
+        #preds=df["output"].astype(str).tolist(),
         refs_lists=refs_lists,
         model_type=args.bertscore_model,
         lang=args.bertscore_lang,
@@ -393,6 +423,7 @@ def main():
     )
     # Percent mirror for paper
     df["bertscore_f1_percent"] = df["bertscore_f1"].map(pp)
+    df["output_clean"] = cleaned_outputs
 
     # Save per-run
     per_run_csv = outdir / f"{args.model}_bertscore_per_run_v2.csv"
